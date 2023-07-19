@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: transclude_line
+# key: tran
+# --
+#+transclude: [[file:]] :lines - :src C++

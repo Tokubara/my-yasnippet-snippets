@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: load-file
+# key: lf
+# --
+
+(load-file "/Users/quebec/Playground/little-scripts/dotfiles/mac/org.el")$0

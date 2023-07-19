@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: memory-frequency-command
+# key: memory-frequency-command
+# --
+nvidia-smi -a -q -d CLOCK | fgrep -A 3 "Max Clocks" | fgrep "Memory"

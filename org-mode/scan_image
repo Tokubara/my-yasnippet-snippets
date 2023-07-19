@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: scan_image
+# key: pi
+# --
+`(org-insert-image-file-link (shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/org_link_image.pl -s -dest=org"))`

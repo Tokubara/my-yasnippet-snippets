@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: file--if-branch-condition
+# key: file--if-branch-condition
+# --
+# -n: not null, not null return 0
+[[ -n "$var" ]]
+# -z: null/empty/unset return 0
+[[ -z "$var" ]]
+# ==/!=/= 是 pattern, =~ 是 regex

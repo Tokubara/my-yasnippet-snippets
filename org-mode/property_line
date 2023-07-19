@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: property line
+# key: pr
+# --
+#+PROPERTY: header-args:R :session :dir /Users/quebec/box/bayes/hw :tangle /Users/quebec/box/bayes/hw/hw6.R :results output :cache yes :exports both :eval never-export

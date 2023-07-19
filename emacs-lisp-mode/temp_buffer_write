@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: temp_buffer_write
+# key: temp_buffer_write
+# --
+(with-temp-buffer
+    (insert str)
+    (write-file filename))

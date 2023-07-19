@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: heredoc
+# key: hd
+# --
+#+begin_src bash :results output
+cat<<"EOF" > ~/Downloads/test.py
+print("yes");
+raise TypeError;
+EOF
+
+python -i -c "import sys; sys.stderr = sys.stdout" $MHOME/Downloads/test.py
+#+end_src

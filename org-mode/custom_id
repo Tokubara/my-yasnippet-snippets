@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: custom_id
+# key: id
+# --
+:PROPERTIES:
+:custom_id: `(progn (setq a (random-string 5)) (kill-new (concat "[[#" a "]]")) (symbol-value 'a))`
+:END:

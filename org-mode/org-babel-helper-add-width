@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: org-babel-helper-add-width
+# key: add-width
+# --
+#+NAME: add-width
+#+BEGIN_SRC sh :var data="" :var width="\\textwidth" :results output
+echo "#+ATTR_ORG: :width $width"
+echo "$data"
+#+END_SRC

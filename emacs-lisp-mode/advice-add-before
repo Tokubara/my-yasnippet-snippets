@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: advice-add-before
+# key: advice-add-before
+# --
+
+(defun my/set-default-directory-to-tab-local-default-directory (&rest _args)
+  (let ((tab-local-default-directory (my/get-tab-local-default-directory)))
+    (when tab-local-default-directory (setq default-directory tab-local-default-directory))
+    )
+  )
+
+(advice-add 'evil-edit :before #'my/set-default-directory-to-tab-local-default-directory)

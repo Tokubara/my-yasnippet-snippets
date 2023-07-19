@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: marktex-latex-export-preamble
+# key: marktex-latex-export-preamble
+# --
+#+SETUPFILE: /Users/quebec/Playground/org-mode-latex-setup/marktex.setup
+#+OPTIONS: num:nil date:nil toc:nil author:nil ^:{}
+#+title: 科研人员的行为规范——《怎样当一名科学家》读书报告
+#+author: Tian Zhuoyu 202228018629017

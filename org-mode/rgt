@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rgt
+# key: rgt
+# --
+#+begin_src R :results output file graphics :file `(format-time-string "figures/Pasted_image_%4Y%m%d%H%M%S.pdf")` :height 7 :wdith 7
+#+end_src

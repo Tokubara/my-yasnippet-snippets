@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: if-string-match-regex
+# key: if-string-match-regex
+# --
+(string-match-p (regexp-quote "://") str)

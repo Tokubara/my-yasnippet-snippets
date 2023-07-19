@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: random-integer
+# key: random-integer
+# --
+RandomInteger[{lower, upper}, {n1, n2, n3}]

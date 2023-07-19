@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: verilog_src_block
+# key: v
+# --
+#+begin_src verilog
+$0
+#+end_src

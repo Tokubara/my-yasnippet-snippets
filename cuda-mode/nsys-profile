@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: nsys-profile
+# key: nsys-profile
+# --
+//: srun -N 1 -n 1 --gpus=1 --pty /bin/bash
+//: nsys profile -o `(setq my/yas-tmp-base (file-name-base (buffer-file-name)))`.qdrep -f true ./`my/yas-tmp-base`
+//: nsys stats `my/yas-tmp-base`.qdrep

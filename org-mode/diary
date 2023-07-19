@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: diary
+# key: diary
+# --
+
+**** `(format-time-string "%Y-%m-%d")`
+***** 做了什么事?
+***** 有什么值得一提的事?
+***** 身体有什么情况?
+***** 心情剪影

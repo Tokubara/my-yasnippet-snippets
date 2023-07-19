@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: link
+# key: link
+# --
+`(let ((kill-ring-0 (org-no-properties (nth 0 kill-ring))) (kill-ring-1 (org-no-properties (nth 1 kill-ring))) )
+(if
+(string-match-p (regexp-quote "://") kill-ring-0)
+(format "[[%s][%s]]" kill-ring-0 kill-ring-1)
+(format "[[%s][%s]]" kill-ring-1 kill-ring-0)
+))`

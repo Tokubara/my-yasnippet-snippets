@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pretty_print_hash
+# key: pretty_print_hash
+# --
+(xah-print-hash xx)

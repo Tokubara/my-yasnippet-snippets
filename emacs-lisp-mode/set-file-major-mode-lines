@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: set-file-major-mode-lines
+# key: set-file-major-mode-lines
+# --
+# -*- mode: sh; -*-
+# -*- eval: (outli-mode); -*-

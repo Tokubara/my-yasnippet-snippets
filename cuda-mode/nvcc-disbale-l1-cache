@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: nvcc-disbale-l1-cache
+# key: nvcc-disbale-l1-cache
+# --
+nvcc -Xptxas -dlcm=cg -o

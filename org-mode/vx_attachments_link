@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vx_attachments_link
+# key: vx
+# --
+[[file:../vx_attachments/$0]]

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bash_src_block
+# key: b
+# --
+#+begin_src bash :results output
+$0
+#+end_src

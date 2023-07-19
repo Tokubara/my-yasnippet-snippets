@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: org-reveal-export-preamble
+# key: org-reveal-export-preamble
+# --
+#+REVEAL_THEME: white
+#+LANGUAGE: en
+#+OPTIONS: num:nil date:t toc:t ^:{}
+#+AUTHOR: Tian Zhuoyu
+#+REVEAL_ROOT: file:///Users/quebec/resources/reveal.js-master

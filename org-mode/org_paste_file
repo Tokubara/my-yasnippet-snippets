@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: paste_any_file
+# key: pf
+# --
+`(shell-command-to-string "/usr/bin/env perl /Users/quebec/Playground/little-scripts/org_link_file.pl")`

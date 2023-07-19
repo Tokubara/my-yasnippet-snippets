@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: label_ref
+# key: label
+# --
+\label{`(setq tmp-name (random-string 5))`} @@latex:% @@ @@latex:\ref{`(symbol-value 'tmp-name)`}@@

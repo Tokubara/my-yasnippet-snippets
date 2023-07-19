@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: php_src_block
+# key: php
+# --
+#+begin_src php
+$0
+#+end_src

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pomors
+# key: pomors
+# --
+pomors -w 28 -s 4 -l 4 -p 10 -n 8

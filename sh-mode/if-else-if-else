@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: if-else-if-else
+# key: if-else-if-else
+# --
+if ; then
+elif ; then
+else
+fi

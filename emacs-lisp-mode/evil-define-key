@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: evil-define-key
+# key: evil-define-key
+# --
+(evil-define-key 'normal magit-status-mode-map (kbd "p") #'magit-section-backward)

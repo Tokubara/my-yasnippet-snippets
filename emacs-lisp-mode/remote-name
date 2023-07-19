@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remote-name
+# key: remote-name
+# --
+(file-name-concat my/remote-path (file-relative-name (buffer-file-name) my/local-path))

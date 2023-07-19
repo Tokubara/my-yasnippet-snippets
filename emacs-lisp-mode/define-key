@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: define-key
+# key: define-key
+# --
+(define-key evil-motion-state-map (kbd "C-b") nil)

@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: babel-latex
+# key: bl
+# --
+#+header: :headers '("\\\\usepackage{algorithm2e}" "\\\\usepackage{tikz}")
+#+begin_src latex :results file raw :file "../vx_attachments/`(format-time-string "Pasted_image_%4Y%m%d%H%M%S")`.svg" :post add-width(width="200", data=*this*)
+\begin{algorithm}[H]
+\SetAlgoLined
+\KwResult{Write here the result }
+initialization\;
+\While{While condition}{
+instructions\;
+\eIf{condition}{
+instructions1\;
+instructions2\;
+}{
+instructions3\;
+}
+}
+\caption{How to write algorithms}
+\end{algorithm}
+#+end_src

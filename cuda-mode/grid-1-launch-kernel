@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: grid=1 launch kernel
+# key: grid-1-launch-kernel
+# --
+<<<1, block>>>

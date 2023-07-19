@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: R_src_block_graphics
+# key: rg
+# --
+#+begin_src r :exports results :results output file graphics :file `(format-time-string "pasted_image_%4y%m%d%h%m%s.pdf")` :dir ~/notes/vx_attachments/
+#+end_src

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pdfoo-link
+# key: fl
+# --
+`(shell-command-to-string "pbpaste | /usr/bin/env perl /Users/quebec/Playground/little-scripts/pdfoo_link.pl")`

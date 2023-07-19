@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Table
+# key: Table
+# --
+Table[j+(i-1)*ny, {i, 1, nx}, {j, 1, ny}]

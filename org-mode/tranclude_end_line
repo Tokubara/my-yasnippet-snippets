@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tranclude_end_line
+# key: tranend
+# --
+#+transclude: [[file:::class ZeroOutOp]] :src C :end "end class ZeroOutOp"

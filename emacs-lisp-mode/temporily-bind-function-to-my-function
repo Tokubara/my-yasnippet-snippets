@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: temporily-bind-function-to-my-function
+# key: temporily-bind-function-to-my-function
+# --
+(cl-letf (((symbol-function 'yas--get-snippet-tables) #'my/yas--get-snippet-tables))
+    (consult-yasnippet nil))

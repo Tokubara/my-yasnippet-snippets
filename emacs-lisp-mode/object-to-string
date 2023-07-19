@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: object-to-string
+# key: object-to-string
+# --
+(prin1-to-string obj)

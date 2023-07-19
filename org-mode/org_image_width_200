@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org_image_width_200
+# key: 2
+# --
+#+ATTR_ORG: :width 200

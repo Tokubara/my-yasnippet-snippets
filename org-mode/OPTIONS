@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: OPTIONS
+# key: option
+# --
+#+OPTIONS: num:nil toc:nil ^:{} author:nil date:nil

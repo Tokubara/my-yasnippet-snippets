@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: stdin
+# key: stdin
+# --
+sys.stdin.read() # sys.stdin 用起来和 filehandle 没有任何区别
+sys.stdin.readlines()

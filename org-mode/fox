@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: foxtrot search profession path
+# key: fox
+# --
+
+[[`(shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/foxtrot_front_path.pl")`]]

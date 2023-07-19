@@ -1,0 +1,17 @@
+(undo-tree-save-format-version . 1)
+"942559f5983bb9cb39d198cbfff4f2dfb514ac55"
+[nil nil nil nil (25203 36056 552228 0) 0 nil]
+([nil nil ((apply yas--snippet-revive 1 47 #s(yas--snippet nil (#s(yas--field 1 33 33 nil (#s(yas--mirror 41 41 (yas--key-from-desc yas-text) #s(yas--field 2 41 41 nil nil nil nil #8) #s(yas--exit 47 nil) nil)) nil nil #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #7 #s(yas--exit 47 nil) nil))) #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #6 #s(yas--exit 47 nil) nil))) #s(yas--exit 47 nil) 3 nil #s(yas--field 1 33 33 nil (#s(yas--mirror 41 41 (yas--key-from-desc yas-text) #s(yas--field 2 41 41 nil nil nil nil #7) #s(yas--exit 47 nil) nil)) nil nil #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #6 #s(yas--exit 47 nil) nil))) nil nil)) (apply yas--take-care-of-redo #s(yas--snippet nil (#s(yas--field 1 33 33 nil (#s(yas--mirror 41 41 (yas--key-from-desc yas-text) #s(yas--field 2 41 41 nil nil nil nil #8) #s(yas--exit 47 nil) nil)) nil nil #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #7 #s(yas--exit 47 nil) nil))) #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #6 #s(yas--exit 47 nil) nil))) #s(yas--exit 47 nil) 3 nil #s(yas--field 1 33 33 nil (#s(yas--mirror 41 41 (yas--key-from-desc yas-text) #s(yas--field 2 41 41 nil nil nil nil #7) #s(yas--exit 47 nil) nil)) nil nil #s(yas--field 2 41 41 nil nil nil nil #s(yas--mirror 41 41 (yas--key-from-desc yas-text) #6 #s(yas--exit 47 nil) nil))) nil nil)) (1 . 47)) nil (25203 36056 552227 0) 0 nil])
+([nil nil ((42 . 43) (41 . 42)) nil (25203 36056 552226 0) 0 nil])
+([nil nil ((48 . 49) 47) nil (25203 36056 552225 0) 0 nil])
+([nil nil ((nil rear-nonsticky nil 49 . 50) (#("
+" 0 1 (fontified nil)) . -95) (49 . 96)) nil (25203 36056 552223 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t rear-nonsticky t)) . 49) (undo-tree-id2 . -1) (undo-tree-id3 . -1)) nil (25203 36056 552222 0) 0 nil])
+([nil nil ((#("emacs-lisp :tangle yes" 0 22 (font-lock-fontified t fontified t face font-lock-comment-face)) . 61) (undo-tree-id1 . 22)) nil (25203 36056 552219 0) 0 nil])
+([nil nil ((61 . 81)) nil (25203 36056 552216 0) 0 nil])
+([nil nil ((#("
+" 0 1 (src-block t font-lock-fontified t fontified t)) . 82) (undo-tree-id0 . -1)) nil (25203 36056 552214 0) 0 nil])
+([nil nil ((82 . 84) (82 . 83)) nil (25203 36056 552190 0) 0 nil])
+([nil current ((33 . 37) (t 25203 36056 555137 699000)) nil (25203 36060 944353 0) 0 nil])
+nil

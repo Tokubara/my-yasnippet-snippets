@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: save-keep-point
+# key: save-keep-point
+# --
+(save-excursion )

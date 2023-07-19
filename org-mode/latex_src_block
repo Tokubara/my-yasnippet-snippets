@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: latex_src_block
+# key: l
+# --
+#+begin_src latex
+$0
+#+end_src

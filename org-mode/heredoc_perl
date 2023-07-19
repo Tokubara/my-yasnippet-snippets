@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: heredoc_perl
+# key: hdpe
+# --
+#+begin_src bash :results output
+cat<<"EOF" > ~/Downloads/test.pl
+use v5.10;
+EOF
+perl ~/Downloads/test.pl 2>&1 || echo -n ""
+#+end_src

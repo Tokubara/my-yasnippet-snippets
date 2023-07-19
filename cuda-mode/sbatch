@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sbatch
+# key: sbatch
+# --
+sbatch --gpus=1 ./run_transpose.sh

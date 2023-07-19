@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: anki-editor-end
+# key: ae
+# --
+# local variables:
+# eval: (anki-editor-mode +1)
+# end:

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: random-id
+# key: rid
+# --
+`(random-string 4)`

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: evil-visual-selected-text-region
+# key: evil-visual-selected-text-region
+# --
+(evil-visual-state-p)
+(buffer-substring-no-properties evil-visual-beginning evil-visual-end)
+(buffer-substring-no-properties (1- evil-visual-end) evil-visual-end)

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: diff_src_block
+# key: d
+# --
+#+begin_src diff
+$0
+#+end_src

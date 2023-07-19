@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: perl
+# key: pe
+# --
+#+begin_src perl :results output
+$0
+#+end_src

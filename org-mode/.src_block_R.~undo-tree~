@@ -1,0 +1,6 @@
+(undo-tree-save-format-version . 1)
+"36ff41ef5d2ac2f7b4c6fb01d63f2f8d91a1a251"
+[nil nil nil nil (25203 2434 677915 0) 0 nil]
+([nil nil ((#(" :session :results output" 0 25 (face font-lock-comment-face fontified t)) . 72) (t 25195 59475 801355 908000)) nil (25203 2434 677908 0) 0 nil])
+([nil current ((72 . 88) (t 25203 2434 683925 867000)) nil (25360 41839 552249 0) 0 nil])
+nil

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attr_latex_image
+# key: ali
+# --
+#+ATTR_LATEX: :caption \bicaption{HeadingA}{HeadingB} :width 0.6\linewidth :float t

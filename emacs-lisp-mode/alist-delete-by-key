@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: alist-delete-by-key
+# key: alist-delete-by-key
+# --
+(assoc-delete-all "bb" xx)
+(assq-delete-all 'bb xx)

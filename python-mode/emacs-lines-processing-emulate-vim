@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: emacs-lines-processing-emulate-vim
+# key: emacs-lines-processing-emulate-vim
+# --
+import sys
+
+stdin_list = sys.stdin.read().split('\n')
+output_list = None
+if len(sys.argv) > 1:
+  output_list = make_table(stdin_list, int(sys.argv[1]))
+else:
+  output_list = make_table(stdin_list)
+
+print('\n'.join(output_list))

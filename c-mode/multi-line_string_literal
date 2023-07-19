@@ -1,0 +1,8 @@
+# string literal concatenation
+# -*- mode: snippet -*-
+# name: multi-line string literal
+# key: multi-line_string_literal
+# --
+const char* my_str =
+  "Here is the first line.\n"
+  "Here is the second line.";

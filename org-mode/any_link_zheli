@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: any_link_zheli
+# key: zhe
+# --
+[[`(current-kill 0)`][这里]]

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: symbol as property list
+# key: symbol-as-property-list
+# --
+(put 'fly 'verb 'transitive)
+(put 'fly 'noun '(a buzzing little bug))
+(get 'fly 'verb)
+(symbol-plist 'fly)
+     ⇒ (verb transitive noun (a buzzing little bug))

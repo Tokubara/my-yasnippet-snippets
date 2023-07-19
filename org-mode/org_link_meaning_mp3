@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pronunciation
+# key: pn
+# --
+`(shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/org_link_meaning_mp3.pl")`

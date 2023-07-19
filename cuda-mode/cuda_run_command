@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cuda_run_command
+# key: cuda_run_command
+# --
+//: ucd `(file-name-concat my/remote-path (file-relative-name (buffer-file-name) my/local-path))`
+//: module load cuda/11.1
+//: nvcc `(setq my/yas-tmp-base (file-name-base (buffer-file-name)))`.cu -o `my/yas-tmp-base`
+//: srun --gpus=1 -n1 ./`my/yas-tmp-base`

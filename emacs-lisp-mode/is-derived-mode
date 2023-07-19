@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: is-derived-mode
+# key: is-derived-mode
+# --
+(derived-mode-p 'cuda-mode)

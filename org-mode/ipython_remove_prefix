@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ipython_remove_prefix
+# key: ipy
+# --
+`(shell-command-to-string "pbpaste | /usr/local/bin/perl /Users/quebec/Playground/little-scripts/remove_ipython_prefix.pl")`

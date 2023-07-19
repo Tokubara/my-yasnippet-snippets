@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: zsh
+# key: z
+# --
+#+begin_src zsh
+$0
+#+end_src

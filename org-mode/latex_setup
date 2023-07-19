@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex_setup
+# key: setup
+# --
+#+SETUPFILE: /Users/quebec/box/org-mode/marktex.setup

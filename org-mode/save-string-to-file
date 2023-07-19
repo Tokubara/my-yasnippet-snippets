@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: save-write-string-to-file
+# key: save-string-to-file
+# --
+(save-string-to-file (prin1-to-string yas--tables) "/Users/quebec/Downloads/yas--tables.txt")

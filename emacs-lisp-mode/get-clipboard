@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-clipboard
+# key: get-clipboard
+# --
+(current-kill 0)

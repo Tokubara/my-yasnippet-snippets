@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: srun_bash
+# key: srun_bash
+# --
+srun -N 1 -n 1 --gpus=1 --pty /bin/bash

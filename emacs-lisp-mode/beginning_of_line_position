@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: beginning of line position
+# key: beginning_of_line_position
+# --
+(progn (beginning-of-line) (point))

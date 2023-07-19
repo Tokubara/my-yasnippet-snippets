@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: heredoc
+# key: heredoc
+# --
+cat << "EOF" >> ~/tmp.txt
+source /home/ics/z.sh
+
+cd /opt/code_chap_5_student/env
+source env.sh
+cd ..
+EOF
+# <<- 与 << 也不一样, <<- 表示 leading tabs(只能是 tabs, 不能是普通的 whitespace) 不会被当做文本的一部分, 而 << 是严格的, leading tabs 也会被当成一部分.
+# 如果开始是 "EOF", 而不是 EOF, 啥也不会展开

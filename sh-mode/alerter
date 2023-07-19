@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: alerter
+# key: alerter
+# --
+alerter -title "" -message "" -timeout 5

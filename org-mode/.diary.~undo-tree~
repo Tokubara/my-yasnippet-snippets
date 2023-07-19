@@ -1,0 +1,73 @@
+(undo-tree-save-format-version . 1)
+"0305811ccafbf95cf029bfe3c111305af5bbd367"
+[nil nil nil nil (25211 3706 38228 0) 0 nil]
+([nil nil ((nil rear-nonsticky nil 304 . 305) (#("
+" 0 1 (fontified nil)) . -319) (304 . 320) (t 25201 51206 734085 723000)) nil (25211 3706 38225 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 303) (undo-tree-id270 . -1) (undo-tree-id271 . -1) (undo-tree-id272 . -1) (undo-tree-id273 . -1) (undo-tree-id274 . -1) (undo-tree-id275 . -1) (undo-tree-id276 . -1) (undo-tree-id277 . -1)) nil (25211 3706 38220 0) 0 nil])
+([nil nil ((282 . 284) (#("跑" 0 1 (fontified t)) . -282) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) \.\.\.) nil (25211 3706 38180 0) 0 nil])
+([nil nil ((138 . 222) 285 (#("- [ ] 按时起
+- [ ] 上午按时work
+- [ ] 上午work时间> 3h
+- [ ] 按时午睡
+- [ ] 下午按时work
+- [ ] 下午work时间> 3.5h
+- [ ] 晚上按时work
+- [ ] 晚上work时间 > 4h
+- [ ] 晚上按时睡
+- [ ] 运动
+" 0 2 (fontified t) 2 3 (fontified t face (rainbow-delimiters-depth-1-face)) 3 4 (fontified t) 4 5 (fontified t face (rainbow-delimiters-depth-1-face)) 5 12 (fontified t) 12 13 (fontified t face (rainbow-delimiters-depth-1-face)) 13 14 (fontified t) 14 15 (fontified t face (rainbow-delimiters-depth-1-face)) 15 27 (fontified t) 27 28 (fontified t face (rainbow-delimiters-depth-1-face)) 28 29 (fontified t) 29 30 (fontified t face (rainbow-delimiters-depth-1-face)) 30 41 (fontified t) 41 43 (fontified t face highlight-numbers-number) 43 46 (fontified t) 46 47 (fontified t face (rainbow-delimiters-depth-1-face)) 47 48 (fontified t) 48 49 (fontified t face (rainbow-delimiters-depth-1-face)) 49 57 (fontified t) 57 58 (fontified t face (rainbow-delimiters-depth-1-face)) 58 59 (fontified t) 59 60 (fontified t face (rainbow-delimiters-depth-1-face)) 60 72 (fontified t) 72 73 (fontified t face (rainbow-delimiters-depth-1-face)) 73 74 (fontified t) 74 75 (fontified t face (rainbow-delimiters-depth-1-face)) 75 86 (fontified t) 86 87 (fontified t face highlight-numbers-number) 87 88 (fontified t) 88 90 (fontified t face highlight-numbers-number) 90 93 (fontified t) 93 94 (fontified t face (rainbow-delimiters-depth-1-face)) 94 95 (fontified t) 95 96 (fontified t face (rainbow-delimiters-depth-1-face)) 96 108 (fontified t) 108 109 (fontified t face (rainbow-delimiters-depth-1-face)) 109 110 (fontified t) 110 111 (fontified t face (rainbow-delimiters-depth-1-face)) 111 123 (fontified t) 123 125 (fontified t face highlight-numbers-number) 125 128 (fontified t) 128 129 (fontified t face (rainbow-delimiters-depth-1-face)) 129 130 (fontified t) 130 131 (fontified t face (rainbow-delimiters-depth-1-face)) 131 140 (fontified t) 140 141 (fontified t face (rainbow-delimiters-depth-1-face)) 141 142 (fontified t) 142 143 (fontified t face (rainbow-delimiters-depth-1-face)) 143 147 (fontified t)) . 138) (undo-tree-id132 . -144) (undo-tree-id133 . -138) (undo-tree-id134 . -147) (undo-tree-id135 . -147) (undo-tree-id136 . -6) (undo-tree-id137 . -6) (undo-tree-id138 . -144) \.\.\.) nil (25224 18317 488982 0) 0 nil])
+([nil nil (142) nil (25224 18317 486163 0) 0 nil])
+([nil nil ((138 . 139) (138 . 139)) nil (25224 18317 486160 0) 0 nil])
+([nil nil ((#("1" 0 1 (fontified t face highlight-numbers-number)) . -138) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) \.\.\.) nil (25224 18317 486146 0) 0 nil])
+([nil nil ((131 . 139) (t 25224 18317 497888 618000)) nil (25240 8423 846864 0) 0 nil])
+([nil nil ((123 . 127)) nil (25240 8423 846861 0) 0 nil])
+([nil nil ((#("**    *** chec        kpoint
+
+起床时间:
+上午work时间:
+上午离开时间:
+中午上床时间:
+中午起床时间:
+下午work时间:
+下午离开时间:
+晚上work时间:
+晚上离开时间:
+晚上上床时间:
+
+" 0 29 (fontified t) 29 115 (fontified t)) . 121) (undo-tree-id9263 . -52) (undo-tree-id9264 . -114) (undo-tree-id9265 . -30) (undo-tree-id9266 . -52) (undo-tree-id9267 . -52) (undo-tree-id9268 . -114) (undo-tree-id9269 . -115) (undo-tree-id9270 . -52) (undo-tree-id9271 . -52) \.\.\.) nil (25240 8423 846617 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 120) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) \.\.\.) nil (25240 8423 835009 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 97) (undo-tree-id14074 . -1) (t 25240 8423 871341 382000)) nil (25240 14423 539683 0) 0 nil])
+([nil nil ((135 . 136) (t 25240 14423 565923 14000) 132) nil (25385 16168 709975 0) 0 nil])
+([nil nil ((nil rear-nonsticky nil 136 . 137) (#("
+" 0 1 (fontified nil)) . -147) (136 . 148)) nil (25385 16168 709971 0) 0 nil])
+([nil nil ((nil rear-nonsticky nil 147 . 148) (#("
+" 0 1 (fontified nil)) . -159) (147 . 160) 137) nil (25385 16168 709968 0) 0 nil])
+([nil nil ((nil rear-nonsticky nil 159 . 160) (#("
+" 0 1 (fontified nil)) . -175) (159 . 176) 148) nil (25385 16168 709963 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t rear-nonsticky t)) . 136) (undo-tree-id266 . -1) (undo-tree-id267 . -1) (undo-tree-id268 . -1) (undo-tree-id269 . -1) (undo-tree-id270 . -1) (undo-tree-id271 . -1) (undo-tree-id272 . -1) (undo-tree-id273 . -1) (undo-tree-id274 . -1) \.\.\.) nil (25385 16168 709953 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 118) (undo-tree-id133 . -1) (undo-tree-id134 . -1) (undo-tree-id135 . -1) (undo-tree-id136 . -1) (undo-tree-id137 . -1) (undo-tree-id138 . -1) (undo-tree-id139 . -1) (undo-tree-id140 . -1) (undo-tree-id141 . -1) \.\.\.) nil (25385 16168 709733 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t)) . 174) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) \.\.\.) nil (25385 16168 709296 0) 0 nil])
+([nil nil ((#("? 用了多少时间?" 0 9 (fontified t)) . 108) (t 25385 16168 736090 335000)) nil (25457 2325 414625 0) 0 nil])
+([nil nil ((108 . 109)) nil (25457 2325 414624 0) 0 nil])
+([nil nil ((#("***** 不好的地方
+" 0 12 (fontified t)) . 138) (undo-tree-id1006 . -10) (undo-tree-id1007 . -12) (undo-tree-id1008 . -10) (undo-tree-id1009 . -10) (undo-tree-id1010 . -10) (undo-tree-id1011 . -10) (undo-tree-id1012 . -10) (undo-tree-id1013 . -10) (undo-tree-id1014 . -10) \.\.\.) nil (25457 2325 414605 0) 0 nil])
+([nil nil ((#("***** 觉得可以更好的地方
+" 0 15 (fontified t) 15 16 (fontified t)) . 138) (undo-tree-id676 . -10) (undo-tree-id677 . -16) (undo-tree-id678 . -15) (undo-tree-id679 . -10) (undo-tree-id680 . -10) (undo-tree-id681 . -10) (undo-tree-id682 . -10) (undo-tree-id683 . -10) (undo-tree-id684 . -10) \.\.\.) nil (25457 2325 413927 0) 0 nil])
+([nil nil ((133 . 135) (#("启" 0 1 (fontified t)) . -133) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) (undo-tree-id7 . -1) \.\.\.) nil (25457 34871 745171 0) 0 nil])
+([nil nil ((#("***** 启示
+" 0 8 (fontified t) 8 9 (fontified t)) . 127) (undo-tree-id1461 . 1) (undo-tree-id1462 . -6) (undo-tree-id1463 . -9) (undo-tree-id1464 . -8) (t 25457 2325 421860 854000)) nil (25457 34874 557483 0) 0 nil] [nil nil ((#("***** 有什么值得一提的事?
+" 0 17 (fontified t)) . 110) (undo-tree-id1460 . -17) (t 25457 2325 421860 854000)) ((110 . 127)) (25457 34871 744277 0) 0 nil])
+([nil nil ((141 . 142) (t 25457 34874 576437 13000) 135) nil (25674 30354 234132 0) 0 nil])
+nil
+([nil nil ((nil rear-nonsticky nil 142 . 143) (#("
+" 0 1 (fontified nil)) . -157) (undo-tree-id74 . -1) (142 . 158)) nil (25674 30354 234130 0) 0 nil])
+([nil nil ((#("
+" 0 1 (fontified t rear-nonsticky t)) . 142) (undo-tree-id70 . -1) (undo-tree-id71 . -1) (undo-tree-id72 . -1) (undo-tree-id73 . -1)) nil (25674 30354 234124 0) 0 nil])
+([nil current ((#("?" 0 1 (fontified t)) . -152) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (undo-tree-id6 . -1) 153 (148 . 152) (#("身" 0 1 (fontified t)) . -148) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) (undo-tree-id12 . -1) (undo-tree-id13 . -1) (undo-tree-id14 . -1) (undo-tree-id15 . -1) (undo-tree-id16 . -1) (undo-tree-id17 . -1) (undo-tree-id18 . -1) (undo-tree-id19 . -1) (undo-tree-id20 . -1) (undo-tree-id21 . -1) (#("体" 0 1 (fontified t)) . -149) (undo-tree-id22 . -1) (undo-tree-id23 . -1) (undo-tree-id24 . -1) (undo-tree-id25 . -1) (undo-tree-id26 . -1) (undo-tree-id27 . -1) (undo-tree-id28 . -1) (undo-tree-id29 . -1) (undo-tree-id30 . -1) (undo-tree-id31 . -1) (undo-tree-id32 . -1) (undo-tree-id33 . -1) (undo-tree-id34 . -1) (#("有" 0 1 (fontified t)) . -150) (undo-tree-id35 . -1) (undo-tree-id36 . -1) (undo-tree-id37 . -1) (undo-tree-id38 . -1) (undo-tree-id39 . -1) (undo-tree-id40 . -1) (undo-tree-id41 . -1) (undo-tree-id42 . -1) (undo-tree-id43 . -1) (undo-tree-id44 . -1) (undo-tree-id45 . -1) (#("什" 0 1 (fontified t)) . -151) (undo-tree-id46 . -1) (undo-tree-id47 . -1) (undo-tree-id48 . -1) (undo-tree-id49 . -1) (undo-tree-id50 . -1) (undo-tree-id51 . -1) (undo-tree-id52 . -1) (undo-tree-id53 . -1) (undo-tree-id54 . -1) (#("么" 0 1 (fontified t)) . -152) (undo-tree-id55 . -1) (undo-tree-id56 . -1) (undo-tree-id57 . -1) (undo-tree-id58 . -1) (undo-tree-id59 . -1) (undo-tree-id60 . -1) (undo-tree-id61 . -1) (#("情" 0 1 (fontified t)) . -153) (undo-tree-id62 . -1) (undo-tree-id63 . -1) (undo-tree-id64 . -1) (undo-tree-id65 . -1) (undo-tree-id66 . -1) (#("况" 0 1 (fontified t)) . -154) (undo-tree-id67 . -1) (undo-tree-id68 . -1) (undo-tree-id69 . -1) 155) nil (25674 30354 234105 0) 0 nil])
+nil

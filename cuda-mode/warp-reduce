@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: warp-reduce
+# key: warp-reduce
+__inline__ __device__ int warpReduce(int localSum)
+{
+    localSum += __shfl_xor(localSum, 16);
+    localSum += __shfl_xor(localSum, 8);
+    localSum += __shfl_xor(localSum, 4);
+    localSum += __shfl_xor(localSum, 2);
+    localSum += __shfl_xor(localSum, 1);
+
+    return localSum;
+}

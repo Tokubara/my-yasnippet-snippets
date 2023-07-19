@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: write-file
+# key: write-file
+# --
+(with-temp-file file-path
+      (insert file-contents))

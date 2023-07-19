@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: anki-editor-note
+# key: anki
+# --
+***** $0
+:PROPERTIES:
+:ANKI_NOTE_TYPE: Basic
+:ANKI_DECK: tmp
+:END:
+****** Front
+****** Back
+****** Remark
+****** Extra

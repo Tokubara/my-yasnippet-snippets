@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cuda-memset
+# key: cuda-memset
+# --
+cudaMemset(void *devPtr, int value, size_t count);

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: interactively_call_command
+# key: interactively_call_command
+# --
+(call-interactively #'consult-yasnippet-visit-snippet-file)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inline_src_cpp
+# key: sc
+# --
+src_c++[:exports code]{$0}

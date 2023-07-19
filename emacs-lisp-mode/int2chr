@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: convert integer(number) to string(character)
+# key: int2chr
+# --
+(char-to-string 44)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org_audacity
+# key: a
+# --
+`(shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/audacity_org.pl")`

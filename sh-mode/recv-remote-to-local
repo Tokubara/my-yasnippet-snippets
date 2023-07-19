@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: recv-remote
+# key: recv-remote
+# --
+z vx
+rsync_all -r -m cuda -t . -- man_nvidia-smi.txt

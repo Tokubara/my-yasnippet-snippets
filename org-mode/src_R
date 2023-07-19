@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: src_r
+# key: sr
+# --
+src_R[:exports results :results value]{$1} $0

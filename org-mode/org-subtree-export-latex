@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org subtree export latex
+# key: org-subtree-export-latex
+# --
+:PROPERTIES:
+:EXPORT_FILE_NAME: .tex
+:EXPORT_TITLE: \Huge \bfseries 
+:END:

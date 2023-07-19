@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: remove space
+# key: rb
+# --
+
+`(shell-command-to-string "/usr/local/bin/python /Users/quebec/Playground/little-scripts/rm_code_blank.py")`

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: get_device_count
+# key: get_device_count
+# --
+int count;
+cudaGetDeviceCount( &count );

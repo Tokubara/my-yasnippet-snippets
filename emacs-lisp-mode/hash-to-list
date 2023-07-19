@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hash-to-list
+# key: hash-to-list
+# --
+(xah-hash-to-list xx)

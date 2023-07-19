@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: insert local abbrev
+# key: insert-local-abbrev
+# --
+(set-local-abbrevs '(("cs" "completing style" nil) ("ws whitespace" nil)))

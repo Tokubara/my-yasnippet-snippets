@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: paste_anki_image_link
+# key: pa
+# --
+`(org-insert-image-file-link (shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/yasnippet_anki_image_link.pl -s -dest='org'"))`

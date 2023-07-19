@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: perl_redirect_stderr_stdout
+# key: pee
+# --
+#+begin_src bash :results output
+perl -e '
+$0
+' 2>&1 || echo -n ""
+#+end_src

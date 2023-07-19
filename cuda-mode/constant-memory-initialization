@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: constant-memory-initialization
+# key: constant-memory-initialization
+# --
+__constant__ float coef[RADIUS + 1]; // 在 global
+const float h_coef[] = {a0, a1, a2, a3, a4};
+CHECK(cudaMemcpyToSymbol( coef, h_coef, (RADIUS + 1) * sizeof(float)));

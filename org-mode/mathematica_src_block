@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: mathematica_src_block
+# key: m
+# --
+#+begin_src mathematica :results output
+$0
+#+end_src

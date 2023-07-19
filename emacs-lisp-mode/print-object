@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: print-object
+# key: print-object
+# --
+(princ (format "xx: %s, value: %s" (prin1-to-string xx) (assoc-delete-all "bb" xx)))

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: looking-at-and-delete-region
+# key: looking-at-and-delete-region
+# --
+(when (looking-at (format "=%s" my/float-regex)))
+  (delete-region (match-beginning 0) (match-end 0))

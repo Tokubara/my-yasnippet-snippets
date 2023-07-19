@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ssh-setup
+# key: ssh-setup
+# --
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eiTet/zfArH9zSBTe9qU1f2HFnhI4gaMuJHLPiCuo5LjLXGqF+FIj7jsWgEwC9CSLD3vtizWBWGqxLMQeaQrpvxeoxpBBQ7aoOd/fhItYHjVerJ6S8lmaQ4t34Lf/l6j0yEoC/TxpDVYnZ5y65jKHJhiW5ZNFv7CJ+5u+qvzLFwKVJOVO4OvzBsZLRkn0ZT2xlYcoRiTrlskN5tYrfDXn6gVvcfZZ5sZCszx6NckrH9soNzsW5bBJHwoWSkEQrcFoPRjxiGAfuz5zz1XfFcqxS0sEsiJe6tvGA5BX9Ngr7+juPAKHkCfUa1ATn5dGkfsZD3aP/fJie+NJQh5JhAV IsaacQuebec@outlook.com" >> ~/.ssh/authorized_keys
+chmod 644 ~/.ssh/authorized_keys

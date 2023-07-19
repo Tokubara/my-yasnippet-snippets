@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: file-link
+# key: file-link
+# --
+[[`(current-kill 0)`][`(file-name-nondirectory (current-kill 0))`]]

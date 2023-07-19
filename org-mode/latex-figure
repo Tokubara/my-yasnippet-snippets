@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex-figure
+# key: fig
+# --
+# 图@@latex:~@@[[fig:`(setq tmp-fig-id (random-string 5))`]]
+#+caption: 
+#+attr_latex: :width 0.4\linewidth :float nil
+#+name: fig:`(symbol-value 'tmp-fig-id)`

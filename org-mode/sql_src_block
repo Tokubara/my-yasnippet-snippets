@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sql_src_block
+# key: s
+# --
+#+begin_src sql
+$0
+#+end_src

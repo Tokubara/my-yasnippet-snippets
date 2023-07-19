@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: file-local-variables
+# key: file-local-variables
+# --
+# Local Variables:
+# eval: (abbrev-mode);
+# eval: (clear-local-abbrev);
+# eval: (set-local-abbrevs '(("cc" "compute capability" nil) ("gm" "global memory" nil) ("sm" "shared memory" nil) ("tb" "thread block" nil) ("execution model" "em" nil)));
+# End:

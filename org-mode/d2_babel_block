@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d2_babel_block
+# key: d2
+# --
+#+begin_src d2 :file `(format-time-string "../vx_attachments/Pasted_image_%4Y%m%d%H%M%S.svg")`
+$0
+#+end_src
