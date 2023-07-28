@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: set-ssh-login-shell-path
+# key: 
+# --
+New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value $(Join-Path $PSHOME "powershell.exe") -PropertyType String -Force

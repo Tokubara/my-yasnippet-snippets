@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: xenops-add-package
+# key: 
+# --
+(add-to-list 'org-latex-packages-alist '("" "multirow" t))

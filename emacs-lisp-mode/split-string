@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: split-string
+# key: split-string
+# --
+(split-string mode "/" t)

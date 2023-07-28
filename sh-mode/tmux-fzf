@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tmux-fzf
+# key: tmux-fzf
+# --
+tmux capture-pane -J -p -S - -t %6

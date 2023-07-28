@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pasted-image
+# key: 
+# --
+(my/vx-pasted-image-name "svg")

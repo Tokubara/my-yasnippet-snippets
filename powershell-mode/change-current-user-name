@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: change-current-user-name
+# key: 
+# --
+Rename-LocalUser -Name "12708" -NewName "quebec"
+Get-LocalUser # 确认是否成功

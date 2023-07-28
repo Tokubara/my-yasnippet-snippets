@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: match-string-no-properties
+# key: match-string-no-properties
+# --
+(match-string-no-properties 1)

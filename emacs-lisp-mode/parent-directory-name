@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: parent-directory-name
+# key: 
+# --
+(let* ((filename (buffer-file-name)) (mode (file-name-directory filename))) (car (last (split-string mode "/" t))))

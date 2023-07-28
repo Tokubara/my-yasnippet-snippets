@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-vx-pasted-image
+# key: 
+# --
+`(my/vx-pasted-image-name "svg")`

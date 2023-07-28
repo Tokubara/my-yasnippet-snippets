@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: powershell-path
+# key: 
+# --
+$(Join-Path $PSHOME "powershell.exe") # 5.1 之后(不包括) 是 pwsh.exe
