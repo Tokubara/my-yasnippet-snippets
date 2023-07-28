@@ -4,3 +4,4 @@
 # --
 (when (looking-at (format "=%s" my/float-regex)))
   (delete-region (match-beginning 0) (match-end 0))
+(match-string-no-properties 1)
