@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: syncthreads
+# key: 
+# --
+__syncthreads();

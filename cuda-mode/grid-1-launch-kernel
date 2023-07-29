@@ -1,5 +1,7 @@
 # -*- mode: snippet -*-
-# name: grid=1 launch kernel
-# key: grid-1-launch-kernel
+# name: launch kernel
+# key: launch-kernel
 # --
-<<<1, block>>>
+dim3 dimGrid((n - 1) / 32 + 1, (n - 1) / 32 + 1);
+dim3 dimBlock(32, 32);
+kernel<<<dimGrid, dimBlock>>>

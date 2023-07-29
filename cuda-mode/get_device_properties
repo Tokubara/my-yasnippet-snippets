@@ -1,20 +1,11 @@
 # -*- mode: snippet -*-
 # name: get_device_properties
-# key: get_device_properties
+# key: 
 # --
 #include <stdio.h>
 #include <cuda_runtime.h>
 
-#define CHECK(call)                                                            \
-{                                                                              \
-    const cudaError_t error = call;                                            \
-    if (error != cudaSuccess)                                                  \
-    {                                                                          \
-        fprintf(stderr, "Error: %s:%d, ", __FILE__, __LINE__);                 \
-        fprintf(stderr, "code: %d, reason: %s\n", error,                       \
-                cudaGetErrorString(error));                                    \
-    }                                                                          \
-}
+`(my/get-yasnippet-expansion-by-name "CHECK_macro")`
 
 int main(int argc, char *argv[])
 {

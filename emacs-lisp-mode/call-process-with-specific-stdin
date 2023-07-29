@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: call-process-with-specific-stdin
+# key: 
+# --
+(let* ((input (substring-no-properties (current-kill 0)))
+         (output-buffer (get-buffer-create "*pandoc-output*"))
+         (exit-code (with-current-buffer output-buffer
+                      (insert input)
+                      (call-process-region (point-min) (point-max) "pandoc" t t nil "-f" "markdown" "-t" "org" "--wrap=none")))
+         markdown-output)
+    (if (zerop exit-code)
+        (progn
+          (with-current-buffer output-buffer
+            (setq markdown-output (buffer-string))
+            (erase-buffer)
+            markdown-output
+            )
+          )
+      ))

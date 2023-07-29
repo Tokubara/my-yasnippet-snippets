@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copy-string
+# key: 
+# --
+Set-Clipboard "[[file:../$vx_path]]"

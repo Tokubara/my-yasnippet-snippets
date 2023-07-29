@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: get-environment-variable
+# key: 
+# --
+#include <cstdlib>
+#include <cstring>
+
+inline bool get_bool_env_var(const char* varname) {
+  bool warm = false;
+  char *env_var = std::getenv(varname);
+  if (env_var != nullptr && strcmp(env_var, "") != 0) {
+    warm = true;
+  }
+  return warm;
+}

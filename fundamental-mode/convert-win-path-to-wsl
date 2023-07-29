@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: convert-win-path-to-wsl
+# key: wslp
+# --
+`(convert-win-path-to-wsl (current-kill 0))`

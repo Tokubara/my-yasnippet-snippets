@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: which-equivalent
+# key: 
+# --
+(Get-Command notepad.exe).Source

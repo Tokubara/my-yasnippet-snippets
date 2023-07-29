@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-module
+# key: 
+# --
+Get-Module az -ListAvailable

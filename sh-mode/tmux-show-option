@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tmux-show-option
+# key: 
+# --
+tmux show -g history-limit

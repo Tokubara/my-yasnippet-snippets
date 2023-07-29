@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: m2o
+# key: m2o
+# --
+`(snippet/pandoc-markdown-to-org)`

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: shell-output
+# key: 
+# --
+\`(shell-command-to-string "/usr/bin/env perl /Users/quebec/Playground/little-scripts/org_link_image.pl")\`

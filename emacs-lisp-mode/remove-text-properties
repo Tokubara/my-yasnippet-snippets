@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remove-text-properties
+# key: 
+# --
+(substring-no-properties (current-kill 0))

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: save-clipboard-image-to-file
+# key: 
+# --
+$img = Get-Clipboard -format image
+$img_path = "//wsl.localhost/Ubuntu/home/quebec/notes/$vx_path"
+$img.save($img_path)

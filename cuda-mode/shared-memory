@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: shared-memory
+# key: 
+# --
+__shared__ float tile[TILE_DIM * TILE_DIM];

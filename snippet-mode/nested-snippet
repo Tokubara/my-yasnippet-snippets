@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: nested-snippet
+# key: 
+# --
+`(my/get-yasnippet-expansion-by-name "CHECK_macro" 'cuda-mode)`
+`(my/get-yasnippet-expansion-by-name "CHECK_macro")`

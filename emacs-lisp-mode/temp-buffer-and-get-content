@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: temp-buffer-and-get-content
+# key: 
+# --
+(with-temp-buffer
+    (funcall mode)
+    (unless yas-minor-mode (yas-minor-mode))
+    (buffer-string))

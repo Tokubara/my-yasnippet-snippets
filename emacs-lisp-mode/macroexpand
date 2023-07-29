@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: macroexpand
+# key: 
+# --
+(macroexpand '(macro macro-args))

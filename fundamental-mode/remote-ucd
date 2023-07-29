@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ucd-remote
+# key: 
+# --
+//: ucd `(my/remote-file-full-path)`

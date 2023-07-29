@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pbcopy-equivalent
+# key: 
+# --
+| xclip -selection clipboard

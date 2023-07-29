@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cuda-module-load--file
+# key: 
+# --
+module load cuda/11.1
+module load gcc/9.3

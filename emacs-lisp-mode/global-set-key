@@ -2,4 +2,4 @@
 # name: global-set-key
 # key: global-set-key
 # --
-(global-set-key (kbd "M-v") 'yank)
+(global-set-key (kbd "C-S-v") 'yank)

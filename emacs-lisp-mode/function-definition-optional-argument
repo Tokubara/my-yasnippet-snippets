@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: function-definition-optional-argument
+# key: 
+# --
+(defun my/get-yasnippet-by-name(snippet-name &optional mode)
+  (yas--template-content (yas--get-template-by-uuid (yas--table-get-create (or mode major-mode) ) snippet-name)))

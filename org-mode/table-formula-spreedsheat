@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: table-formula-spreedsheat
+# key: 
+# --
+=#+TBLFM: @2$3=$1+$2;T::@3$3=$1+$2;U::@4$3=$1+$2;t=

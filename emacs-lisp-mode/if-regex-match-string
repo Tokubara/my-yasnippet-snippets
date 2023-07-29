@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: if-regex-match-string
+# key: 
+# --
+(string-match "/\\(home\\|Users\\)/quebec" "/home/quebec/Playground/little-scripts/dotfiles/mac/util.el")

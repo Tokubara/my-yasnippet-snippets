@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fc-font
+# key: 
+# --
+fc-list : family | sort | uniq
+sudo fc-cache -fv

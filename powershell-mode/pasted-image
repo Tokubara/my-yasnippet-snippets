@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pasted-image-format-time-string
+# key: 
+# --
+"Pasted_image_{0:yyyyMMddHHMMss}.png" -f (Get-Date)

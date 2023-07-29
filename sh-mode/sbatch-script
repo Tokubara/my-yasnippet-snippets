@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sbatch-script
+# key: 
+# --
+#!/bin/bash
+APSP_CHECK_CORRECTNESS=1 ./benchmark 10000

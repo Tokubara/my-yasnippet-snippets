@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-alias-of-command
+# key: 
+# --
+Get-Alias -Definition "Get-Process"

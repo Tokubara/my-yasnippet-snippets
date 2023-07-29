@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: new-custom-mode
+# key: 
+# --
+(define-derived-mode ahk-mode fundamental-mode "ahk"
+  "A major mode for editing AutoHotKey scripts."
+  (setq font-lock-defaults '(((";.*" . font-lock-comment-face)
+                              ("\".*\"" . font-lock-string-face)
+                              ("\\<[A-Za-z_][A-Za-z_0-9]*\\>" . font-lock-variable-name-face)))))
+(add-to-list 'auto-mode-alist '("\\.ahk\\'" . ahk-mode))

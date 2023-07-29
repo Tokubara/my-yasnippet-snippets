@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-command-of-alias
+# key: 
+# --
+Get-Alias -Name gp*, sp* -Exclude *ps

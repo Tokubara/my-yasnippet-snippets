@@ -2,4 +2,4 @@
 # name: sbatch
 # key: sbatch
 # --
-sbatch --gpus=1 ./run_transpose.sh
+sbatch --gpus=1 ./sbatch.sh

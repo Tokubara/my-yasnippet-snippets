@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-clipboard-pbpaste-equivalent
+# key: 
+# --
+xclip -selection clipboard -o

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: memcheck
+# key: 
+# --
+cuda-memcheck --leak-check full ./benchmark 10000

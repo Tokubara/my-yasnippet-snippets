@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: nvcc
+# key: 
+# --
+//: nvcc -gencode arch=compute_86,code=sm_86 -Xcompiler -Wall,-O0 -Xptxas -O0 `(setq my/yas-tmp-base (file-name-base (buffer-file-name)))`.cu -o `my/yas-tmp-base`

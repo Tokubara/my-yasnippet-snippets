@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pandoc
+# key: 
+# --
+pandoc -f markdown -t org --wrap=none -o file filepath
+pandoc -f markdown -t org --wrap=none

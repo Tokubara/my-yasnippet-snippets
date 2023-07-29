@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: wsl2-run-powershell
+# key: 
+# --
+powershell.exe -command 'Get-Clipboard'

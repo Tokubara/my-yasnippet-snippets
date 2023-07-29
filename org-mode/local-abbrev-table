@@ -5,5 +5,5 @@
 # Local Variables:
 # eval: (abbrev-mode);
 # eval: (clear-local-abbrev);
-# eval: (set-local-abbrevs '(("cc" "compute capability" nil) ("gm" "global memory" nil) ("sm" "shared memory" nil) ("SM" "SM" nil)));
+# eval: (set-local-abbrevs '(("" "")));
 # End:

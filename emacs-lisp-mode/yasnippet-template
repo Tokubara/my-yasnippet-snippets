@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: yasnippet-template
+# key: 
+# --
+(yas--table-name (yas--template-table template))
+(yas--template-key template)
+(yas--template-content template)

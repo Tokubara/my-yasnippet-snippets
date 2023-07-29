@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: evil-region-cmd
+# key: 
+# --
+(defun pandoc-markdown-to-org (beg end)
+  "Convert region from markdown to org using pandoc."
+  (interactive "r")
+      (shell-command-on-region beg end
+                               "pandoc -f markdown -t org --wrap=none"
+                               nil t))
+(evil-ex-define-cmd "m2o" 'pandoc-markdown-to-org)

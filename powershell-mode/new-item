@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: new-item
+# key: 
+# --
+New-Item testFolder -ItemType Directory

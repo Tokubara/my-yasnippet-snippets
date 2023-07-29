@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: clipboard-trick
+# key: 
+# --
+echo "123" | xclip -selection clipboard

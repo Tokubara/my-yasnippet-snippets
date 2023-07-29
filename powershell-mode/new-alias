@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: new-alias
+# key: 
+# --
+New-Alias grep -Value Select-String

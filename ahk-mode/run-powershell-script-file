@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: run-powershell-script-file
+# key: 
+# --
+Run "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File C:\Users\12708\Documents\AutoHotkey\save_clipboard_image_to_wsl_vx.ps1"
