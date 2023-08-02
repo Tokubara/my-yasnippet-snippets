@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: printf-format-specifier
+# key: 
+# --
+%hi // short
+%hu // unsigned short
+%lu // unsigned long/int
+%llu // unsiged long lonng
+%lli, %lld // long long
+%lf // double
+%f // float

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tf-compat
+# key: 
+# --
+tf.compat.v1.Session()
+
+# or 下面这个方法全局生效
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()

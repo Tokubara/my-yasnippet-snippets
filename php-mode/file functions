@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: file functions
+# key: 
+# --
+file_get_contents() // read

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: matlab commands
+# key: 
+# --
+close all; clear; clc

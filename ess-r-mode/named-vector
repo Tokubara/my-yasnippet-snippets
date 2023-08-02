@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: named-vector
+# key: 
+# --
+v=c(a=1)
+v["a"] # v$a 不行
+c("日"=7)["日"] # 得到 7

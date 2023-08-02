@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: max:min:sum--of-list
+# key: 
+# --
+use List::Util qw( min max sum);
+my $min = min @numbers;
+my $max = max @numbers;

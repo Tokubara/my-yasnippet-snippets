@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: numpy-check-type
+# key: 
+# --
+a.dtype == np.dtype('int64')

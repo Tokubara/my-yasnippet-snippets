@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: diag
+# key: 
+# --
+diag(A) % 如果参数 A 是 matrix, 那么返回是向量, 就是 A 的对角
+diag(a) % 如果参数 a 是向量, 是返回对较为 a 的对角矩阵
+diag(diag(A)) % 以矩阵 A 对角元素为对角的对角矩阵

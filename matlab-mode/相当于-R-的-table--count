@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 相当于-R-的-table--count
+# key: 
+# --
+tabulate(reshape(im_sp,1,[]))

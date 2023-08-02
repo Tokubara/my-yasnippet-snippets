@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: ucas-beamer-template
+# key: 
+# --
+#+DATE: 
+#+TITLE: 多模式 MLC PCM 性能-寿命平衡优化技术研究
+#+SUBTITLE: 
+#+SETUPFILE: /Users/quebec/box/org-mode/ucas_beamer.setup
+
+#+BEGIN_EXPORT beamer
+\nocite{*}
+\begin{frame}[plain]
+  \maketitle
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{目录}
+  \tableofcontents
+\end{frame}
+#+END_EXPORT
+
+* 参考文献
+#+BEGIN_EXPORT beamer
+\begin{frame}[allowframebreaks]
+    \bibliography{thesis}
+    \bibliographystyle{abbrv}
+    % 如果参考文献太多的话, 可以像下面这样调整字体：
+    % \tiny\bibliographystyle{alpha}
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+      {\Huge\calligra 感谢各位\\恳请老师的批评指正}
+    \end{center}
+\end{frame}
+#+END_EXPORT

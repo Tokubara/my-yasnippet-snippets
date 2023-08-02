@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: current thread id
+# key: 
+# --
+int i = (int) Thread.currentThread().getId()%10-1;
+int i = Integer.parseInt(Thread.currentThread().getName().substring(7));

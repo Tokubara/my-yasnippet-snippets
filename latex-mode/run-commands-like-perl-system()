@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: run-commands-like-perl-system()
+# key: 
+# --
+os.system('./run_mlu.sh')

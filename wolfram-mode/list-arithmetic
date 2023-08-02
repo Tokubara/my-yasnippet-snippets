@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: list-arithmetic
+# key: 
+# --
+Times @@ q; (*一整个 list 的乘积*)

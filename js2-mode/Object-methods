@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Object-methods
+# key: 
+# --
+// create: Object.create(), new, literal
+let o = new Object();
+
+Object.keys() // an array of property names
+Object.values() // array of values
+Object.entries(o)  // 2-d list, inner list 是 key value

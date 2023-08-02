@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: string--char
+# key: 
+# --
+a = 'MyString'
+length(a) % ans = 8
+a(2)
+[a,a] % ans = MyStringMyString # concat
+
+char(0x47) % 相当于 python 的 chr(0x47), ascii 对应的 character

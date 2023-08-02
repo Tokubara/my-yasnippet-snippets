@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: integer
+# key: 
+# --
+2^^010 (* base *)
+IntegerLength[9, 2] (* 4 *)
+BaseForm[number,n] (* print number in base n *)
+IntegerDigits[n] (* [0] 是 MSB *)
+IntegerDigits[n, base]
+IntegerDigits[n, base, len]
+FromDigits (*digit list to integer*)
+FromDigits[Take[binaryDigits, {partStart, partEnd}], 2]
+FactorInteger
+PowerMod[a,b,p] (* a^b%p *)

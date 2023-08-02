@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: ArrayList
+# key: 
+# --
+ArrayList<Integer> intList = new ArrayList<Integer>();
+ArrayList<String> strList = new ArrayList<String>();
+public boolean add(E e) //添加元素到末尾 
+public boolean isEmpty() //判断是否为空 
+public int size() //获取⻓度 
+public E get(int index) //访问指定位置的元素 
+public int indexOf(Object o) //查找元素, 如果找到,返回索引位置,否则返回-1 
+public int lastIndexOf(Object o) //从后往前找 
+public boolean contains(Object o) //是否包含指定元素,依据是equals方法的返回值 
+public E remove(int index) //删除指定位置的元素, 返回值为被删对象 //删除指定对象,只删除第一个相同的对象,返回值表示是否删除了元素 //如果o为null,则删除值为null的元素 
+public boolean remove(Object o) 
+public void clear() //删除所有元素 //在指定位置插入元素,index为0表示插入最前面,index为ArrayList的⻓度表示插到最后面 
+public void add(int index, E element) 
+public E set(int index, E element) //修改指定位置的元素内容

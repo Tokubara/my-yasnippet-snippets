@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: modelsim-command
+# key: 
+# --
+set sim_home D:/pe_exp/sim
+vlib ${sim_home}/work
+vmap work ${sim_home}/work
+vlog -f ${sim_home}/compile_2.f
+vsim +nowarnTSCALE -lib work -c -novopt tb_top_2
+
+restart
+
+run 1000ns; # stimulate
+quit -sim; # stop simulate

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pip
+# key: 
+# --
+sudo pip install . # pip install setup.py
+pip3 install -r requirements.txt # pip install requirements.txt
+sudo pip install -e . # pip install debug(develop) mode 

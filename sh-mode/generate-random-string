@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: generate-random-string
+# key: 
+# --
+/usr/local/bin/pwgen 6 1

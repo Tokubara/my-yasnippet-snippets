@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: manifest
+# key: 
+# --
+Main-Class: WordCount

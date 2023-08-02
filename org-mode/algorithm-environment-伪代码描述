@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: algorithm-environment-伪代码描述
+# key: 
+# --
+# 算法@@latex:~\ref{vg37j}@@ 
+#+begin_algorithm
+\caption{Question 1}
+\label{vg37j}
+\small
+#+attr_latex: :options [1]
+#+begin_algorithmic
+\Function{KSmallest}{A,B,l1,r1,l2,r2,k}
+
+\If{l1>r1}
+\Return B[1]
+\ElsIf{l2>r2}
+\Return A[1]
+\Else
+\Return min(A[l1],B[l2])
+\EndIf
+
+\For{i}{1}{n}
+   \State $p \gets p * i$
+\EndFor
+
+@@latex:\For{num \textbf{in} x}@@
+\EndFor
+
+\Return result
+\EndFunction
+#+end_algorithmic
+#+end_algorithm

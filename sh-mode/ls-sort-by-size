@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ls-sort-by-size
+# key: 
+# --
+ls -lh # include size
+ls -sh # size
+ls # -t: sort by modification time, newest first
+ls -S: sort by file size, largest first

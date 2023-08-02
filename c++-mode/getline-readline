@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: getline-readline
+# key: 
+# --
+char line_buf[20];
+fgets(line_buf,20,stdin);
+line_buf[strlen(line_buf)-1] = '\0'; // 处理 \n

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: rand
+# key: 
+# --
+rand % Uniformly distributed pseudorandom numbers
+randi % Uniformly distributed pseudorandom integers
+randn % Normally distributed pseudorandom numbers

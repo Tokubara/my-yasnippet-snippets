@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: While
+# key: 
+# --
+While[n < 4, Print[n]; n++]

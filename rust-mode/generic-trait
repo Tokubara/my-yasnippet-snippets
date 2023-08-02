@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: generic-trait
+# key: 
+# --
+pub trait Mul<Rhs = Self> {
+    type Output;
+    fn mul(self, rhs: Rhs) -> Self::Output;
+}

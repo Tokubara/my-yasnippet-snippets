@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: substitutions
+# key: 
+# --
+# 不修改原来的字符串用 r flag
+my $copy = $original =~ s/\d+ ribs?/10 ribs/r;
+s{!?\[\[([^\]]+)\.(png|jpg|jpeg)(\|\d+)?\]\]}{"![](" . (substr($1,0,1) eq '/' ? "$1" : "$notes_prefix$1")  . ".$2)"}eig;
+

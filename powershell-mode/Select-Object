@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: Select-Object
+# key: 
+# --
+# limit property
+Select-Object -Property Name, ID
+Get-Process | Select-Object -Property Name, *Memory # wildcard
+Get-Process | Select-Object -Property * -ExcludeProperty *Memory*
+
+# 可以用 index 选择/排除一些, 相当灵活
+Get-ChildItem C:\ -Recurse | Select-Object -First 2 # limit number
+Get-ChildItem C:\ | Select-Object -Last 3
+Get-ChildItem C:\ | Select-Object -Skip 4 -First 1
+Get-ChildItem C:\ | Select-Object -Skip 2 -Last 1 # 先除去最后 2 个
+Get-ChildItem C:\ | Select-Object -Index 3, 4, 5
+Get-ChildItem C:\ | Select-Object -SkipIndex 3, 4, 5
+
+Get-Process | Where-Object Path | ForEach-Object {
+$acl = Get-Acl $_.Path
+Select-Object -InputObject $_ -Property @(
+'Name'
+@{Name = 'ProcessId'; Expression = 'ID' }
+@{Name = 'FileOwner'; Expression = { $acl.Owner }}
+@{Name = 'Access'; Expression = { $acl.AccessToString }}
+) }
+# Name                 ProcessId FileOwner                   Access                                     # ----                 --------- ---------                   ------
+# 其中 Name 填写新字段, Expression 填写表达式
+
+1, 1, 1, 3, 5, 2, 2, 4 | Select-Object -Unique
+# remove duplicate

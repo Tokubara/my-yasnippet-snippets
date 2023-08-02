@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pmset-battery-
+# key: 
+# --
+pmset -g batt # get battery percentage

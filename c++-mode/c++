@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: c++
+# key: 
+# --
+numeric_limits<int>::max()

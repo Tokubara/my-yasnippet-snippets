@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: hashtable
+# key: 
+# --
+$b = @{'one' = 1 
+       'two' = 2}
+       
+# Hashtables store mappings from keys to values, similar to Dictionaries.
+$emptyHash = @{}
+# Here is a prefilled dictionary
+$filledHash = @{"one"= 1 
+                "two"= 2 
+                "three"= 3}
+
+$filledHash["one"]  # => 1
+
+$filledHash.Keys  # => ["one", "two", "three"], 类型不是 array, 是 KeyCollection, 是 iterable
+$filledHash.Values  # => [1, 2, 3]
+
+# Adding to a dictionary
+$filledHash.Add("five",5)  # $filledHash["five"] is set to 5
+$filledHash["four"] = 4 # $filledHash["four"] is set to 4, running again does nothing
+
+# Remove keys from a dictionary with del
+$filledHash.Remove("one") # Removes the key "one" from filled dict

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: mkdir-rmdir
+# key: 
+# --
+mkdir 'fred', 0755 or warn "Cannot make fred directory: $!";
+my $name = "fred";
+my $permissions = "0755"; # danger...this isn't working, 应该为oct($permissions)
+mkdir $name, $permissions;
+
+foreach my $dir (qw(fred barney betty)) {
+rmdir $dir or warn "cannot rmdir $dir: $!\n";
+}
+

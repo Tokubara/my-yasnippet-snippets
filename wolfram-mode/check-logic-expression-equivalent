@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: check-logic-expression-equivalent
+# key: 
+# --
+Clear[a, b, c];
+expr1 = (a && b) || (c && d);
+expr2 = ! ((! a || ! b) && (! c || ! d) );
+Equivalent[expr1, expr2] // TautologyQ

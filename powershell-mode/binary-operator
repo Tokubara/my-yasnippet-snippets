@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: binary-operator
+# key: 
+# --
+# bitwise
+3 -band 4     # => 0
+3 -bor 4     # => 7
+# 类似有 -bxor, -bnot
+-shl # shift left
+-shr

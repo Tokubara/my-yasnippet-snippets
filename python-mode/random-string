@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: random-string
+# key: 
+# --
+input_io.input_write(String.random(c, charset="/\\"))

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print a specific line
+# key: 
+# --
+sed '12p' /file/path
+perl -ne 'if($.==17) {print;break;}' /file/path

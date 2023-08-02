@@ -1,0 +1,53 @@
+# -*- mode: snippet -*-
+# name: testbench
+# key: 
+# --
+`timescale  1ns / 1ns
+
+module seq_1010_tb;
+
+// Parameters
+parameter PERIOD  = 20;     
+
+// Outputs
+wire  y_out                           ;  
+reg clk, rst, x_in;
+integer i;
+reg [0:19] seq_gen = 20'b01010101001001011010; 
+
+// clock
+initial
+begin
+    clk = 1;
+    forever #(PERIOD/2)  clk=~clk;
+end
+
+seq_1010  seq_1010_0 (
+  .clk(clk),
+  .rst(rst),
+  .x_in(x_in),
+  .y_out(y_out)
+);
+
+initial
+begin
+
+#(PERIOD*3);
+    for (i = 0; i < 20; i=i+1) begin
+	x_in = seq_gen[i];
+   #PERIOD;
+    end
+   // $finish;
+end
+
+initial
+begin
+  rst = 0;
+  #(2*PERIOD);
+  rst = 1;
+  #PERIOD;
+  rst = 0;
+  #(10*PERIOD);
+  rst = 1;
+end
+endmodule

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: string-operator
+# key: 
+# --
+t ends with ".pptx"
+t starts with ".pptx"

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ip-command
+# key: 
+# --
+ip addr # 相当于 ifconfig
+ip neigh show # arp table

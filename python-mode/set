@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: set
+# key: 
+# --
+== # 比较 2 个 set 是否相同, 比如 set({1,2,3}) == set({3,1,2})
+A|B # union
+A&B # intersection
+A-B # difference
+A^B # symmetric difference

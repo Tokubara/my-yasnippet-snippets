@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: parse-string-integer-float-double-convert-
+# key: 
+# --
+// 不需要 import
+Integer.parseInt("", 2) // radix
+Integer.parseInt("")
+Double.parseDouble("2.3")
+Float.parseFloat("2.3")

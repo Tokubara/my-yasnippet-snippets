@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: dijkstra-邻接矩阵+不用堆遍历查找
+# key: 
+# --
+int a[3010][3010], d[3010], n, m; // d 即 distTo, a 是邻接矩阵
+bool v[3010]; // 表示是否被标记过, v 是 visit 的意思
+
+// 这个函数会修改全局变量 d, d[i] 会得到点 i 到点 1 的最短距离
+void dijkstra() {
+  memset(d, 0x3f, sizeof(d)); // dist 数组
+  memset(v, g, sizeof(v));    //节点标记
+  d[1] = 0;
+  for (int i = 1; i < n; i++) { //重复进行 n-1 次
+    int x = 0; // x 要存的是 dist 最小的点的编号, 由于点编号从 1 开始,
+               // 初始化为一个无效的点, 就是 0
+    //找到未标记节点中 dist 最小的点 x
+    for (int j = 1; j <= n; j++)
+      if (!v[j] && (x == 0 || d[j] < d[x]))
+        x = j;
+    v[x] = 1; // 将要松弛 x
+    for (int y = 1; y <= n; y++)
+      d[y] = min(d[y], d[x] + a[x][y]); // 不用判断是否是 x, 对 x 也成立
+  }
+  int main() {
+  cin >> n >> m;
+  //构建邻接矩阵
+  memset(a, 0x3f, sizeof(a));
+  for (int i = 1; i <= n; i++)
+    a[i][i] = 0; // 初始化邻接矩阵, a[i][i]为 0, 其它元素为无穷
+  for (int i = 1; i < m; i++) {
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    a[x][y] = min(a[x][y], z); //? 为什么不直接写 a[x][y]=z? 难道会出现多次 x,y,z?
+  }
+  //求单源最短路径
+  dijkstra();
+  for (int i = 1; i < n; i++) {
+    printf("%d\n", d[i]);
+  }
+}

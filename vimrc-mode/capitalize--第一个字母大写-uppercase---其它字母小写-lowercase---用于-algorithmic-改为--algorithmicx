@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: capitalize--第一个字母大写-uppercase---其它字母小写-lowercase---用于-algorithmic-改为--algorithmicx
+# key: 
+# --
+%s/\(\u\)\(\u\+\)/\1\L\2\e/

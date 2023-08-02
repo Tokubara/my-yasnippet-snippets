@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: lambda-keybinding
+# key: 
+# --
+(evil-define-key 'normal global-map (kbd "hi") (lambda() (interactive) (goto-char (line-beginning-position)) (org-insert-heading)))
+; lambda 所在的 list 就是可以有若干个参数, lambda 的函数体不需要多余的 ()

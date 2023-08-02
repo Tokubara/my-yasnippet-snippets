@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bigdata-hw1
+# key: 
+# --
+/home/bdms/setup/hbase-0.98.11-hadoop2/bin

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: exit
+# key: 
+# --
+import sys
+sys.exit(1)

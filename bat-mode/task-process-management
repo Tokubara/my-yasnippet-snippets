@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: task-process-management
+# key: 
+# --
+rem kill process
+taskkill /IM audiodg.exe /F
+rem list process(ps)
+tasklist

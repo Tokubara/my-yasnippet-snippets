@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: for
+# key: 
+# --
+for(i in 1:10) {  
+}

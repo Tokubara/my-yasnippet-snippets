@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: decode-binary-sequence
+# key: 
+# --
+bytearray([0xe4,0xb8,0xad]).decode('utf-8')

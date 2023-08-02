@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: org-reveal
+# key: 
+# --
+#+REVEAL_THEME: white
+#+LANGUAGE: en
+#+OPTIONS: num:nil date:t toc:t author:t ^:{}
+#+REVEAL_ROOT: file:///Users/quebec/resources/reveal.js-master
+#+REVEAL_ROOT: .
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+
+
+
+#+REVEAL_PLUGINS: (highlight)
+
+#+REVEAL_HLEVEL: 2
+
+#+REVEAL: split
+
+:PROPERTIES:
+:EXPORT_FILE_NAME: TensorFHE-HadaMult
+:EXPORT_TITLE: 对 TensorFHE Hada-Mult kernel 意义的疑惑
+:EXPORT_OPTIONS: toc:4
+:END:
+
+#+ATTR_HTML: :width 45% :align center
+
+#+BEGIN_NOTES
+#+END_NOTES

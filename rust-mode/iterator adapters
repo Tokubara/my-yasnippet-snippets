@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: iterator adapters
+# key: 
+# --
+.map(str::trim) // map 函数的参数是 self
+.filter(Fn) // filter 参数是 &self
+.enumerate() // move, 生成的是 (i,val), 其中 val 是前一个 iterator 生成的 val, 不会增加 reference
+.flatten() // 前一个 iterator 生成的 value 类型是 IntoIterator, 它会把这些展平
+.flat_map(Fn) // 先调用 map, map move value 然后再生成一个 IntoIterator(或者直接是 Iterator), 再 flatten
+.take(n) // 只生成 n 个(与 lazy 特性有关)
+.take_while(predicate) // predicate 与 filter 一样, 是 &Self::Item, 遇到 false 就停下来
+.skip(n) // skip 前 n 个, 与 take 相反
+.skip_while(predicate) // 与 take_while 相反, 遇到 false 就不再跳过, &Self::Item
+.step_by(step) // 比如 step=2, 那就是生成 0, 2, 4 前一个 iterator 的 val
+.rev() // 要看
+.chain(self, other:IntoIterator) // 参数的 Item 要与这个 Item 相同
+.zip(self, other:IntoIterator) // 与 chain 参数相同, 得到的是 (第一个 iterator 的 val, 第二个 iterator 的 val)
+.cloned() // 前一个 iterator item 类型是 &T, T:Clone, 它生成的是 item.clone, 相当于去引用
+.copied() // 前一个 iterator item 类型是 &T, T:Copy, 它生成的是 item.clone, 相当于去引用
+.cycle() // 对前一个 iterator 的 val 无限循环, 还是 val 类型
+
+.collect();
+
+// filter_map 要么 drop, 要么 transform, 先 filter 再 map, 参数函数是 FnMut(Self::Item) -> Option<B>
+use std::str::FromStr;
+let text = "1\nfrond .25 289\n3.1415 estuary\n";
+for number in text.split_whitespace().filter_map(|w| f64::from_str(w).ok()) {
+    println!("{:4.2}", number.sqrt());
+}

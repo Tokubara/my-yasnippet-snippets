@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: get:create-iterator
+# key: 
+# --
+// 如果实现了 IntoIterator
+v.into_iter() 
+(&v).into_iter()
+(&mut v).into_iter()
+
+v.iter() // 生成的是 &T
+v.iter_mut() // 生成的是 &mut T
+
+// 还有 from_fn
+// collection 的 drain 方法
+s.drain(1..4)
+
+// std::ops::Range 本身就实现了 Iterator
+(1..4) // 这就是个 iterator, 所以才可以用在 for 中的

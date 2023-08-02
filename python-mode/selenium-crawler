@@ -1,0 +1,50 @@
+# -*- mode: snippet -*-
+# name: selenium-crawler
+# key: 
+# --
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+chrome_options = webdriver.ChromeOptions()
+prefs = {"profile.managed_default_content_settings.images": 2}
+chrome_options.add_experimental_option("prefs", prefs)
+chrome_options.add_argument('--headless')
+browser = webdriver.Chrome(chrome_options=chrome_options)
+
+wait = WebDriverWait(browser, 10)
+
+def index_page(problem_details: dict, page: str, difficulty: int):
+    """
+    抓取索引页
+    :param page: 页码
+    """
+    print('正在爬取第', page, '题')
+    try:
+        # page = "P1209"
+        url = f"https://www.luogu.com.cn/problem/{page}"
+        browser.get(url)
+        # 接下来是为了跳转到 page 指定的页面
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '.field')))
+        html = browser.page_source
+        doc = pq(html)
+        items = doc('.field')
+        items_text_list =  [i.text() for i in items("div").items()]
+        problem_details[page] = {"difficulty": difficulty, "commit":items_text_list[0][3:], "pass": items_text_list[1][3:]}
+    except Exception as e:
+        print(f"error: {page}, {e}")
+
+
+#%% save to problem_details dict
+def get_problem_details_with_difficulty(difficulty: int):
+    for prob_id in sorted(problems[str(difficulty)]):
+        index_page(prob_id, difficulty)
+        time.sleep(random.uniform(0.8,1.5))
+# 单独处理错误
+# index_page("P2759")
+# index_page("P2947")
+
+problem_details = dict()
+get_problem_details_with_difficulty(problem_details, 3)
+get_problem_details_with_difficulty(problem_details, 4)

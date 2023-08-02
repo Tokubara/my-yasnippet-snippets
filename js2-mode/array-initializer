@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: array-initializer
+# key: 
+# --
+[] // An empty array: no expressions inside brackets means no elements
+[1+2,3+4] // A 2-element array. First element is 3, second is 7
+let matrix = [[1,2,3], [4,5,6], [7,8,9]];
+let sparseArray = [1,,,,5];

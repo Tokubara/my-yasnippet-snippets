@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: execute-applescript-preview-path
+# key: 
+# --
+$_=`osascript -e 'tell application "Preview" to return path of front document'`; # 似乎一定会有 newline
+chomp;

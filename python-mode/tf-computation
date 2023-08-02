@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: tf-computation
+# key: 
+# --
+tf.add()
+tf.subtract()
+tf.multiply()
+tf.abs()
+tf.square()
+tf.sin()
+tf.greater()
+tf.where(condition,x,y)
+tf.reduce_sum() # return scalar
+tf.reduce_mean() # return scalar

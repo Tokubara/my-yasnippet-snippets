@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: matrix:array
+# key: 
+# --
+m=matrix("",rnow=,ncol=)
+# m[1,] 不是 array, 是 vector

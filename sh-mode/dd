@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dd
+# key: 
+# --
+dd if=/dev/zero of=文件名 bs=1M count=10 seek= skip=
+# seek 是 skip output, skip 是 skip input

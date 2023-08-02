@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: hash-map-
+# key: 
+# --
+$family_name{'fred'} = 'flintstone';
+my %fruit_color = ("apple", "red", "banana", "yellow");
+
+my %fruit_color = (
+  apple  => "red",
+  banana => "yellow",
+);
+
+# Hash elements are accessed using curly braces, again with the $ sigil.
+my $color = $fruit_color{apple};
+
+my @fruits = keys %fruit_color;
+my @colors = values %fruit_color;
+
+# number of keys
+scalar keys %fruit_color

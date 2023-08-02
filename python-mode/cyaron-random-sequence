@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cyaron-random-sequence
+# key: 
+# --
+Vector.random(num=n, position_range=[20,20], mode=0)

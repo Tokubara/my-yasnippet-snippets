@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for loop dict
+# key: 
+# --
+for [animal, name] in items(animal_names)
+echo 'This ' . animal . '''s name is ' . name 
+endfor

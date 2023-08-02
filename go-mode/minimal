@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: minimal
+# key: 
+# --
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+  var a int32 = 1
+  fmt.Printf("%g\n", a*32.1293)
+}

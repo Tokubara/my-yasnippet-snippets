@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ls
+# key: 
+# --
+$vx_dir = '/Users/quebec/notes/vx_attachments/';
+opendir(DIR, $vx_dir) || die "can't opendir $vx_dir: $!";
+@file_list = grep { /^[^.]/ && -f "$vx_dir/$_" } readdir(DIR);
+closedir DIR;

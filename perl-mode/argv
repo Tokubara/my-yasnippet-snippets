@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: argv
+# key: 
+# --
+while(@ARGV) {
+  $_ = shift @ARGV;
+}
+$ARGV[0] # 不是 program name, 就是第一个参数
+$0 # program name

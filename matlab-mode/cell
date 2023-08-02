@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: cell
+# key: 
+# --
+a = {'one', 'two', 'three'}
+ellcolvec = {23; 'a'; 1:2:9; 'hello'}
+cellmat = {23 'a'; 1:2:9 'hello'}
+mycellmat = cell(2,2)
+ellrowvec{2}
+cellmat{1,1}
+mycellmat{1,1} = 23

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: norm
+# key: 
+# --
+norm(c(1,1), type="2") # L2 norm

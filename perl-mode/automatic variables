@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: automatic variables
+# key: 
+# --
+$. # starts from 1

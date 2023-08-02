@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: eval-after-load
+# key: 
+# --
+(eval-after-load 'iso-transl
+  '(define-key iso-transl-ctl-x-8-map "<" "《"))

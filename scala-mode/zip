@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: zip
+# key: 
+# --
+// 本来以为 zip 是 List 独有的方法, 从文档的上百结果来看, zip 是很普遍的方法
+List(1, 2) zip List("a", "b") // val res9: List[(Int, String)] = List((1,a), (2,b))
+Array(1, 2) zip Array("a", "b") // Array[(Int, String)] = Array((1,a), (2,b))
+(1,2,3) zip ("a","b","c") // val res11: ((Int, String), (Int, String), (Int, String)) = ((1,a),(2,b),(3,c))

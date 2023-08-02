@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: poly-fit
+# key: 
+# --
+a = 4;
+b = 0.6;
+p = (1 + b x/a)^(-a);
+t = Table[{x, ReplaceAll[p, x -> x]}, {x, 0.5, 4, 0.1}];
+
+expr = c0 + c1 x + c2 x^2;
+fit2 = FindFit[t, expr, {c0, c1, c2}, x];
+
+Show[ListPlot[t], Plot[ReplaceAll[expr, fit2], {x, 0.5, 4}],
+ Plot[12.29386 - 0.18295 x + 0.0015 x^2, {x, 0.5, 4}, 
+  PlotStyle -> Red]]

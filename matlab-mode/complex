@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: complex
+# key: 
+# --
+%Complex math operations
+abs(x)   % Magnitude of complex variable x
+phase(x) % Phase (or angle) of complex variable x
+real(x)  % Returns the real part of x (i.e returns a if x = a +jb)
+imag(x)  % Returns the imaginary part of x (i.e returns b if x = a+jb)
+conj(x)  % Returns the complex conjugate 

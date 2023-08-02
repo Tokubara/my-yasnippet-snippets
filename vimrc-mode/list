@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: list
+# key: 
+# --
+" index starts from 0
+echo  []                   | " Empty list
+echo  [1, 2, 'Hello']      | " List with elements
+echo  [1, 2, 'Hello', ]    | " Trailing comma permitted
+echo  [[1, 2], 'Hello']    | " Lists can be nested arbitrarily
+
+" List concatenation
+echo  [1, 2] + [3, 4]      | " Creates a new list
+
+" List indexing, negative is relative to end of list (|list-index|)
+echo  [1, 2, 3, 4][2]      | " Third element
+echo  [1, 2, 3, 4][-1]     | " Last element
+
+" List slicing (|sublist|)
+echo  [1, 2, 3, 4][:]      | " Shallow copy of entire list
+echo  [1, 2, 3, 4][:2]     | " Sublist until third item (inclusive)
+echo  [1, 2, 3, 4][2:]     | " Sublist from third item (inclusive)
+echo  [1, 2, 3, 4][:-2]    | " Sublist until second-to-last item (inclusive)
+
+len(l) " length
+
+" unpack
+let [line_start, column_start] = getpos("'<")[1:2]

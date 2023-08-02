@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: value-of-constant-常数-
+# key: 
+# --
+Quantity["BoltzmannConstant"] // UnitConvert // QuantityMagnitude

@@ -1,0 +1,133 @@
+# -*- mode: snippet -*-
+# name: class definition
+# key: 
+# --
+class MyClass
+{
+    const MY_CONST      = 'value'; // A constant
+
+    static $staticVar   = 'static';
+
+    // Static variables and their visibility
+    public static $publicStaticVar = 'publicStatic';
+    // Accessible within the class only
+    private static $privateStaticVar = 'privateStatic';
+    // Accessible from the class and subclasses
+    protected static $protectedStaticVar = 'protectedStatic';
+
+    // Properties must declare their visibility
+    public $property    = 'public';
+    public $instanceProp;
+    protected $prot = 'protected'; // Accessible from the class and subclasses
+    private $priv   = 'private';   // Accessible within the class only
+
+    // Create a constructor with __construct
+    public function __construct($instanceProp)
+    {
+        // Access instance variables with $this
+        $this->instanceProp = $instanceProp;
+    }
+
+    // Methods are declared as functions inside a class
+    public function myMethod()
+    {
+        print 'MyClass';
+    }
+
+    // final keyword would make a function unoverridable
+    final function youCannotOverrideMe()
+    {
+    }
+
+    // Magic Methods
+
+    // what to do if Object is treated as a String
+    public function __toString()
+    {
+        return $property;
+    }
+
+    // opposite to __construct()
+    // called when object is no longer referenced
+    public function __destruct()
+    {
+        print "Destroying";
+    }
+
+/*
+ * Declaring class properties or methods as static makes them accessible without
+ * needing an instantiation of the class. A property declared as static can not
+ * be accessed with an instantiated class object (though a static method can).
+ */
+
+    public static function myStaticMethod()
+    {
+        print 'I am static';
+    }
+}
+
+// Class constants can always be accessed statically
+echo MyClass::MY_CONST;    // Outputs 'value';
+
+echo MyClass::$staticVar;  // Outputs 'static';
+MyClass::myStaticMethod(); // Outputs 'I am static';
+
+// Instantiate classes using new
+$my_class = new MyClass('An instance property');
+// The parentheses are optional if not passing in an argument.
+
+// Access class members using ->
+echo $my_class->property;     // => "public"
+echo $my_class->instanceProp; // => "An instance property"
+$my_class->myMethod();        // => "MyClass"
+
+// Nullsafe operators since PHP 8
+// You can use this when you're unsure if the abstraction of $my_class contains has a property/method
+// it can be used in conjunction with the nullish coalesce operator to ensure proper value
+echo $my_class->invalid_property // An error is thrown
+echo $my_class?->invalid_property // => NULL
+echo $my_class?->invalid_property ?? "public" // => "public"
+
+// Extend classes using "extends"
+class MyOtherClass extends MyClass
+{
+    function printProtectedProperty()
+    {
+        echo $this->prot;
+    }
+
+    // Override a method
+    function myMethod()
+    {
+        parent::myMethod();
+        print ' > MyOtherClass';
+    }
+}
+
+$my_other_class = new MyOtherClass('Instance prop');
+$my_other_class->printProtectedProperty(); // => Prints "protected"
+$my_other_class->myMethod();               // Prints "MyClass > MyOtherClass"
+
+final class YouCannotExtendMe
+{
+}
+
+// You can use "magic methods" to create getters and setters
+class MyMapClass
+{
+    private $property;
+
+    public function __get($key)
+    {
+        return $this->$key;
+    }
+
+    public function __set($key, $value)
+    {
+        $this->$key = $value;
+    }
+}
+
+$x = new MyMapClass();
+echo $x->property; // Will use the __get() method
+$x->property = 'Something'; // Will use the __set() method

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: string
+# key: 
+# --
+# compare
+"1" eq "2" # 不可是 ==, == 是 number 的比较, 会转成 number, 得到 undef

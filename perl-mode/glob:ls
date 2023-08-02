@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: glob:ls
+# key: 
+# --
+my @all_files = (glob("*.jpg"),glob("*.jpeg"),glob("*.png"));

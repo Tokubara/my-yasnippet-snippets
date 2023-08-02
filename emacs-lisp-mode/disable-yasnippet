@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: disable-yasnippet
+# key: 
+# --
+(yas--remove-template-by-uuid (yas--table-get-create 'org-mode) "inline_src_cpp")

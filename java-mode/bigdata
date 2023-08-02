@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: bigdata
+# key: 
+# --
+./run-test.pl ./score 1_202228018629017_hw1.java
+java Hw1Grp1 R=/hw1/join_0R.tbl S=/hw1/join_0S.tbl join:R0=S0 res:R1,S1

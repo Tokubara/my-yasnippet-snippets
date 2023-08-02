@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: array
+# key: 
+# --
+.section .data
+data_items:
+.long 3,67,34,21,45,65,222,34,44,33,22,11,66,0
+
+# access/read
+movl $0, %edi
+movl data_items(, %edi, 4), %eax

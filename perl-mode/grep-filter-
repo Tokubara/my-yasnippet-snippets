@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: grep-filter-
+# key: 
+# --
+my @odd_numbers = grep { $_ % 2 } 1..1000;
+# block 返回 bool, 不改变原来的 list
+# 如果是 scalar context, 返回的是个数

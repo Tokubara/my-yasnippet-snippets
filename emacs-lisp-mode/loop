@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+(dotimes (_ 次数)
+(语句)
+(语句)
+)

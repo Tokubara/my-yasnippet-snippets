@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: openmp
+# key: 
+# --
+#include <omp.h>
+#pragma omp parallel for num_threads(56)
+for(unsigned int i = 0; i < (1u<<31); i++) {
+// gcc -fopenmp exploit.c -o exploit

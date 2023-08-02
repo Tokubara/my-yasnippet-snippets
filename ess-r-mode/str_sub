@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: str_sub
+# key: 
+# --
+str_sub(x, 1, 3)

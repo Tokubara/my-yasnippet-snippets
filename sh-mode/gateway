@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: gateway
+# key: 
+# --
+route get default | grep gateway

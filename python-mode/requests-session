@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: requests-session
+# key: 
+# --
+headers = {
+            'Referer': 'https://github.com/',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+            'Host': 'github.com'
+        }
+
+        post_data = {
+            'commit': 'Sign in',
+            'utf8': '✓',
+            'authenticity_token': self.token()[0],
+            'login': email,
+            'password': password
+        }
+
+session = requests.Session()
+session.get(self.login_url, headers=headers)
+session.post(self.post_url, data=post_data, headers=headers)

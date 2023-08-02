@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: plot-arguments
+# key: 
+# --
+Plot[,,PlotLabel -> "sin(x)", AxesLabel -> {"x", "y"}, PlotLegends->{"1","2"}]
+PlotLegends -> "Expressions" (*很有用, 这样 legend 就会显示函数表达式*)

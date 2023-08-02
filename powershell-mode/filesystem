@@ -1,0 +1,45 @@
+# -*- mode: snippet -*-
+# name: filesystem
+# key: 
+# --
+New-Item $env:Temp\newfile.txt -ItemType File
+New-Item win1.txt,win2.txt -ItemType File
+New-Item $env:Temp\newdirectory -ItemType Directory
+New-Item HKLM:\Software\NewKey -ItemType Key
+New-Item LinkName -ItemType SymbolicLink -Value \\Server\Share # symlink
+New-Item C:\Users\1\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 -ItemType SymbolicLink -Value C:\Users\1\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 -Force
+New-Item LinkName.txt -ItemType HardLink -Value OriginalName.txt
+New-Item LinkName -ItemType Junction -Value C:\Temp
+New-Item -Path $Profile -Type File -Force
+$File = New-Item NewFile.txt
+$File | Get-Member -MemberType Property
+# -Force 的作用是 如果已经存在, 就先删除再创建
+
+# rm
+$file = New-TemporaryFile
+Remove-Item $file # 有 rm alias
+rm -Recurse pe_exp1
+# 如果要删除的是目录, 加上 -Recurse 选项
+
+# Open the current directory in explorer
+# 类似于 mac 的 open
+Invoke-Item .
+# Open test.ps1 in the default editor
+Invoke-Item test.ps1
+# Open cmd
+Invoke-Item $env:windir\system32\cmd.exe
+
+Test-Path string # 返回 boolean, 是否存在 if exists
+
+get-item -Path path # 返回这个 path 对应的 file object
+get-item -Force # 访问 hidden item
+get-childitem . -Recurse -Include "*.exe" # 类似于 ls, 返回这个 path 所有 item 匹配 "*.exe" wildcard
+get-childitem . -Recurse -Include "modelsim"
+# cp
+Copy-Item -Path D:\modeltech64_10.5\LICENSE_1.txt -Destination . # 有 alias cp
+cp -Recurse .\pe_exp\ .\pe_exp1 # copy directory
+cp .\pe_exp\sim\*.do,.\pe_exp\sim\*.v pe_exp1\sim\
+
+# mv
+Rename-Item oldname.txt newname.txt
+Rename-Item LICENSE_1.txt LICENSE.txt

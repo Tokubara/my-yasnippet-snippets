@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: if
+# key: 
+# --
+if boolean then statement
+
+if boolean1 then
+statement1
+else if boolean2 then
+statement2
+else
+statement3
+end if

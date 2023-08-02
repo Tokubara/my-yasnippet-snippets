@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: overflow
+# key: 
+# --
+n.checked_mul(m) // Some(1)/None
+n.wrapping_mul(m) // 和 c 结果一样, 直接返回数
+n.saturating_add(m) // 溢出取 max, min
+255_u8.overflowing_sub(2) // (wrap_value, bool)

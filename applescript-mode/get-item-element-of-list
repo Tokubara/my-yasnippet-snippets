@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: get-item-element-of-list
+# key: 
+# --
+-- item index of list: get element of list by index, 也可以是 last/first/second item of, 还可以是 end of
+
+set newspaper to {"articles", "author", "advertisements"}
+set itemValue to item -1 of newspaper

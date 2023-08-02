@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tar-command
+# key: 
+# --
+tar -cf moby.tar moby-dick/ # create
+tar -pzcvf moby.tar.gz moby-dick/ # create
+tar -zcvf submit.tar.gz stu_upload
+tar -vtf moby.tar.gz # test
+tar -zvtf moby.tar.gz # test
+tar -pzvxf moby.tar.gz # untar

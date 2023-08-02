@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: count-number-of-occurrences
+# key: 
+# --
+grep -o 'needle' file | wc -l

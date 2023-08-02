@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: brew
+# key: 
+# --
+brew info sed

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: vector
+# key: 
+# --
+; self-evaluating
+;; create
+[1 2 3] ; literal, 不会对每个元素求值
+(vector 1 2 xx)  ; 会对每个元素求值
+(make-vector 5 0) ; 得到的就是 [0 0 0 0 0]
+
+(fillarray xx 1)
+
+(length (vector 7 4 5)) ; 3
+(aref ["a" "b" "c"] 0) ; "a"
+(aset xx 0 "b") ; return "b", 虽然 aset 参数 xx 前面没有 ', 但它会修改 xx
+
+[[1 2] [3 4]] ; nested

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: source vimscript files
+# key: 
+# --
+execute('source ' . $MDOT . 'util.vim')

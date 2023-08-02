@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: git-rm
+# key: 
+# --
+git rm --cached  # org-protocol://id?id=04880D32-69A8-420D-9B92-E751E1BAA931, 从 index 删除但不从 work tree 删除

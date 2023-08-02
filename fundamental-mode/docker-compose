@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: docker-compose
+# key: 
+# --
+version: '3'
+services:
+  web:
+    image: jamtur01/composeapp
+    command: python app.py
+    ports:
+     - "5000:5000"
+    volumes:
+     - .:/composeapp
+  redis:
+    image: redis

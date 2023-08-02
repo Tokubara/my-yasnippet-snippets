@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 割圆-polynomial-多项式-
+# key: 
+# --
+Cyclotomic[5, x]

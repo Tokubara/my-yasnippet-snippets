@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: call-method-的-4-种写法
+# key: 
+# --
+"hello".to_string()
+str::to_string("hello")
+ToString::to_string("hello")
+<str as ToString>::to_string("hello")
+
+// 指定泛型参数(generic parameters)
+let b =TryInto::<u32>::try_into().unwrap();
+let b =<_ as TryInto<u32>>::try_into(a).unwrap();

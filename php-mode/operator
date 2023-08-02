@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: 
+# --
+// ternary
+$x?$y:1;
+$x?:1; // 相当于 $x?$x:1
+
+// null coalesce operator
+$a = null;
+$b = 'Does print';
+echo $a ?? 'a is not set'; // prints 'a is not set'
+// 也就是如果 ?? 前面是 null 那就继续, 否则就用前一个的值

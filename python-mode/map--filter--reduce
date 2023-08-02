@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: map--filter--reduce
+# key: 
+# --
+map(factorial, range(6)) # 不改变, 返回
+[factorial(n) for n in range(6)] # 等价于 map
+[i for i in a if i != ''] # 等价于 filter

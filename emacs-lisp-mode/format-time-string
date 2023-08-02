@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: format-time-string
+# key: 
+# --
+(format-time-string "Pasted_image_%4Y%m%d%H%M%S.png")

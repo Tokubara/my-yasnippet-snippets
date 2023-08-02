@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tf-constant
+# key: 
+# --
+tf.zeros([10])

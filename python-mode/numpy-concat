@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: numpy-concat
+# key: 
+# --
+np.concatenate((np.zeros(4),np.ones(2)), axis=0) # 向量的拼接, 注意向量都在一个 tuple 中

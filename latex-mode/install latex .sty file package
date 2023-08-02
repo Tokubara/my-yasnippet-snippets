@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: install latex .sty file package
+# key: 
+# --
+mv ~/Downloads/ucas-beamer /usr/local/texlive/2018/texmf-dist/tex/latex
+texhash
+kpsewhich ucas.sty

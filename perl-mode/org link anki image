@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: org link anki image
+# key: 
+# --
+# use Clipboard;
+# use v5.34;
+# use utf8;
+no strict;
+$_=`osascript -e 'tell application "Preview" to return path of front document'`;
+chomp;
+use File::Basename;
+# $fullname="/Users/quebec/box/markdown2latex/out/error.tex";
+$basename = basename($_);
+$target_dir="/Users/quebec/notes/vx_attachments/";
+if(!(-e "$target_dir/$basename")) {
+  use File::Copy;
+  copy($_, $target_dir);
+}
+print("[[file:../vx_attachments/$basename]]");

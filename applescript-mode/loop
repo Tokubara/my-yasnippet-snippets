@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+repeat
+--do something
+end repeat
+
+repeat n times
+--do something
+end repeat
+
+repeat until boolean
+--do something
+end repeat
+
+repeat while boolean
+--do something
+end repeat
+
+repeat while boolean
+--do something
+end repeat
+
+repeat with loopVariable from startvalue to stopvalue by stepvalue
+--do something
+end repeat
+
+repeat with loopVariable in list
+--do something
+end repeat
+-- example:
+set myList to {"Hello", "Hi", "Hey", "Goodbye"}
+repeat with i in myList
+display dialog (contents of i)
+set (contents of i) to "oh" end repeat

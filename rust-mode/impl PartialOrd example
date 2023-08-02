@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: impl PartialOrd example
+# key: 
+# --
+use std::cmp::{Ordering, PartialOrd};
+impl<T: PartialOrd> PartialOrd<Interval<T>> for Interval<T> {
+    fn partial_cmp(&self, other: &Interval<T>) -> Option<Ordering> {
+        if self == other {
+            Some(Ordering::Equal)
+        } else if self.lower >= other.upper {
+            Some(Ordering::Greater)
+        } else if self.upper <= other.lower {
+            Some(Ordering::Less)
+        } else {
+            None
+        }
+    }
+}

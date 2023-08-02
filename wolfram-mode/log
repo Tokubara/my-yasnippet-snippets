@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: log
+# key: 
+# --
+(*默认是 base E, 如果需要表示其它 base, 用第一个参数表示 base *)
+Log[2,62]
+Log[E^2]

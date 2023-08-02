@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: linux-info
+# key: 
+# --
+lsb_release # linux distribution

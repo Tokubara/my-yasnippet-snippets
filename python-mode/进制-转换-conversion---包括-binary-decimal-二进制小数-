@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: 进制-转换-conversion---包括-binary-decimal-二进制小数-
+# key: 
+# --
+def str_2_num(s, base, mapping):
+  ans = 0
+  length = len(s)
+  tmp = 1
+  for i in range(length):
+    tmp*=base
+    ans += tmp*mapping[s[i]]
+  return ans 
+print(str_2_num("0110", 0.5, {"0":0, "1":1}))

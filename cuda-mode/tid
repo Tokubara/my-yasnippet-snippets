@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tid
+# key: 
+# --
+unsigned int tid = threadIdx.x;

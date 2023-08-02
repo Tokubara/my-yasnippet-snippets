@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: timing
+# key: 
+# --
+tic
+A = rand(1000);
+A*A*A*A*A*A*A;
+toc

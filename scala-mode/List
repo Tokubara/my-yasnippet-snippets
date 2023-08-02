@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: List
+# key: 
+# --
+// linked-list, 链表, append 是线性复杂度, prepend 比较好
+Nil // empty List
+val oneTwo = List(1, 2)
+val threeFour = List(3, 4)
+val oneTwoThreeFour = oneTwo ::: threeFou // ::: concat list
+
+val twoThree = List(2, 3)
+val oneTwoThree = 1 :: twoThree // :: prepend
+val oneTwoThree = 1 :: 2 :: 3 :: Nil
+// index 从 0 开始, 用 ()
+oneTwoThree(0)

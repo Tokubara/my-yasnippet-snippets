@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: git-reset
+# key: 
+# --
+git reset --hard HEAD -- path # 不能加 --hard, --soft, 作用就是修改 index tree 这个 path 与 commit 相同, 它只是在修改 index tree
+git checkout -- <path> # 修改 working tree 与 index tree 一样, 不改变 index tree
+git checkout <commit> <path> # 修改 working tree 和 index tree, 与 commit 一样

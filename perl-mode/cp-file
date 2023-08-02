@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cp-file
+# key: 
+# --
+use File::Copy;
+copy($oldfile, $newfile);
+# 第二个参数可以是目标目录

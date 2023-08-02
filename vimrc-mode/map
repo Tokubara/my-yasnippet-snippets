@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: map
+# key: 
+# --
+nnoremap <silent> <leader>cc :let @*=substitute(expand("%:p"),"/Users/quebec","$MHOME", "")<CR>

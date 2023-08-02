@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: arithmetic
+# key: 
+# --
+(1- 10) ; 9
+(1+ 10) ; 11

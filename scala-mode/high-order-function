@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: high-order-function
+# key: 
+# --
+(1 to 5).map(println(_))

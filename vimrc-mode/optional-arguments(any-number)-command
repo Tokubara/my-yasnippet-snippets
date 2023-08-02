@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: optional-arguments(any-number)-command
+# key: 
+# --
+function! MakeOrgTable(...)
+python << EOF
+import vim
+col_num = int(vim.eval("a:1")) if int(vim.eval("a:0")) > 0 else 0
+vim.current.buffer[:]=make_table(vim.current.buffer, col_num)
+EOF
+endfunction
+
+call execute("py3file $MDOT/make_table.py")
+command! -nargs=* MakeTable :call MakeOrgTable(<f-args>)

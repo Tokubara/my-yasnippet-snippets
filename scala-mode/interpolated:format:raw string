@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: interpolated:format:raw string
+# key: 
+# --
+s"Power of 2: ${math.pow(2, 2)}"                      // => "Power of 2: 4"
+
+// Formatting with interpolated strings with the prefix "f"
+f"Power of 5: ${math.pow(5, 2)}%1.0f"         // "Power of 5: 25"
+f"Square root of 122: ${math.sqrt(122)}%1.4f" // "Square root of 122: 11.0454"
+
+// Raw strings, ignoring special characters.
+raw"New line feed: \n. Carriage return: \r." // => "New line feed: \n. Carriage return: \r."
+
+// Some characters need to be "escaped", e.g. a double quote inside a string:
+"They stood outside the \"Rose and Crown\"" // => "They stood outside the "Rose and Crown""
+
+// Triple double-quotes let strings span multiple rows and contain quotes
+val html = """<form id="daform">
+                <p>Press belo', Joe</p>
+                <input type="submit">
+              </form>"""

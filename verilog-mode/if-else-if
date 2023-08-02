@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: if-else-if
+# key: 
+# --
+if() begin
+end // 如果只有一句可以省略 begin end
+else if
+else

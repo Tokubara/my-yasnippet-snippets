@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: comment
+# key: 
+# --
+% Comments start with a percent sign.
+
+%{
+Multi line comments look
+something
+like
+this
+%}

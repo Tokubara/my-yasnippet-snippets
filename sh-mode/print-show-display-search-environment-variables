@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: print-show-display-search-environment-variables
+# key: 
+# --
+set # 没有参数就是打印, 包含 global 和 local 
+env # global
+printenv # global
+env | grep FZF

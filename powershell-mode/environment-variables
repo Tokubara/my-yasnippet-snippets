@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: environment-variables
+# key: 
+# --
+$Env:programdata
+[Environment]::GetEnvironmentVariable("Path", "User") # 环境变量有 3 种 scope, user, machine, 这里的 User 不要改成具体的用户名, 表示 user-level
+
+[Environment]::SetEnvironmentVariable(<name>, <value>, <target>) # target 还是填 user
+$pathElements = @([Environment]::GetEnvironmentVariable("Path", "User") -split ";")
+$pathElements += "d:\tools"
+$newPath = $pathElements -join ";"
+[Environment]::SetEnvironmentVariable("Path", $newPath, "User")
+[Environment]::SetEnvironmentVariable("LM_LICENSE_FILE", "C:\modeltech64_10.5\LICENSE.txt", "User")

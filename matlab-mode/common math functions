@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: common math functions
+# key: 
+# --
+sin(x)
+cos(x)
+tan(x)
+asin(x)
+acos(x)
+atan(x)
+exp(x)
+sqrt(x)
+log(x)
+log10(x)
+abs(x) %If x is complex, returns magnitude
+min(x)
+max(x)
+ceil(x)
+floor(x)
+round(x)
+rem(x)

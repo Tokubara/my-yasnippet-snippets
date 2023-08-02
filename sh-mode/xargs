@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: xargs
+# key: 
+# --
+echo -n gemm_SRAM.mlu gemm16Kernel.h mlu_gemm16.cpp | /usr/local/gnubin/xargs -d ' ' -I '{}' find . -name "{}" # 原因见 org-protocol://id?id=F90AD65C-A63F-45E2-9B94-B84D32F58D82

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pattern
+# key: 
+# --
+($0 ~ /whole/) || (($1 ~ /part1/) && ($2 ~ /part2/)) {print}

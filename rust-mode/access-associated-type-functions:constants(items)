@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: access-associated-type-functions:constants(items)
+# key: 
+# --
+trait Write {
+    const GREETING: &'static str;
+    fn method() -> () {
+        println!("{}", Self::GREETING)
+    }
+    fn wrapper() -> () {
+        Self::method();
+    }
+}
+
+struct ZK;
+struct JK;
+impl Write for ZK {
+    const GREETING: &'static str = "abc";
+}
+impl Write for JK {
+    const GREETING: &'static str = "kde";
+}
+
+fn main() {}

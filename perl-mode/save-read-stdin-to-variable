@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: save-read-stdin-to-variable
+# key: 
+# --
+$_ = join "", <STDIN>

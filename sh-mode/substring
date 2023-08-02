@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: substring
+# key: 
+# --
+${String:0} # 从0开始到结束部分
+${String:7:3} # 从下标7开始的3个字符
+${a:(-4):2} # () 必须有

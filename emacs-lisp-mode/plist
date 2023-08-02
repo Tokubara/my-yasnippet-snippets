@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: plist
+# key: 
+# --
+(plist-get arg :id) ; 其中 arg 就是 plist

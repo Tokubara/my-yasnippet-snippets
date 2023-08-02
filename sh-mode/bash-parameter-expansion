@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: bash-parameter-expansion
+# key: 
+# --
+${var:-default} # 为 null 替换
+${var:+default} # 不为 null 替换, 如果 var 已经存在就为空
+${var#pattern} # prefix remove
+${var##pattern}
+
+${string#substring} # 从$string 左边开始，剥去最短匹配$substring 子串
+${string##substring} # 从$string 左边开始，剥去最长匹配$substring 子串
+${string%substring} # 从$string 结尾开始，剥去最短匹配$substring 子串
+${string%%substring} # 从$string 结尾开始，剥去最长匹配$substring 子串
+
+# replace
+${parameter/pattern/string}

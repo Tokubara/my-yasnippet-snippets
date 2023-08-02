@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: pattern
+# key: 
+# --
+Some(Account { name, language, .. })
+[a, .., b]
+Account { ref name, ref language, .. }
+Ok(ref mut line)
+Some(digit @ '0'..='9')
+100 "name"                                                                           
+0 ..= 100
+'a' ..= 'k'                                                                
+_                                                                                    
+name, mut count                                                                      
+ref field, ref mut field                                                             
+val @ 0 ..= 99, ref circle @ Shape::Circle { .. }                                    
+Some(value), None, Pet::Orca                                                         
+(key, value), (r, g, b)                                                              
+[a, b, c, d, e, f, g], [heading, carom, correction]                                  
+[first, second],[first, _, third],[first, .., nth], []                               
+Color(r, g, b),Point { x, y }, Card { suit: Clubs, rank: n },Account { id, name, .. }
+&value,&(k, v)                                                                       
+'a' | 'A'                                                                             
+[[#1tlpq]]                                                                   

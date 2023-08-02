@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: str
+# key: 
+# --
+.strip('abc') # 默认是 whitespace
+.endswith('.pdf')

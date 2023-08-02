@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: buffer
+# key: 
+# --
+(buffer-list)
+(buffer-name buffer)
+(kill-buffer buffer)
+(current-buffer)
+(switch-to-buffer (buffer-base-buffer)) ; switch/open, indirect buffer
+
+; buffer object <-> buffer name
+(buffer-name (current-buffer))
+(get-buffer vterm-buffer-name) ; get-buffer 参数是 buffer name
+
+; open buffer but not select it
+(display-buffer BUFFER-OR-NAME &optional ACTION FRAME) ;  Display BUFFER-OR-NAME in some window, without selecting it.
+(display-buffer vterm-buffer-name t)
+
+(dolist (buffer (buffer-list))
+  (when (string-prefix-p "compile_2" (buffer-name buffer))
+    (kill-buffer buffer)))

@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: 
+# --
+transpose(A) % Transpose the matrix, which is the same as:
+A.' % Concise version of transpose (without taking complex conjugate)
+ctranspose(A) % Hermitian transpose the matrix, which is the same as:
+A'  % Concise version of complex transpose
+    % (the transpose, followed by taking complex conjugate of each element)
+
+A * B % Matrix multiplication
+A .* B % Multiply each element in A by its corresponding element in B, 区别在于前面有 period
+
+.^
+^
+
+% Relational
+==
+~= % 相当于 c 中的 !=
+>
+>=
+<
+<=
+
+% logical
+&
+|
+&& % shortcut
+|| % shortcut
+~

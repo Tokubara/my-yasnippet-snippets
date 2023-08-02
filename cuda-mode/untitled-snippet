@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: untitled-snippet
+# key: 
+# --
+threadidx // 
+blockIdx
+blockDim

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: marker
+# key: 
+# --
+; jump to marker
+(save-excursion
+        (marker-buffer marker)
+      (goto-char marker)
+      (org-super-links-store-link))

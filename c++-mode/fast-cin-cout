@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fast-cin-cout
+# key: 
+# --
+ios::sync_with_stdio(false);
+cin.tie(nullptr);

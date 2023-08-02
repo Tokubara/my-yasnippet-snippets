@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: extended-literal
+# key: 
+# --
+let o = { x, y }; // Shorthand Properties, 相当于 let o = { x:x, y:y };
+// computed property
+let p = {     [PROPERTY_NAME]: 1,     [computePropertyName()]: 2 }; // [] 中是任意 js expression, 作为 property name
+// ... spread operator, 把 objects 中的属性拷贝过来(不包括继承的属性)
+let rect = { ...position, ...dimensions }; //
+let q = { ...o, x: 2 }; // 如果属性重名, last 为准
+// shorthand methods
+// 原来
+let square = {  area: function() { return this.side * this.side; }}; 
+// 现在可以省略 : function
+let square = {  area() { return this.side * this.side; }}; 
+// 可以配合 computed property
+const METHOD_NAME = "m"; const symbol = Symbol(); let weirdMethods = {     "method With Spaces"(x) { return x + 1; },     [METHOD_NAME](x) { return x + 2; },     [symbol](x) { return x + 3; } };

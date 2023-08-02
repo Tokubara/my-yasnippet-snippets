@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: zsh-globbing
+# key: 
+# --
+ls ^pattern # exclude
+mv ^bits bits # move everything in this directory to bits, except bit directory itself 

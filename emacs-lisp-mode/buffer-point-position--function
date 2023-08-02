@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: buffer-point-position--function
+# key: 
+# --
+; search and set point
+(re-search-forward regexp &optional LIMIT NOERROR COUNT)
+; LIMIT 是一个 position, 默认是 end of buffer, 意义是 No match extending after that position is accepted.
+; COUNT 的意思是搜索几次, 比如如果为 2, point 是设置到第 2 个 match 的 end.
+; search-forward 与 re-search-forward 的区别是它搜索的不是 regex, 是固定字符串. 其它参数意义相同.
+(search-forward string &optional LIMIT NOERROR COUNT)
+
+replace-match

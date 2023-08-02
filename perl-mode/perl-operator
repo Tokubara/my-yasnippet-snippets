@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: perl-operator
+# key: 
+# --
+&&
+||
+!
+
+# string
+ne
+eq
+lt
+le
+gt
+ge
+
+-f $file
+/
+# 不是 integer division, 而是 float, 比如 5/3=1.33
+int(5/3)

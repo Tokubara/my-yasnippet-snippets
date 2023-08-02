@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sum
+# key: 
+# --
+Sum[a[i], {i, imin, imax, increment}]
+Sum[(4 V / Pi * 1/(n*Sqrt[2]))^2/R , {n, 1, Infinity, 2}]

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cut-video
+# key: 
+# --
+ffmpeg -ss 00:00:00 -to 00:03:40 -i /Users/quebec/Desktop/nemu.mov -c copy /Users/quebec/Desktop/nemu_cut.mov

@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: ForEach-Object
+# key: 
+# --
+Get-Process | ForEach-Object {
+Write-Host $_.Name -ForegroundColor Green
+}
+# 用 $_ 访问变量
+# 其中 {} 是 -Process 参数, 相当于
+Get-Process | ForEach-Object -Process {
+Write-Host $_.Name -ForegroundColor Green
+}
+
+1..5 | ForEach-Object -Begin {
+Write-Host "Starting the pipeline. Creating value." $value = 0
+} -Process {
+Write-Host "Adding $_ to value."
+$value += $_ } -End {
+Write-Host "Finished the pipeline. Displaying value."
+$value
+}
+
+-Parallel # 并行, 比如
+1..10 | ForEach-Object -Parallel { Start-Sleep -Seconds 2
+$_
+}
+
+# 不过如果使用了 -Parallel, 要访问 block 以外的变量必须是 $using:string 而不是 $string
+$string = 'Hello world'
+1 | ForEach-Object -Parallel {
+# The $string variable is only accessible if using is used.
+    $using:string
+}
+
+# 也可以不要 block, 获取单个属性或者调用单个 method
+Get-Process | ForEach-Object -MemberName Path
+
+@(
+Get-Date '01/01/2019'
+Get-Date '01/01/2020'
+) | ForEach-Object ToString('yyyyMMdd')

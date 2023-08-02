@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: babel
+# key: 
+# --
+# 得到 raw string
+:results verbatim

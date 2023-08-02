@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: regex-functions
+# key: 
+# --
+use regex::Regex;
+let regex = Regex::new(r"\.+").expect("incorect regex");
+let mut pit_len_vec: Vec<i32> = regex.split(s).map(|x| i32::try_from(x.len()).unwrap()).filter(|&x| x > 0).collect::<Vec<i32>>();

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: write-to-csv
+# key: 
+# --
+# csv_header = ["name", "difficulty", "pass_num", "commit"]
+# problem_details_list = [("P1234",1,2,3),...]
+import csv
+with open('problems.csv', 'w', encoding='UTF8', newline='') as f:
+    writer = csv.writer(f)
+    # write the header
+    writer.writerow(csv_header)
+    # write multiple rows
+    writer.writerows(problem_details_list)
+

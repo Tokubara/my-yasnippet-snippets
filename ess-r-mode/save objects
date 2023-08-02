@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: save objects
+# key: 
+# --
+save(data1, data2, file = "data.RData")
+save(list=c("data1", "data2"), file = "data.RData")

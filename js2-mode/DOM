@@ -1,0 +1,51 @@
+# -*- mode: snippet -*-
+# name: DOM
+# key: 
+# --
+document.querySelector("form#shipping")
+let titles = document.querySelectorAll("h1, h2, h3")
+let hyperlink = event.target.closest("a[href]");
+// closest 与 querySelector 相反, closest 是从这个节点搜索它的最近的祖宗节点, querySelector 是搜索子节点
+e.matches("h1,h2,h3,h4,h5,h6")
+// 返回 true/false, 是否 match
+
+// preselected
+.images
+.forms
+.links // a 包含 href
+
+.head
+.body
+.parentNode
+.children // list
+childElementCount
+firstElementChild
+lastElementChild
+nextElementSibling
+previousElementSibling
+
+document.children[0].children[1]
+document.firstElementChild.firstElementChild.nextElementSibling
+
+function traverse(e, f) {
+  f(e); // Invoke f() on e     
+  for (let child of e.children) { // Iterate over the children         
+    traverse(child, f); // And recurse on each one     
+  }
+}
+
+// attribute
+getAttribute(), setAttribute(), hasAttribute(), and removeAttribute()
+// 但通常通过 properties 来访问, attribute 都有对应的 properties
+
+let url = image.src;       // The src attribute is the URL of the image
+image.id === "main_image"  // => true; we looked up the image by id
+
+let f = document.querySelector("form");      // First <form> in the document
+f.action = "https://www.example.com/submit"; // Set the URL to submit it to.
+f.method = "POST";                           // Set the HTTP request type.
+// js 与 html 的映射关系
+.className // class 属性
+.htmlFor
+.maxLength // camel case
+.classList.add/remove/contains/toggle

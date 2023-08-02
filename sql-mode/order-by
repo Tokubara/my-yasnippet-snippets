@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: order-by
+# key: 
+# --
+SELECT sid FROM enrolled WHERE cid = '15-721' ORDER BY UPPER(grade) DESC, sid + 1 ASC;
+
+LIMIT 5 OFFSET 5 -- 以 0 为 index

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: only-print-capture-groups
+# key: 
+# --
+rg -N -o 'strncmp\("-([^"]*)"' /Users/quebec/Playground/XPEsim/simulator/simulator/hardwaresim/ReadParam.cpp -r '$1'

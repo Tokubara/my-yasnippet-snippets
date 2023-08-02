@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: use-cmake-to-build
+# key: 
+# --
+# 较新版本
+cmake -S. -B build
+cmake --build build -j 2
+
+# 更旧版本(但对新版应该也使用)
+mkdir build && cd build
+cmake ..
+make

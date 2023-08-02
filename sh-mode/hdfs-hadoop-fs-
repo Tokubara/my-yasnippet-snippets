@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: hdfs-hadoop-fs-
+# key: 
+# --
+hdfs dfs -rm -r -f /hw1
+hdfs dfs -mkdir /hw1
+hdfs dfs -put *.tbl /hw1
+hdfs dfs -ls /hw1

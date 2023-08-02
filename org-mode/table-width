@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: table-width
+# key: 
+# --
+| <1> | <1> | <1> |
+配合 shrink 使用

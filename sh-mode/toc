@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: toc
+# key: 
+# --
+# 检查页码
+perl ~/box/pdf-toc/check_increasing_page_number.pl tmp_toc.txt

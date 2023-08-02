@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: read-write-file
+# key: 
+# --
+# Writing to a file
+$contents = @{"aa"= 12 
+             "bb"= 21}
+$contents | Export-CSV "$env:HOMEDRIVE\file.csv" # writes to a file
+
+$contents = "test string here"
+$contents | Out-File "$env:HOMEDRIVE\file.txt" # writes to another file
+
+# Read file contents and convert to json
+Get-Content "$env:HOMEDRIVE\file.csv" | ConvertTo-Json
+Set-Content -Path $file -Value 'Temporary: 10'

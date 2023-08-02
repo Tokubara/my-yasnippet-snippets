@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: create-list
+# key: 
+# --
+ConstantArray[1, {12}]
+Range[imin, imax, di]
+Table[Exp[-k 2 Pi I/n], {k, 0, n-1}]

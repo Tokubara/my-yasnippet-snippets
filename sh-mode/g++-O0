@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: g++-O0
+# key: 
+# --
+g++ -std=c++17 -O0 -g3 -o main CH0103_bellman_held_karp.cpp

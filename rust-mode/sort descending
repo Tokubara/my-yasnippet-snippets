@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: sort descending
+# key: 
+# --
+v.sort_by_key(|&x|-x);
+// 或者
+v.sort();
+v.reverse();

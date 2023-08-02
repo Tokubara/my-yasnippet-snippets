@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: clipboard
+# key: 
+# --
+tell application "Word"
+    set theData to (the clipboard as text)
+    set the clipboard to theData
+end tell

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: re
+# key: 
+# --
+# match object
+.start(group) # index
+.end(group)
+.group(group) # group 的内容

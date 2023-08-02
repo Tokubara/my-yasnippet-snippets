@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: generic-function-trait-restrict-where
+# key: 
+# --
+fn top_ten<T: Debug + Hash + Eq>(values: &Vec<T>) { ... }
+
+fn run_query<M: Mapper + Serialize, R: Reducer + Serialize>(
+data: &DataSet, map: M, reduce: R) -> Results {...}
+
+fn run_query<M, R>(data: &DataSet, map: M, reduce: R) -> Results
+where M: Mapper + Serialize,
+R: Reducer + Serialize
+{...}
+// 更多 where 的 example
+// 提醒 where 中不能有 = 之类的, 比如 Self::IntoIter::Item = Iterator::Item 是错误的
+where I: Iterator<Item=String>
+where I: Iterator, I::Item: Debug
+
+fn dump(iter: &mut dyn Iterator<Item=String>)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pickle-save-object
+# key: 
+# --
+import pickle
+problems_path = "problems_dict"
+with open(problems_path, 'wb') as f:
+  pickle.dump(problems, f)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: vterm
+# key: 
+# --
+(vterm)
+(vterm--goto-line -1) ; 最新位置, 最后一行
+(vterm-send-string command)
+(vterm-send-return)

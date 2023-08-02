@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: object
+# key: 
+# --
+is_object($x);
+
+$ed = new Person;
+$ed->name('Edison'); # access attributes
+echo "Hello, {$ed->name} <br/>";
+$tc = new Person;
+$tc->name('Crapper');
+echo "Look out below {$tc->name} <br/>"; 
+
+is_object

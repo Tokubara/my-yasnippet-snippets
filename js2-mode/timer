@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: timer
+# key: 
+# --
+setTimeout(checkForUpdates, 60000); // 时间单位是 milliseconds, 因此这里是 6 min. 会有返回, 返回用于 clearInterval, 这样就会停止 timer 
+let updateIntervalId = setInterval(checkForUpdates, 60000);
+function stopCheckingForUpdates() {
+  clearInterval(updateIntervalId);
+}
+
+

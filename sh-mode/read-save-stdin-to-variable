@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read-save-stdin-to-variable
+# key: 
+# --
+var=`cat`

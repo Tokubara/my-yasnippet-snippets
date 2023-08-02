@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: jar
+# key: 
+# --
+jar -cf myapp.jar com/packt/learnjava/ch09_jvm/MyApplication.class # create .jar
+jar -cfm myapp.jar manifest.txt com/packt/learnjava/ch09_jvm/*.class com/packt/learnjava/ch09_jvm/example/*.class # 指定 manifest.txt
+jar cfe myjar.jar com.packt.learnjava.ch09_jvm.MyApplication com/packt/learnjava/ch09_jvm/*.class com/packt/learnjava/ch09_jvm/example/*.class # 通过 -e 指定 entry point 对应的 class, 自动创建 manifest.txt
+jar tvf myapp.jar # show/display

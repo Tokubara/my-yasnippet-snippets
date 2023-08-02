@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: environment-variables
+# key: 
+# --
+import os
+os.environ["PATH"]
+os.getenv("PATH") # get
+os.putenv('MLU_VISIBLE_DEVICES','') # set

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: assert
+# key: 
+# --
+On[Assert]
+Assert[1==2]

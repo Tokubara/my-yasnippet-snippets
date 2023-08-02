@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: switch
+# key: 
+# --
+# Switch statements are more powerful compared to most languages
+$val = "20"
+switch($val) {
+  { $_ -eq 42 }           { "The answer equals 42"; break }
+  '20'                    { "Exactly 20"; break }
+  { $_ -like 's*' }       { "Case insensitive"; break }
+  { $_ -clike 's*'}       { "clike, ceq, cne for case sensitive"; break }
+  { $_ -notmatch '^.*$'}  { "Regex matching. cnotmatch, cnotlike, ..."; break }
+  default                 { "Others" }
+}

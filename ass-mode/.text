@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: .text
+# key: 
+# --
+.section .text
+.globl _start
+_start:
+movl $0, %edi

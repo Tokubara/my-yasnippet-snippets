@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mdfind-search-file-path-name
+# key: 
+# --
+mdfind -name 

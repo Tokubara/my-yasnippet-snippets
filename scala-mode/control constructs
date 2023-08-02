@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: control constructs
+# key: 
+# --
+if(cond) { ...
+} else if(cond) { ...
+} else { ...
+}
+
+val a = if 2>1 then  2 else 1
+val a = if (2>1) 2 else 1 // if 有括号则 () 可以省略
+
+while (x < 5) {
+  println(x)
+  x += 1
+}
+
+do {
+  println(x)
+  x += 1
+} while (x < 5)

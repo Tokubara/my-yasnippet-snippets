@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: 邻接表
+# key: 
+# --
+int tot = 0;
+onst int M = 10001*2; // 无向图注意 * 2
+int head[N], ver[M], edge[M], Next[M]; // head[i] 是 i 点最新加入的边号, ver[j] 是 j 边的终点, edge[j] 是 j 边的 weight, Next[j] 是 j 边的下一条边(它们有相同的起点)
+
+void add(int x, int y, int z) { // x 是起点, y 是终点, z 是 weight
+  ver[++tot] = y, edge[tot] = z, Next[tot] = head[x], head[x] = tot;
+}
+
+// 读入邻接表
+  cin >> n >> m; //构建邻接表
+  for (int i = 1; i <= m; i++) {
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    add(x, y, z);
+  }
+
+// 遍历 x 点所有的邻边
+    for (int i = head[x]; i; i = Next[i]) {
+      int y = ver[i], z = edge[i]; // y 是边的终点, z 是 weight
+    }

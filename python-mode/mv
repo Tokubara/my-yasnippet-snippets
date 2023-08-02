@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mv
+# key: 
+# --
+import shutil
+shutil.move(fname, "/Users/hello/tmp/")

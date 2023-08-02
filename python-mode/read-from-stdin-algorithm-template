@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: read-from-stdin-algorithm-template
+# key: 
+# --
+def get_ints():
+  return map(int,input().strip().split()) # 返回 generator
+
+while True:
+  try:
+    n,target = get_ints() # 不用 list 转换
+    num_list = list(get_ints()) # 需要用 list 转换, 否则 num_list 会是 map object
+    print(subset_num(num_list, 0, target))
+  except EOFError: # 处理 EOF
+    break

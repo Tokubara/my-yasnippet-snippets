@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: matlab operator
+# key: 
+# --
+^ % power
+&& || ~ % logical 与 c 相同

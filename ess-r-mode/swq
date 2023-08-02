@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: swq
+# key: 
+# --
+# 固定间隔
+seq(from = 1, to = 10, by = 1)
+# 固定长度
+seq(from = 1, to = 10, length.out=10)
+# 固定长度和间隔
+seq(from = 1, length.out=10, by=1)

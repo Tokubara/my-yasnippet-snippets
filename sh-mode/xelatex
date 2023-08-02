@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: xelatex
+# key: 
+# --
+xelatex --shell-escape -output-directory=out test.tex

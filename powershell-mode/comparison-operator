@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: comparison-operator
+# key: 
+# --
+# Comparison operators look at the numerical value of True and False.
+0 -eq $False  # => True, case-insensitive
+1 -eq $True   # => True
+2 -eq $True   # => False
+-5 -ne $False # => True
+-ceq # case-sensitive, 有 -ieq 但没必要, -eq 就 insensitive
+
+# More comparisons
+1 -lt 10  # => True
+1 -gt 10  # => False
+2 -le 2  # => True
+2 -ge 2  # => True
+
+-like # wildcard
+'one', 'two', 'three' -like '*e*'
+-clike # c 还是表示 case

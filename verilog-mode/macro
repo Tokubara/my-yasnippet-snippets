@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: macro
+# key: 
+# --
+`define WORD_SIZE 32

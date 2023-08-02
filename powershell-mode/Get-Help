@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Get-Help
+# key: 
+# --
+Get-Help Get-Process
+Get-Help Get-Process -Examples
+Get-Help get-childitem -Parameter Include

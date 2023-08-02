@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: head-tail
+# key: 
+# --
+head -c 10 # first 10 bytes
+head -c -10 # 除了最后 10 bytes
+head -n 10 # first 10 lines
+head -n -10 # except last 10 lines
+
+tail -n +11 # skip first 10 lines, +11 是 从 100 开始

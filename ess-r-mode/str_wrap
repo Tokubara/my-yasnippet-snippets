@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: str_wrap
+# key: 
+# --
+str_wrap(s,width=8)

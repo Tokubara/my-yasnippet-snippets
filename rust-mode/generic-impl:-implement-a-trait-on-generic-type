@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: generic-impl:-implement-a-trait-on-generic-type
+# key: 
+# --
+/// You can write HTML to any std::io writer.
+impl<W: Write> WriteHtml for W {
+    fn write_html(&mut self, html: &HtmlDocument) -> io::Result<()> {
+        // ...
+    }
+}

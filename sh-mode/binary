@@ -1,0 +1,32 @@
+# -*- mode: snippet -*-
+# name: binary
+# key: 
+# --
+objdump -R .so # GOT
+readelf -d foo.so | grep TEXTREL
+readelf -S level2 # 查看各段 (segments, sections) 的地址
+
+gcc -fno-stack-protector -z execstack -no-pie -m32 -o level1 level1.c
+
+sudo sysctl -w kernel.randomize_va_space=0
+
+ROPgadget  --binary ./level4 > level4_ropgadget.txt
+ROPgadget --only "pop|ret" --binary /lib/x86_64-linux-gnu/libc.so.6 > libc64.txt
+/usr/lib/x86_64-linux-gnu/libc.so
+/lib/i386-linux-gnu/libc.so.6
+
+objdump -d -j .plt
+
+# gdb
+info shared # 能查看 shared library 的 address 
+info address <symbol> # 查看 symbol 的 address
+info proc mappings # 与 cat /proc/pid/maps 效果相同
+info symbol <address> # 查看 address 在哪个 segment 中
+
+readelf -S elf # 查看 sections
+
+got # pwndbg
+plt # pwndbg
+canary # pwndbg
+retaddr # pwndbg
+stack # pwndbg

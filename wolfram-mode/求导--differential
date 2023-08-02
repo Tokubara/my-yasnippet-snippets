@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 求导--differential
+# key: 
+# --
+D[y,x]

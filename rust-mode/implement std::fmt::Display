@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: implement std::fmt::Display
+# key: 
+# --
+use std::fmt;
+// Errors should be printable.
+impl fmt::Display for JsonError {
+    fn fmt(&self, f: &mut fmt::Formatter) -> Result<(), fmt::Error> {
+        write!(f, "{} ({}:{})", self.message, self.line, self.column)
+    }
+}

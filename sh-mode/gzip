@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: gzip
+# key: 
+# --
+gzip -c foo.txt > foo.txt.gz # 压缩
+gzip -d -c foo.txt.gz > foo.txt # 解压
+gzip -tv foo.txt.gz # 只是检查完整性

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: image
+# key: 
+# --
+imwrite(rgbImage, 'fubar.png');
+imwrite(g1, sprintf("~/Downloads/Pasted_image_%s.png",string(datetime('now'), "yyyyMMddhhmmss")))
+im2double(I) % 将 uint8 灰度图转换为范围为 [0,1] 的 double
+mat2gray(I,[0 255]) % 同样是将 uint8 灰度图转换为范围为 [0,1] 的 double

@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: namedtuple
+# key: 
+# --
+from collections import namedtuple
+# 参数可以是 list
+# Card = namedtuple('Card', ['rank', 'suit'])
+# 参数可以是空格分隔的字符串
+City = namedtuple('City', 'name country population coordinates')
+LatLong = namedtuple('LatLong', 'lat long')
+delhi_data = ('Delhi NCR', 'IN', 21.935, LatLong(28.613889, 77.208889))  # 这就是一个普通 tuple, 不是 namedtuple
+delhi = City._make(delhi_data) # _make 的参数是 iterable
+# Card(rank=1, suit=2)
+delhi._asdict() # to dict
+# OrderedDict([('name', 'Delhi NCR'), ('country', 'IN'), ('population', 21.935), ('coordinates', LatLong(lat=28.613889, long=77.208889))])
+for key, value in delhi._asdict().items():
+  print(key + ':', value)

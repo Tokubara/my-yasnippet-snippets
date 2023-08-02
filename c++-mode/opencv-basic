@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: opencv-basic
+# key: 
+# --
+#include <iostream>
+#include <opencv2/opencv.hpp>
+#include <opencv2/core/utils/logger.hpp>
+using namespace cv;
+using namespace std;
+
+int main()
+{
+	cv::utils::logging::setLogLevel(utils::logging::LOG_LEVEL_SILENT);
+	///////////  显示 OpenCV 版本号  ////////////// 
+	std::cout << "\n---------------------------------\n";
+	std::cout << "OpenCV version: " << CV_VERSION << endl;
+	std::cout << "\n---------------------------------\n";
+
+	//////////////////////////////////// 
+	// 1. 读入一幅图像 //////////////////
+	Mat img = imread("../data/lena.jpg");
+	if (!img.empty()) {
+		Size imgsize;
+		imgsize = img.size();
+		std::cout << "image size is: " << imgsize.height << "*" << imgsize.width << "\n";
+
+		imshow("彩色图像", img);
+		cv::waitKey(0);
+
+		// 4. 仿射变换——旋转
+		Mat affineImg;
+		Mat M;
+		M = getRotationMatrix2D(Point2f(0, 0), 45, 1);
+		cout << "变换矩阵：\n" << M;
+		warpAffine(img, affineImg, M, Size(imgsize.width, imgsize.height));
+		imshow("仿射变换后（旋转）", affineImg);
+		cv::waitKey(0);
+
+	}
+}

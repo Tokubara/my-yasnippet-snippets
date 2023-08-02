@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: sleep
+# key: 
+# --
+// 不需要 import 任何 packages
+try {
+		Thread.sleep(5000);
+} catch (InterruptedException e) {
+		e.printStackTrace();
+}

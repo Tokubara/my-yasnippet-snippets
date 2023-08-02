@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: character
+# key: 
+# --
+?a
+?\t
+?\\ ; 就是 '\'

@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: region
+# key: 
+# --
+(region-beginning)
+(region-end)
+(region-active-p)
+(delete-region begin-point end-point)
+
+; 这段代码是如果有 region, 获得 region, 否则获得当前行
+(if (region-active-p)
+                     (string-trim (buffer-substring
+                                   (save-excursion (region-beginning))
+                                   (save-excursion (region-end))))
+                   (string-trim (buffer-substring (save-excursion
+                                                    (beginning-of-line)
+                                                    (point))
+                                                  (save-excursion
+                                                    (end-of-line)
+                                                    (point)))))
+
+(defun org-convert-lines-to-checklist (beg end)
+  "Convert all plain lines in region to a plain list with checkboxes."
+  (interactive "r")
+  (save-excursion
+    (goto-char beg)
+    (dotimes (_ (- (line-number-at-pos end) (line-number-at-pos beg)))
+    (re-search-forward "^\\(- \\)?" (line-end-position))
+    (replace-match "- [ ] ")
+      (indent-according-to-mode)
+      (forward-line 1))))

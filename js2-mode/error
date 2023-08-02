@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: error
+# key: 
+# --
+throw new Error("Abstract method");

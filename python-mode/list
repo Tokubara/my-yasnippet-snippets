@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: list
+# key: 
+# --
+list.index(obj) # 从列表中找出某个值第一个匹配项的索引位置

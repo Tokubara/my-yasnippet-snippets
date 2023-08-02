@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: doctest
+# key: 
+# --
+// ```
+/// Another snippet, the same code, but written differently:
+///
+/// ```
+/// if samples::everything().works() {
+///     println!("ok");
+/// }
+/// ```
+
+// 4 空格 缩进
+/// Return true if two ranges overlap.
+///     assert_eq!(ranges::overlap(0..7, 3..10), true);
+///     assert_eq!(ranges::overlap(1..5, 101..105), false);
+/// If either range is empty, they don't count as overlapping.
+///     assert_eq!(ranges::overlap(0..0, 0..10), false);
+pub fn overlap(r1: Range<usize>, r2: Range<usize>) -> bool {
+//
+}
+
+// # 不会出现在 doc 中, 会被添加到测例代码中
+///    # use fern_sim::Terrarium;
+///    # use std::time::Duration;
+///    # let mut tm = Terrarium::new();
+///    tm.apply_sunlight(Duration::from_secs(60));
+
+/// Upload all local terrariums to the online gallery. ///
+/// ```no_run
+/// let mut session = fern_sim::connect();
+/// session.upload_all();
+/// ```
+
+/// ```ignored
+/// let mut session = fern_sim::connect();
+/// session.upload_all();
+/// ```
+
+

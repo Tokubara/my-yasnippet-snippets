@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: rsync
+# key: 
+# --
+rsync -rLptgoDv --exclude '*.swp' --update -e "ssh -p 22" 192.168.3.84:Downloads
+
+rsync -rLptgoDv mgls.dll MentorKG.exe patch64_dll.bat --update -e "ssh -p 22" 192.168.3.84:Downloads
+
+# replace 

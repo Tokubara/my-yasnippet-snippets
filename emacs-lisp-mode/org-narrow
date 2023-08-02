@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-narrow
+# key: 
+# --
+(org-narrow-to-subtree)

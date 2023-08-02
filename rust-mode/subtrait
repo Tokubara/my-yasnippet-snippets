@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: subtrait
+# key: 
+# --
+/// Someone in the game world, either the player or some other
+/// pixie, gargoyle, squirrel, ogre, etc.
+trait Creature: Visible {
+    fn position(&self) -> (i32, i32);
+    fn facing(&self) -> Direction;
+    // ...
+}
+// 也可以是多个
+trait Ord: Eq + PartialOrd<Self> {
+fn cmp(&self, other: &Self) -> Ordering;
+}
+
+impl Creature for Broom {
+// ...
+}
+impl Visible for Broom {
+// ...
+}

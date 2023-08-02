@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: conditional-breakpoint
+# key: 
+# --
+$DB::single = 1 if ($_ =~ glew);

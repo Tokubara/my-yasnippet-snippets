@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: swap
+# key: 
+# --
+use std::mem;
+mem::swap(&mut x, &mut y);

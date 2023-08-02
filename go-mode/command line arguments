@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: command line arguments
+# key: 
+# --
+// os.Args[0] 是 program name
+os.Args[1]

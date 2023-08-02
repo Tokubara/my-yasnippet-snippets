@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: apt-remove-delete
+# key: 
+# --
+sudo apt remove ace-of-penguins
+sudo apt purge <package-name> # 后者删除得更彻底
+apt-get install --only-upgrade cmake # apt upgrade(package)
+apt-file search --regexp 'bin/ip$'
+sudo apt install ./file.deb7 # 必须有 ./
+apt-cache show klayout # info
+dpkg -l # list packages installed

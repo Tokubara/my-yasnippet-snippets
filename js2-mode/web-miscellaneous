@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: web-miscellaneous
+# key: 
+# --
+location.href // Window 的 property, 当前网站 url
+location.hostname

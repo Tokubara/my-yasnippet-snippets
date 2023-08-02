@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: consult--ref-tag--in-source-block
+# key: 
+# --
+(defun my-souce-code-tag-jump ()
+  (interactive)
+  (let* ((thing (org-no-properties (thing-at-point 'list)))
+         (ref-text (nth 1 (split-string (substring thing 1 -1) ":")))
+         (target (concat "[[(" ref-text ")]]")))
+    (consult-line target)))
+

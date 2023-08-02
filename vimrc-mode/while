@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: while
+# key: 
+# --
+while len(animals) > 0 
+endwhile

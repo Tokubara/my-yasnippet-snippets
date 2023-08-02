@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: map
+# key: 
+# --
+my @formatted_data = map { &big_money($_) } @data;

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: aggregate
+# key: 
+# --
+SELECT AVG(s.gpa), e.cid FROM enrolled AS e, student AS s WHERE e.sid = s.sid GROUP BY e.cid;

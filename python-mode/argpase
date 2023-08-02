@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: argpase
+# key: 
+# --
+parser = argparse.ArgumentParser(description='convert between lunar and solar calendar')
+parser.add_argument('date', metavar='date', type=str, nargs='?', default=dt.datetime.today().strftime(DATE_FORMAT), # default, nargs 配合默认为今天, ? 就是可以有一个也可以没有, 没有给这个参数就是 default, 给了参数 default 就不起作用了
+                    help='date to convert')
+parser.add_argument('-s', dest='is_solar', action='store_const',
+                    const=True, default=False,
+                    help='input date is solar') # 选项默认为 False, 可以为 True, 配合 action 与 const, default

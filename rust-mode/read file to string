@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read file to string
+# key: 
+# --
+let input = std::fs::read_to_string(path)?;

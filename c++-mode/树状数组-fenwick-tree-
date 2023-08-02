@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: 树状数组-fenwick-tree-
+# key: 
+# --
+int ask(int x){
+  int ans=0;
+  for (;x;x-=(x&(-x))) ans+=cnt[x];
+  return ans;
+}
+
+void add(int x,int y){
+  for (;x<=n;x+=x&-x)cnt[x]+=y;
+}

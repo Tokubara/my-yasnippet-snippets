@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pair
+# key: 
+# --
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+\norm[size]{}
+\norm{}
+\norm*{}

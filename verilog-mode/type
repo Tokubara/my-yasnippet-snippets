@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: type
+# key: 
+# --
+reg[2:0] a , b, c;
+wire a, b, c; // 默认 1 bit
+// memory array
+reg mem1bit[0:1023]; // 1 bit
+reg [7:0] membyte[0:1023]; // 8 bit
+// constant
+parameter port_id = 5; //Definesaconstantport-id

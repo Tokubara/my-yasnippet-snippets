@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: m command
+# key: 
+# --
+# scalar context, 匹配返回 1, 否则返回 0
+# list context, 且没有/g, 那么返回list =($1, $2, ...)= . 如果 pattern 没有 group, 有返回 =(1)= (只有一个元素 1 的列表). 没有匹配返回 =()= .
+# list context, 有 /g flag: 无组返回全部匹配, 有组全部组.
+

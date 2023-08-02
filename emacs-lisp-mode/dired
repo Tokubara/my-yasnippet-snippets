@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dired
+# key: 
+# --
+(dired default-directory) ; open dired buffer

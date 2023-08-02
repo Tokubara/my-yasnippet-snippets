@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: string
+# key: 
+# --
+(substring "abc" 0 3)
+(substring "abc" 0 -1) ; 去掉最后一个字符
+; parse, convert to/from integer
+(number-to-string 23)
+(string-to-number "23")
+(string-equal system-type "windows-nt") ; compare string
+(string= "abc" "bca") ; string xequal
+(string-match-p (regexp-quote "://") str)
+(regexp-quote "**") ; fix string 表示 "**" 是 fix string 而不是 regex
+(string-prefix-p "compile_2" (buffer-name buffer)) ; starts with
+(string-trim "   abc  ") ; strip
+(split-string (substring thing 1 -1) ":")
+"\"" ; double quote

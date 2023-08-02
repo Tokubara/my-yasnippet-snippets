@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: command-line-arguments
+# key: 
+# --
+int main(int argc, char **argv)

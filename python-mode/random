@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: random
+# key: 
+# --
+import random
+random.random() # (0,1) 之间
+random.uniform(a,b)
+randint(a, b) # b 是闭区间v

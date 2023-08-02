@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: print-field
+# key: 
+# --
+awk -F':' '{print $2}'

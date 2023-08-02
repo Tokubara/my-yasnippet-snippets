@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tuple
+# key: 
+# --
+var tuple = (1,2)
+tuple._1 // 第一个
+var (a,b) = tuple // Destructuring, 不能省略 ()

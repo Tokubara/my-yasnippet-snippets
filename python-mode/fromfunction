@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: fromfunction
+# key: 
+# --
+def w_matrix(n):
+  q = round(((P - 1)/n))
+  f=lambda i, j: pow(r,round(q*int(i)*int(j)),P)
+  w=np.fromfunction(np.vectorize(f), (n,n),dtype=np.int32)
+  return w

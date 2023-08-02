@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: combine na
+# key: 
+# --
+pmin(a, b, c, na.rm = TRUE)

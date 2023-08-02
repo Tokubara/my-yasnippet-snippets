@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: printf-buffer-with-specified-length-size
+# key: 
+# --
+printf("%.*s",len,buf);

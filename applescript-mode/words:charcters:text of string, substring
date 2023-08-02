@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: words:charcters:text of string, substring
+# key: 
+# --
+every character of "一个字符串"
+characters of "一个字符串"
+words of "一个字符串"
+
+characters 3 through 5 of "A String" --结果:{"S", "t", "r"}
+words 3 through 5 of "我的名字叫张三" --结果:{"名字", "叫", "张三"}
+
+character 3 of "This is a text"
+word 2 of "This is a text"
+
+-- substring
+text 3 through 5 of "A String"

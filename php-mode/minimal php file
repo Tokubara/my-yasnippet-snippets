@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: minimal php file
+# key: 
+# --
+<?php
+?>

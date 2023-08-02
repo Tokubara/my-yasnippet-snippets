@@ -1,0 +1,34 @@
+# -*- mode: snippet -*-
+# name: String
+# key: 
+# --
+.split(',') // String[]
+.length()
+.substring(beginIndex)
+.substring(int beginIndex, int endIndex)
+.charAt(0) // 返回 char 类型
+
+public boolean isEmpty()
+public int length()
+public String substring(int beginIndex)
+public String substring(int beginIndex, int endIndex)
+public int indexOf(int ch)
+public int indexOf(String str)
+public int lastIndexOf(int ch)
+public int lastIndexOf(String str)
+public boolean contains(CharSequence s)
+public boolean startsWith(String prefix)
+public boolean endsWith(String suffix)
+public boolean equals(Object anObject)
+public boolean equalsIgnoreCase(String anotherString)
+public int compareTo(String anotherString)
+public int compareToIgnoreCase(String str)
+public String toUpperCase()
+public String toLowerCase()
+public String concat(String str)
+public String replace(char oldChar, char newChar)
+public String replace(CharSequence target, CharSequence replacement)
+public String trim()
+public String[] split(String regex) // 参数是 regex, 比如用 . 分隔就得写成 \\.
+
+String.join(",",List<String>)

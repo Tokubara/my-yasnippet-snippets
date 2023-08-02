@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: for
+# key: 
+# --
+for var in 1 2 3 4 5
+for i in {0..10..2} # 包含 10
+for i in $(seq 1 2 20)
+for (( initializer; condition; step ));
+do
+  shell_COMMANDS
+done
+
+i=1
+for file in compile_2_*.org; do
+  title=$(echo "$file" | sed -E 's/^compile_2_(.*).org$/\1/')
+  ((i++))
+done
+

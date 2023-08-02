@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: argv--argc
+# key: 
+# --
+import sys
+sys.argv[1] # [0] 是 script file path
+# python 没有直接的 argc
+len(sys.argv) # 相当于 argv

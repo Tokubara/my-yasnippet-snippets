@@ -1,0 +1,44 @@
+# -*- mode: snippet -*-
+# name: string
+# key: 
+# --
+let s = "Hello, world";
+s.length
+s.substring(1,4) // 右开
+s.slice(1,4) // 与 substring 相同
+s.slice(-3) // -3 是倒数第 3 个字符 r, 一直到最后
+s.split(", ") // => ["Hello", "world"]: split at delimiter string
+s.indexOf("l") // l 出现的第一个 index, 2
+s.indexOf("l", 3) // => 3 这个参数的含义是从 index 3 开始(包括 3) 查找
+s.indexOf("zz") // 没查找到返回 -1
+s.lastIndexOf("l") // => 10: position of last letter l
+// Boolean searching functions in ES6 and later
+s.startsWith("Hell")
+s.endsWith("!")
+s.includes("or") // contain
+// Creating modified versions of a string
+s.replace("llo", "ya")
+s.toLowerCase()
+s.toUpperCase()
+s.normalize()
+s.normalize("NFD")
+// Unicode NFC normalization: ES6
+// NFD normalization. Also "NFKC", "NFKD"
+
+// Inspecting individual (16-bit) characters of a string
+s.charAt(0)
+s.charAt(s.length-1)
+s.charCodeAt(0)
+s.codePointAt(0)
+// => 72: 16-bit number at the specified position // => 72: ES6, works for codepoints > 16 bits
+// String padding functions in ES2017
+"x".padStart(3) "x".padEnd(3) "x".padStart(3, "*") "x".padEnd(3, "-")
+// => " x": add spaces on the left to a length of 3 // => "x ": add spaces on the right to a length of 3 // => "**x": add stars on the left to a length of 3 // => "x--": add dashes on the right to a length of 3
+// Space trimming functions. trim() is ES5; others ES2019
+" test ".trim()
+" test ".trimStart()
+" test ".trimEnd()
+// => "test": remove spaces at start and end
+// => "test ": remove spaces on left. Also trimLeft // => " test": remove spaces at right. Also trimRight
+// Miscellaneous string methods
+s.concat("!") // => "Hello, world!": just use + operator instead "<>".repeat(5) // => "<><><><><>": concatenate n copies. ES6

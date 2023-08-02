@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: get-selected-region-lines-number
+# key: 
+# --
+(defun get-selected-lines ()
+  (interactive)
+  (when (evil-visual-state-p) ; Check if in visual mode
+    (let ((start-line (line-number-at-pos (region-beginning)))
+          (end-line (if (equal "\n" (buffer-substring-no-properties (region-end) (1+ (region-end) ) ) )   (line-number-at-pos (1- (region-end) )) (line-number-at-pos  (region-end) )) ))
+      (message "Start line: %d, End line: %d" start-line end-line))))

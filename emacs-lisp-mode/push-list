@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: push-list
+# key: 
+# --
+(push "Stephanie" list-of-names) ; 不用加 quote, 会改变 list, 放到队首

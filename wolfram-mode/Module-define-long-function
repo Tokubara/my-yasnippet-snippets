@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Module-define-long-function
+# key: 
+# --
+walk1D[t_] := Module[{dirs = {-1, 1}, steps}, steps = RandomChoice[dirs, t]; Accumulate[steps]]

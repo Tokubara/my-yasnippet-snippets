@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: process
+# key: 
+# --
+Get-Process # list of process
+Get-Process -Id $pid # 只看 $pid 这个进程的信息

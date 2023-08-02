@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: plot
+# key: 
+# --
+p = Plot[Sin[x], {x, 0, 2 π}, PlotLabel -> "sin(x)", AxesLabel -> {"x", "y"}];

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: python-vim-function-wrapper-command
+# key: 
+# --
+function! MakeOrgTable()
+python << EOF
+import vim
+vim.current.buffer[:]=make_table(vim.current.buffer)
+EOF
+endfunction
+
+call execute("py3file $MDOT/make_table.py")
+command! MakeTable :call MakeOrgTable()

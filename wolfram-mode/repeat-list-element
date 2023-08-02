@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: repeat-list-element
+# key: 
+# --
+ConstantArray[1, {2,3}] (*shape 是 (2,3)*)
+Join[ConstantArray[1,{6}],ConstantArray[2,{6}]] (*concat*)

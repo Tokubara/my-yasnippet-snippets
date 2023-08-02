@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: numpy-create
+# key: 
+# --
+import numpy as np
+a=np.tile(np.arange(4).reshape(-1,1),(1,4))
+np.zeros((1,2)) # zeros(shape, dtype=float, order='C')
+np.full((200,200),50)
+np.empty((200,200)) # uin

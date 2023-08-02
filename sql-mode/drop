@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: drop
+# key: 
+# --
+-- Remove the entire tablename1 table.
+DROP TABLE tablename1;

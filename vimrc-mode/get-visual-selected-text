@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get-visual-selected-text
+# key: 
+# --
+let link = printf("%s&pattern=%s", link, selected_text)

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: header-include-path
+# key: 
+# --
+# 先clang -v, 再看给出的 include path, 然后是这段脚本
+for path in ${a[*]}; do
+if [[ -n `ls $path | grep -F 'stdarg.h' ` ]];then
+echo $path
+fi
+done

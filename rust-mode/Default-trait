@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Default-trait
+# key: 
+# --
+use std::default::Default;
+
+impl Default for String {
+    fn default() -> String {
+        String::new()
+    }
+}

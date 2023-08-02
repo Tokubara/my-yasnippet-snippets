@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: org-hugo
+# key: 
+# --
+:PROPERTIES:
+:EXPORT_FILE_NAME: TensorFHE-HadaMult
+:EXPORT_TITLE: 对 TensorFHE Hada-Mult kernel 意义的疑惑
+:EXPORT_OPTIONS: toc:4
+:END:
+
+#+hugo_base_dir: ../blog

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: org-insert-clipboard-image
+# key: 
+# --
+(defun org-insert-clipboard-image ()
+(interactive)
+(let ((image_basename (format-time-string "Pasted_image_%4Y%m%d%H%M%S.png")))
+(shell-command (concat "pngpaste /Users/quebec/notes/vx_attachments/" image_basename))
+(insert (concat "[[file:../vx_attachments/" image_basename "]]"))
+(org-display-inline-images)
+)
+)

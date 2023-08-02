@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: filename-path
+# key: 
+# --
+(delete-file filename) ; rm(remove) file
+
+; path
+(buffer-file-name) ; current buffer file name
+(file-name-nondirectory "") ; basename
+(file-name-directory "") ; directory
+(file-name-extension "a.txt")
+(expand-file-name "~")
+(file-name-sans-extension "/tmp/foo.txt") ; /tmp/foo
+(file-name-with-extension "foo.txt" "bin") ; .bin
+(file-name-base "/tmp/foo.txt") ; foo, basename
+(file-relative-name "/tmp/foo" "/tmp") ; "foo", relative to directory
+(make-temp-name "/tmp/foo-") ;  "/tmp/foo-T3HusY" 这只是产生了而已, 并没有创建文件
+(file-name-concat "/tmp" "foo" "bar/" "zot") ; bar 后面有没有 / 结果都会是 /tmp/foo/bar/zot
+(substitute-in-file-name "$HOME/foo") ; Substitute environment variables
+(file-name-as-directory "/tmp/foo") ; "/tmp/foo/"
+(directory-file-name "/tmp/foo/") ; "/tmp/foo" 

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: date-GNU-
+# key: 
+# --
+date +"Pasted_image_%Y%m%d%H%M%S.png"
+date +"%Y-%m-%d %H:%M:%S"

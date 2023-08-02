@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sleep
+# key: 
+# --
+import time
+time.sleep(random.uniform(0.8,1.5))

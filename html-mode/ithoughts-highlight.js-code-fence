@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ithoughts-highlight.js-code-fence
+# key: 
+# --
+<head>
+   <link rel="stylesheet" href="file:///Users/quebec/resources/highlight/styles/a11y-light.min.css">
+   <script src="file:///Users/quebec/resources/highlight/highlight.min.js"></script>
+   <script>
+     hljs.highlightAll();
+   </script>
+ </head>
+

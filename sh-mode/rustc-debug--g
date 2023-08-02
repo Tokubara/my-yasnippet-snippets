@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rustc-debug--g
+# key: 
+# --
+rustc -g --emit="obj,link"

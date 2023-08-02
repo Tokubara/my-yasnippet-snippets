@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: watchman-log
+# key: 
+# --
+/usr/local/var/run/watchman/quebec-state/log

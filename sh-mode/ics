@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ics
+# key: 
+# --
+cd /opt/code_chap_4_student/exp_4_3_fast_style_transfer_train_student
+cd /opt/code_chap_4_student/env/
+. env.sh

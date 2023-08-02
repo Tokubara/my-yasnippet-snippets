@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pdf-toc
+# key: 
+# --
+z PDF
+ln -s -f "/Users/quebec/Downloads/Mining_of_Massive_Datasets copy.pdf" toc.pdf
+ln -s -f "/Users/quebec/Downloads/Mining_of_Massive_Datasets.pdf" tar.pdf
+bash Run.sh

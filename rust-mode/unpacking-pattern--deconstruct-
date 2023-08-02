@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: unpacking-pattern--deconstruct-
+# key: 
+# --
+let Track { album, track_number, title, .. } = song; // ...unpack a function argument that's a tuple
+fn distance_to((x, y): (f64, f64)) -> f64 { ... }
+for (id, document) in &cache_map

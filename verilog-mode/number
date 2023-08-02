@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: number
+# key: 
+# --
+4'b1111
+// d/D/o/O/b/B/h/H, 大小写都可
+// digit 从 0 到 f
+// 如果没给 baseformat, 默认 10 进制
+// 如果没有给 size, 默认与 simulator- and machine-specific, at least 32

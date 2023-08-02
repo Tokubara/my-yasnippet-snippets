@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 小根堆
+# key: 
+# --
+priority_queue<type , vector<type>, std::greater>

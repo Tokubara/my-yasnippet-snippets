@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cwd
+# key: 
+# --
+use Cwd qw(abs_path);
+my $path = getcwd(); # cwd

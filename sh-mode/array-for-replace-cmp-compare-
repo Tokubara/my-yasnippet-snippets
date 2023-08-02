@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: array-for-replace-cmp-compare-
+# key: 
+# --
+file_list=(ls ~/notes/*_export.org)
+for file in ${file_list[@]}; do
+   another_file=${file/_export/}
+   if -e $another_file && ! cmp $file $another_file &> /dev/null ; then
+      echo $file
+   fi
+done

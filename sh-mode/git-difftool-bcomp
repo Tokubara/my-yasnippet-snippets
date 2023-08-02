@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: git-difftool-bcomp
+# key: 
+# --
+git difftool -d --no-symlinks

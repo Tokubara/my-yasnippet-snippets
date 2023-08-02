@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: disassemble-with-source-code
+# key: 
+# --
+objdump -S -l -d

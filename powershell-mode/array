@@ -1,0 +1,52 @@
+# -*- mode: snippet -*-
+# name: array
+# key: 
+# --
+# create
+$myArray = @() # 不觉得这个有用, 因为之后也不能再添加元素
+$myArray = [Object[]]::new(10)
+$myGreetings = "Hello world", "Hello sun", "Hello moon"
+$myGreetings = @("Hello world", "Hello sun", "Hello moon")
+$myGreetings = @(     
+"Hello world"     
+"Hello sun"     
+"Hello moon"  )
+# type 不需要相同
+$myThings = "Hello world", 2, 34.23, (Get-Date)
+
+# Arrays with a type
+[Int32[]]$myNumbers = 1, 2, $null, 3.45
+# 会做类型转换, $null 转换为 0, 不能转换就报错
+
+$mergedArray = $firstArray + $secondArray
+# 这种 merge 写法很像 perl
+$mergedArray = @(     Get-Process     
+'someString'     
+$firstArray )
+
+# range
+1..5 # 闭区间 array, 会包含 5
+
+# access
+$array[0] # index 从 0 开始
+$array[-1] # last item
+$myArray[2..4] 
+$myArray[-1..-5]
+$myArray[-5..-1]
+$myArray[1..3+5]
+
+# find
+$index = $myArray.IndexOf(5) # 不存在返回 -1
+$myArray[$index]
+
+# filter
+$myArray -gt 5
+$myArray -lt 3
+$myArray -gt 3 -lt 7 # 可以 chain
+'one', 'two', 'three' -like '*e*'
+
+$myArray | Where-Object { $_ -gt 3 -and $_ -lt 7 }
+$myArray.Where{ $_ -gt 3 -and $_ -lt 7 }
+
+# termine 有误
+1 -in $array  # => True

@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: use-path
+# key: 
+# --
+// #### relative ####
+use super::AminoAcid;
+// super 是父 module, 因此这是在 use 兄弟 module
+
+use synthesis::synthesize;
+// synthesis 是当前 module 的一个子 module.
+
+use self::AminoAcid::*; 和 use AminoAcid::*; 是一样的.
+// self 就是当前 module
+
+use crate::proteins::AminoAcid;
+// 也可以从 crate 开始, crate 是这个 crate 的 root
+
+// #### absolute ####
+use ::image::Pixels

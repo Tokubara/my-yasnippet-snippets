@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: create matrix whose element is function of indices(i,j)
+# key: 
+# --
+y,x=meshgrid(0:(N-1), 0:(M-1)); % 第一个参数是需要重复的行, 第一个返回是重复行, 第二个参数是需要重复的行, 第二个返回是重复列, 因此要反过来写 y,x 而不是 x,y, 这样 y 保存列号, x 保存行号
+exp(-2*pi*1i*(u*x/M+v*y/N))

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mosfet--2-
+# key: 
+# --
+vtn = 0.43; vdsatn = 0.63; kntick = 115*^-6;
+vtp = -0.4; vdsatp = -1; kptick = -30*^-6;
+vm = 1.25; vdd = 2.5;
+wlrationp = -(kptick*vdsatp*(-vdd - vtp - vdsatp/2))/(kntick* vdsatn*(vdd - vtn - vdsatn/2));

@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: mac-symbols
+# key: 
+# --
+⌘(cmd)
+⇧(shift)
+⌃(ctrl)
+⌥(alt)
+⌥(opt)
+←(left)
+→(right)
+↑(up)
+↓(down)
+⇪(caps_lock)
+⎋(esc)
+⏏(eject)
+↵(return)
+⌅(enter)
+⇥(tab)
+⇤(backtab)
+⇞(pgup)
+⇟(pgdown)
+↖(home)
+↘(end)
+␣(space)
+⌫(del)
+⌦(fdel)

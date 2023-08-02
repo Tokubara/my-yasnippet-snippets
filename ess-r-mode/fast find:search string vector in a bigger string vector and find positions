@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fast find:search string vector in a bigger string vector and find positions
+# key: 
+# --
+course_name <-c("网络攻防基础","视觉信息处理与FPGA实现","智能计算系统","高级计算机系统结构","计算机体系结构安全","EDA工具及设计实践-数字集成电路","高级宏观经济学")
+course_id <- raw_1$`课程名称`[sapply(raw_1$`课程名称`, function (x) {x %in% course_name})] # 很快, 2s 内

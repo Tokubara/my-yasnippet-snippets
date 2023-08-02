@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: verilator-make
+# key: 
+# --
+verilator -Wall --trace -cc --exe --build alu.sv tb_alu.cpp
+verilator -Wall -cc alu.sv
+make -C obj_dir -f Valu.mk Valu

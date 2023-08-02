@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: join-merge
+# key: 
+# --
+call MyJoinLines(1, 17, 15, "|")

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tab
+# key: 
+# --
+(let* ((tabs (funcall tab-bar-tabs-function))
+       (tab-number (or current-prefix-arg (1+ (tab-bar--current-tab-index tabs))))
+       (tab-name (alist-get 'name (nth (1- tab-number) tabs))))
+(princ (format "%d %s\n" tab-number tab-name))
+)

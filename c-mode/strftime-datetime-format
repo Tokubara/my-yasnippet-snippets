@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: strftime-datetime-format
+# key: 
+# --
+"Pasted_image_%Y%m%d%H%M%S.png"

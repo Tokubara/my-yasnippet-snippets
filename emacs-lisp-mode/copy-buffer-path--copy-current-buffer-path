@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: copy-buffer-path--copy-current-buffer-path
+# key: 
+# --
+(defun copy-buffer-path ()
+  (interactive)
+    (kill-new (buffer-file-name)))
+(define-key evil-normal-state-map (kbd "\\cc") 'copy-buffer-path)
+(define-key evil-motion-state-map (kbd "\\") nil)

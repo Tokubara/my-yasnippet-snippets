@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: string
+# key: 
+# --
+# Strings are created with " or ' but " is required for string interpolation
+"This is a string."
+'This is also a string.'
+
+# Strings can be added too! But try not to do this.
+"Hello " + "world!"  # => "Hello world!"
+
+# A string can be treated like a list of characters
+"Hello world!"[0]  # => 'H'
+
+# You can find the length of a string
+("This is a string").Length  # => 16
+
+# You can also format using f-strings or formatted string literals.
+$name = "Steve"
+$age = 22
+"He said his name is $name." 
+# => "He said his name is Steve"
+"{0} said he is {1} years old." -f $name, $age 
+# => "Steve said he is 22 years old"
+"$name's name is $($name.Length) characters long."  # 用 $() 嵌入 powershell expression, command expansion, interpolate
+# => "Steve's name is 5 characters long."
+
+# 不是用 \ 来 escape(是 path), 用 ` 来 escape
+"Showing`nEscape Chars" # => new line between Showing and Escape
+"Making`tTables`tWith`tTabs" # => Format things with tabs

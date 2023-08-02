@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: server-recipe
+# key: 
+# --
+taskset -c 0-55 ./run_flow.py -d uart -s synth,floorplan,tapcell,pdn,gplace,resize,dplace,cts,filler,groute,droute,layout -f sky130 -t HS -c TYP -v V1 -l V1 > ../mylog/uart_stdout.txt 2> ../mylog/uart_stderr.txt # bind cores

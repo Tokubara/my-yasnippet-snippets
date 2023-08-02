@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: runnable-example
+# key: 
+# --
+Can you give me a runnable example of nn.softmax in tensorflow v2?

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ubuntu
+# key: 
+# --
+/etc/init.d/ # service directory

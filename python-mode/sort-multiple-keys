@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sort-multiple-keys
+# key: 
+# --
+problem_details_list.sort(key=lambda x: (-x.commit, x.difficulty, x.name))

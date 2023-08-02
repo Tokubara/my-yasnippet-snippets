@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: define-trait
+# key: 
+# --
+trait Write {
+    const GREETING: &'static str = "Hello";
+    type IntoIter: Iterator;
+    const ZERO: Self;
+    const ONE: Self;
+    fn write(&mut self, buf: &[u8]) -> Result<usize>;
+    fn flush(&mut self) -> Result<()>;
+}
+
+
+impl Iterator for Args { type Item = String;
+fn next(&mut self) -> Option<String> {
+// ...
+}
+//...
+}
+
+// use
+<I:Iterator> I::item

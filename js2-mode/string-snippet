@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: string-snippet
+# key: 
+# --
+matches = s.match(/^\((\d+)\.\.\.(\d+)\)$/) // regex, 返回 array, [0] 是整个, [1] 是 capture group 1

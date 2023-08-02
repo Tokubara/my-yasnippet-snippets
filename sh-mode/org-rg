@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-rg
+# key: 
+# --
+rg -i '^\*+ .*'

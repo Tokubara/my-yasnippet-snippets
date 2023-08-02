@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tcl
+# key: 
+# --
+# comment 
+set var abc
+${var}

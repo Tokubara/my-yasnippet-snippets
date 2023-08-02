@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: xxd
+# key: 
+# --
+xxd -s 0x1c0 -l 0x31 -c 16 max.o
+# -s 是 seek, 跳过前 ..., 或者 -0x1c0 就是只看前 0x1c0 个字节, -l 是长度, -c 是一行输出的字节数

@@ -1,0 +1,101 @@
+# -*- mode: snippet -*-
+# name: bit-integer-高精度-
+# key: 
+# --
+struct BigInteger
+{
+    static const int BASE = 100000000; // 尽管这个 BASE 这么大, 还是适用于十进制数, 猜测也适用于任意其它进制
+    static const int WIDTH = 8; // 这个与 BASE 匹配, 取成 8 是因为 int 是 20 亿, 其实 WIDTH=9 对 int 也是够的
+    vector<int> s;
+    BigInteger(long long num = 0) // 这个初始化范围有点小
+    {
+        *this = num;
+    }
+    BigInteger operator=(long long num) // 从低位到高位保存
+    {
+        s.clear();
+        do {
+            s.push_back(num%BASE);
+            num /= BASE;
+        } while (num > 0);
+        return *this;
+    }
+    BigInteger operator=(const string& str)
+    {
+        s.clear();
+        int x;
+        int len=(str.length() - 1)/WIDTH + 1; // 有多少段
+        for (int i = 0;i < len;i++)
+        {
+            int end = str.length() - i*WIDTH; // 这一段结束的 index
+            int start = max(0, end - WIDTH); // 这一段开始的 index, max 处理很重要, 因为这一段长度可能不到 8, 比如这个数的大小是 "12".
+            sscanf(str.substr(start, end - start).c_str(), "%d", &x);
+            s.push_back(x);
+        }
+        // 这几行是我加的, 为了避免前面输出不必要的 0
+        while(!s.empty() && s.back()==0) {
+          s.pop_back();
+        }
+        if(s.empty()) {
+          s.push_back(0);
+        }
+        return *this;
+    }
+    BigInteger operator+(const BigInteger& b) const { // x 可能有多余的 0
+        BigInteger c;
+        c.s.clear();
+        for (int i = 0,g = 0;;i++) //? g 是什么? g 是进位的数
+        {
+            if (g == 0 && i >= s.size() && i >= b.s.size()) // 这个条件非常重要, g==0 这个条件是在处理进位, 另外两个条件就是另外两个数要全部处理完
+                break;
+            int x = g;
+            if (i < s.size()) // 有可能只剩一个数了
+                x += s[i];
+            if (i < b.s.size())
+                x += b.s[i];
+            c.s.push_back(x%BASE); // 必须取模, 可能发生了进位
+            g = x / BASE; // g 只可能为 1 或者 0
+        }
+        return c;
+    }
+    BigInteger operator +=(const BigInteger& b)
+    {
+        *this = *this + b;
+        return *this;
+    }
+    bool operator<(const BigInteger& b)const
+    {
+        if (s.size() != b.s.size())
+            return s.size() < b.s.size();
+        for (int i = s.size() - 1;i >= 0;i--)
+            if (s[i] != b.s[i])
+                return s[i] < b.s[i];
+        return false;
+    }
+    bool operator >(const BigInteger& b)const { return b < *this; }
+    bool operator <=(const BigInteger& b)const { return !(b < *this); }
+    bool operator >=(const BigInteger& b)const { return !(*this < b); }
+    bool operator !=(const BigInteger& b)const { return b < *this || *this < b; }
+    bool operator ==(const BigInteger& b)const { return !(b < *this) && !(*this < b); }
+};
+
+ostream& operator << (ostream &out, const BigInteger& x)
+{
+    out << x.s.back(); // 最高位不需要对齐
+    for (int i = x.s.size() - 2;i >= 0;i--) // 除了最高位以外的都需要对齐
+    {
+        char buf[20];
+        sprintf(buf, "%08d", x.s[i]);
+        for (int j = 0;j < strlen(buf);j++)
+            out << buf[j];
+    }
+    return out;
+}
+istream& operator >> (istream &in, BigInteger& x)
+{
+    string s;
+    if (!(in >> s))
+        return in;
+    x = s;
+    return in;
+}

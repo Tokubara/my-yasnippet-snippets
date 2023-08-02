@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: if-not-exist-copy-cp--file
+# key: 
+# --
+use File::Basename;
+$basename = basename($_);
+$target_dir="/Users/quebec/notes/vx_attachments/";
+if(!(-e "$target_dir/$basename")) {
+  use File::Copy;
+  copy($_, $target_dir);
+}

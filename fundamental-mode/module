@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: module
+# key: 
+# --
+module load cuda/11.1

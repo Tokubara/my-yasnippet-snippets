@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: task
+# key: 
+# --
+task bitwise_oper;
+output [15:0] ab_and,ab_or,ab_xor; //outputs from the task input [15:0]a,b;
+//inputs to the task
+begin
+#delay ab_and=a&b; ab_or=a|b; ab_xor=a^b;
+end
+endtask

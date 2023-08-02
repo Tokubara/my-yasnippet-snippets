@@ -1,0 +1,39 @@
+# -*- mode: snippet -*-
+# name: SR latch
+# key: 
+# --
+// This example illustrates the different components of a module
+// Module name and port list
+// SR-latch module
+module SR_latch (Q, Qbar, Sbar, Rbar);
+//Port declarations
+output Q, Qbar;
+input Sbar, Rbar;
+// Instantiatelower-levelmodules
+// Inthiscase,instantiateVerilogprimitivenandgates
+// Note, how the wires are connected in a cross-coupled fashion.
+nand n1 (Q, Sbar, Qbar);
+nand n2(Qbar, Rbar, Q);
+// endmodule statement
+endmodule
+// Module name and port list
+// Stimulusmodule
+module Top;
+// Declarations of wire, req, and other variables
+wire q, qbar; // output
+reg set, reset;
+// Instantiatelower-levelmodules
+// Inthiscase,instantiateSR-latch
+// Feed inverted set and reset signals to the SR latch
+SR_latch m1(q, qbar, ~set, ~reset);
+// Behavioral block, initial
+initial
+begin
+$monitor($time, "set = %b, reset= %b, q= %b\n",set,reset,q);
+set = 0; reset = 0;
+#5 reset = 1;
+#5 reset = 0;
+#5 set = 1;
+end
+// endmodule statement
+endmodule

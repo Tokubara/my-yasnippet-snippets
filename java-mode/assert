@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: assert
+# key: 
+# --
+assert asserrion
+assert assertion : errorcode;
+assert !changed: "not change";

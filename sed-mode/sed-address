@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: sed-address
+# key: 
+# --
+/regexp/
+addr1,addr2
+n/$(last line)
+addr1,+n
+addr!
+addr~step

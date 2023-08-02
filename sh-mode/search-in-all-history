@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: search-in-all-history
+# key: 
+# --
+git grep -F 'JobTracker' $(git rev-list --all)
+git grep  -F 'combine' $(git rev-list --all -- office.org) -- office.org
+git grep lx $(git rev-list --all -- org.el) -- org.el

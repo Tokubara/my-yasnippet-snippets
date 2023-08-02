@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: emacs-GUI-path
+# key: 
+# --
+/usr/local/Cellar/emacs-mac/emacs-28.1-mac-9.0/Emacs.app/Contents/MacOS/Emacs

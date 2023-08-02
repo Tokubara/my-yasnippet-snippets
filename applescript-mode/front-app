@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: front-app
+# key: 
+# --
+tell application "System Events" to set frontApp to name of first application process whose frontmost is true

@@ -1,0 +1,54 @@
+# -*- mode: snippet -*-
+# name: module--port
+# key: 
+# --
+// module 不需要与文件名同名(貌似是 vhdl 的要求)
+// global clk, global rst 放最前面
+// (3) 相关信号根据时钟, 复位, 使能, 控制端的顺序规划在一起, 同时必须有注释.
+// (4) 所有输入 / 输出, 信号命名等, 都必须严格对齐.
+// (5) 所有信号注释必须全部对齐.
+// (6) 为了解决不同编辑器的兼容, TAB 用 4 个空格来代替. 
+// (7) 禁止使用中文注释.
+
+module Verilog_Template
+(
+// global clock input
+input clk, // 50MHz
+input rst_n, //global reset
+
+//user interface
+output [7:0] led_data //board test led
+); // 这个 ; 不能省略, 否则会在它下一行报错
+endmodule
+
+// port 默认是 wire, input 只能是 wire
+module fullAdder(a, b, cin, sum, cout); //端口声明的开始
+    input a, b, cin;
+    output sum, cout; //端口声明的结束
+    wire a, b, cin; // 默认是 1 位 wire
+    wire sum, cout;
+    assign sum = (a ^ b) ^ cin;
+    assign cout = cin & (a ^ b) | (a & b);
+endmodule // 只有 endmodule 没有 ;
+
+// 端口声明也可以这样写
+
+// parameter, localparam
+module adder_carry_para
+    #(parameter N = 4) (
+         input [N - 1: 0]a, b, output [N - 1: 0]sum, output cout
+     );
+    // 常数声明
+    localparam N1 = N - 1;
+    wire [N: 0]sum_ext;
+    assign sum = ext {1'b0, a} + {1'b0, b};
+    assign sum = sum_ext [N1: 0];
+    assign cout = sum_ext[N];
+endmodule
+
+// 实例化
+//实例化8位加法器
+Adder_carry_para #(.N(8)) unit1 (.a(a8),.b(b8),.sum(sum8),.cout(c8)); //实例化4位加法器
+Adder_carry_para unit2 (.a(a4),.b(b4),.sum(sum4),.cout(c4));
+
+

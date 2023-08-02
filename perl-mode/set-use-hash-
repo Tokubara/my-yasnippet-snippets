@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: set-use-hash-
+# key: 
+# --
+my %set;
+while(<>) {
+  if ($. >= 3) {
+  @nums = /\d+/g;
+foreach (@nums) {
+  $set{$_}+=1;
+}
+  }
+}
+my $key_number = scalar keys %set;
+print "key_number: $key_number\n";

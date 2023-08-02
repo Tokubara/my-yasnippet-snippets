@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: string
+# key: 
+# --
+join(lines, "\n") " join, lines 是 string list
+let link = printf("%s&pattern=%s", link, selected_text) " format string
+str[0:3] " first 4 characters

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: thread-block-synchronize
+# key: 
+# --
+__syncthreads();

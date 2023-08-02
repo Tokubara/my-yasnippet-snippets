@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: Array::Utils-intersection:union:diff:minus
+# key: 
+# --
+use Array::Utils qw(:all);
+ 
+my @a = qw( a b c d );
+my @b = qw( c d e f );
+ 
+# symmetric difference
+my @diff = array_diff(@a, @b);
+ 
+# intersection
+my @isect = intersect(@a, @b);
+ 
+# unique union
+my @unique = unique(@a, @b);
+ 
+# check if arrays contain same members
+if ( !array_diff(@a, @b) ) {
+        # do something
+}
+ 
+# get items from array @a that are not in array @b
+my @minus = array_minus( @a, @b );

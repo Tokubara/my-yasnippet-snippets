@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+for k = 1:5
+    disp(k)
+end
+
+k = 0;
+while (k < 5)
+    k = k + 1;
+end

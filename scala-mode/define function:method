@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: define function:method
+# key: 
+# --
+// function
+def sumOfSquares(x: Int, y: Int = 5): Int = { // 参数类型不可省略, 返回类型有时可以省略
+  val x2 = x * x
+  val y2 = y * y
+  x2 + y2
+}
+// 如果 body 只有一个 expression, 可以生态
+sumOfSquares(3, 4)  // by order
+sumOfSquares(y=10, x=3) // by name
+sumOfSquares(3)  // y 有默认参数
+
+def bark = "Woof, woof!" // 无 (), 因为无参数
+
+def getSquareString(input: Double): String =
+  val square = input * input
+  square.toString

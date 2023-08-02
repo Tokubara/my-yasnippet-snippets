@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: css-selector
+# key: 
+# --
+// case-sensitive
+#id
+.class
+span.fatal.error // span 且有 fatal, error class 的
+p.class
+* // all
+p // all p
+div,p // all div and p
+div p // div 内的 p
+div>p // 父节点为 div 的 p
+div+p // 紧靠 div 的 p
+img + p.caption
+div~p // 前面有 div 的 p
+[async] // 所有具有这个属性的 p
+[attribute=value] // 包含单词(区别就在于必须用空格分隔)
+*[name="x"]
+// 除了 =, ~= 表示包含这个单词, ^= 表示 starts with, $= 表示 ends with, *= 表示包含(contain)
+a[href$='.PDF' i] // i 表示 case-insensitive
+
+
+a:link // 未被访问
+a:visited
+a:active
+a:hover
+input:focus
+
+a:visited:hover:lang(de)
+
+:first-child
+:last-child
+:only-child
+:first-of-type
+:only-of-type
+:nth-child(1)
+
+#ericmeyer > :first-child

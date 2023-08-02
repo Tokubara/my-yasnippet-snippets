@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: list
+# key: 
+# --
+scalar arr # length
+$arr[-1]
+$a[$#a]
+qw/bedrock slate lava/
+@stuff = (@giant, undef, @giant)
+$fred[0] = "yabba";
+(1..100)
+@arr=(0, 2..6, 10, 12)
+(1.7..5.7)
+(5..1)  
+("a".."z", "A".."Z", 0..9)
+(glob("*.jpg"),glob("*.jpeg"),glob("*.png")) # 直接 concat 即可
+# slice
+@days[3,4], @days[3..5]
+
+push(@array, 0); # append
+push @array, 8;
+push @array, 1..10;
+@others = qw/ 9 0 2 1 0 /;
+push @array, @others;
+
+foreach (@all_images) {
+    push(@image_full_paths, "$ARGV/assets/$_\n");
+}

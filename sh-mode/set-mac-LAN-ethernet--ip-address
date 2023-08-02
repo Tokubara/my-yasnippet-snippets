@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: set-mac-LAN-ethernet--ip-address
+# key: 
+# --
+ifconfig en8 192.168.200.4/24

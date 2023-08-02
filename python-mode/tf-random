@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tf-random
+# key: 
+# --
+tf.random_normal([30,60],stddev=0.35) # 第一个参数是 shape

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tictoc
+# key: 
+# --
+library(tictoc)
+tic(" begin")
+# .null<-pmax(join$`2011.x` , join$`2011.y`, na.rm=TRUE)
+toc()

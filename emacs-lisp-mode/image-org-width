@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: image-org-width
+# key: 
+# --
+(setq-local org-image-actual-width '(200))

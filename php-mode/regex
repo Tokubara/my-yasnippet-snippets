@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: regex
+# key: 
+# --
+preg_match(regex string, string) // 返回 true, false

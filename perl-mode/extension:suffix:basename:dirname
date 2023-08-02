@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: extension:suffix:basename:dirname
+# key: 
+# --
+use File::Basename;
+$fullname="/Users/quebec/box/markdown2latex/out/error.tex";
+($name,$path,$suffix) = fileparse($fullname,qr/\.[^. ]+/);
+print "$name, $path, $suffix\n";

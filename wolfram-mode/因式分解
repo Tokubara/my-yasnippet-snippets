@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 因式分解
+# key: 
+# --
+Factor[x^9 - 1]

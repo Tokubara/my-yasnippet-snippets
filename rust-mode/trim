@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: trim
+# key: 
+# --
+let text = " ponies \n giraffes\niguanas \nsquid".to_string();
+let v: Vec<&str> = text.lines()  // 得到的是  Vec<&str>, lines 是 &self
+.map(str::trim) // trim 也是 &self
+.collect();

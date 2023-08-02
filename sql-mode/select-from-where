@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: select-from-where
+# key: 
+# --
+SELECT DISTINCT prod_id, prod_price, prod_name, vend_name + '(' + vend_country + ')', quantity*item_price, s.name AS expanded_price
+FROM Products, enrolled AS e, student AS s
+WHERE (NOT (Country = "Germany" AND vend_id  IN ('DLL01','BRS01')) ) prod_price IS NULL OR prod_price between 5 and 10 AND cust_contact LIKE '_[JM]%'
+ORDER BY prod_price DESC, prod_name LIMIT 5;
+-- WHERE 必须紧靠 table name
+-- DISTINCT 在 select 的 column names 之前, 对所有变量起作用

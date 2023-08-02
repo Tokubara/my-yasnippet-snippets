@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: wget
+# key: 
+# --
+wget -O output_filepath url
+# -o logfilepath

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: main
+# key: 
+# --
+public class SortMergeJoin {
+    public static void main(String[] args){
+      // for(String arg: args)
+      // System.out.println(arg); 
+      // 一一处理这 4 个参数
+      String R_path = args[0].substring(2);
+      String S_path = args[1].substring(2);
+    }
+
+}
+// 其中 args[0] 不是 program name, 就是第一个参数

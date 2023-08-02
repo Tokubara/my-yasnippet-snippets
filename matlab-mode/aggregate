@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: aggregate
+# key: 
+# --
+sum(A,"all")
+sum(A,1) % 列和
+sum(A,2) % 行和
+max(A,[],"all")
+min(A,[],"all")
+any(A<0,"all")
+all(A>=0,"all")

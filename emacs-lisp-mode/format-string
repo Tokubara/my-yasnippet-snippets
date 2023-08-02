@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: format-string
+# key: 
+# --
+(format "Hello %s!\n" "visitor")

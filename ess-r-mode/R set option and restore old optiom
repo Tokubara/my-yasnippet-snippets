@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: R set option and restore old optiom
+# key: 
+# --
+oldw <- getOption("warn")
+options(warn = -1)
+# [your "silenced" code]
+options(warn = oldw)

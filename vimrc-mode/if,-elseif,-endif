@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: if,-elseif,-endif
+# key: 
+# --
+if len(lines) == 0
+    return ''
+endif

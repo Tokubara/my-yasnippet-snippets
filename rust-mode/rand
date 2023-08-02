@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: rand
+# key: 
+# --
+thread_rng
+pub fn thread_rng() -> ThreadRng
+ThreadRng 是一个 struct
+
+thread_rng().gen::<i32>()
+A reference to the thread-local generator
+
+An instance can be obtained via thread_rng or via ThreadRng::default().
+
+[docs.rs/rand/latest/rand/trait.Rng.html][1]
+
+还有 [stackoverflow.com/questions/26033976/how-do-i-create-a-vec-from-a-range-and-shuffle-it][2] 这里的回答.
+
+[1]: https://docs.rs/rand/latest/rand/trait.Rng.html
+[2]: https://stackoverflow.com/questions/26033976/how-do-i-create-a-vec-from-a-range-and-shuffle-it

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: convert savely
+# key: 
+# --
+use std::convert::TryFrom;
+usize::try_from(a).unwrap();

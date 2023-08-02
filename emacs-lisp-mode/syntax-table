@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: syntax-table
+# key: 
+# --
+(modify-syntax-entry ?_ "w" c++-mode-syntax-table)

@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: platform-dependent-if
+# key: 
+# --
+if(WIN32)
+    # for Windows operating system in general
+endif()
+if(APPLE)
+    # for MacOS X or iOS, watchOS, tvOS (since 3.10.3)
+endif()
+if(UNIX AND NOT APPLE)
+    # for Linux, BSD, Solaris, Minix
+endif()
+if(WIN32)
+    target_link_libraries(${PROJECT_NAME} bioutils wsock32)
+else
+    target_link_libraries(${PROJECT_NAME} bioutils)
+endif()

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mkdir
+# key: 
+# --
+(unless (file-exists-p "fig") (make-directory "fig"))

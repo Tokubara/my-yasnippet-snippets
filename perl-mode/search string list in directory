@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: search string list in directory
+# key: 
+# --
+foreach (@file_list) {
+  if(system("rg -q -F /$_")) {
+    print "$_\n";
+    rename("/Users/quebec/notes/vx_attachments/$_" , "/Users/quebec/notes/trash/$_");
+  }
+}

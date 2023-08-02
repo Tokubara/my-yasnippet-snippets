@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: array
+# key: 
+# --
+Array[String]
+a=Array(3, 9, 8, 13, 2, 5, 4)
+a(0)

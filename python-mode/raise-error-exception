@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: raise-error-exception
+# key: 
+# --
+raise Exception("not find") # Exception 是所有异常错误类的父类
+raise NotImplementedError("")
+raise TypeError("")
+raise ValueError("")

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: matrix-sum
+# key: 
+# --
+Total[List,{2}] (*row sum*)
+Total[List] (*column sum*)

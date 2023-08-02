@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Box
+# key: 
+# --
+let b = Box::new(t)
+
+// Box 配合 trait object 用很常见
+fn make_shape(shape: &str) -> Box<dyn Shape> {
+    Box::new(match shape {
+        "circle" => Circle::new(),
+        "triangle" => Triangle::new()    
+        })
+}

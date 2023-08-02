@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ics
+# key: 
+# --
+scipy.misc.imread(style_path, mode='RGB')
+scipy.misc.imsave(out_path, uint8 类型的 array) # 从 org-protocol://open-file?file=/Users/quebec/Playground/ics-lab/lab3/exp_4_2_fast_style_transfer_infer_student/src/utils.py&pattern=def save_img 实现来看, 必须要转成 int

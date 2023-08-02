@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: write-json-file-from-dict
+# key: 
+# --
+path=""
+with open(path, 'w', encoding='utf8') as f:
+    dic = {
+    }
+    f.write(json.dumps(dic, indent=2))

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: system
+# key: 
+# --
+system 'tar', 'cvf', $tarfile, @dirs;
+system 'ls -l $HOME';

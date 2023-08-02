@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: trash-current-buffer-file
+# key: 
+# --
+(defun my-move-to-trash ()
+(interactive)
+(if (y-or-n-p "Trash this file?")
+    (progn
+        (setq this-buffer buffer-file-truename)
+        (move-file-to-trash (buffer-file-name))
+        (kill-current-buffer)
+        (message "%s was trashed" this-buffer))) nil)

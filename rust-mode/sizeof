@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sizeof
+# key: 
+# --
+use std::mem::size_of;
+assert_eq!(size_of::<Ordering>(), 1);

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: import
+# key: 
+# --
+	import (
+		"crypto/rand"
+		mrand "math/rand" // alternative name mrand avoids conflict
+	)

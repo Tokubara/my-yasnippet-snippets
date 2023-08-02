@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: 
+# --
+// not: ~(不是 !), 按位取反也是这个

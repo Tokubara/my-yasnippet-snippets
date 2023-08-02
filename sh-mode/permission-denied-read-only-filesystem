@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: permission-denied-read-only-filesystem
+# key: 
+# --
+sudo mount -u -w /

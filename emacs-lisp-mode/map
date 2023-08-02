@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: map
+# key: 
+# --
+(mapcar 'hello list-of-names) ; 很接近我们想的 map, 返回是等长 list, 第二个参数是 SEQUENCE, 可以是 list/vector/string
+(mapc 'hello list-of-names) ; 类似 mapcar, 区别在于你用了 mapc 那就说明你是为了它的 side effect 来的, 而不是为了它的值

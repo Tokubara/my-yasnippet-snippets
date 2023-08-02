@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: if-else-if
+# key: 
+# --
+% Conditional statements (the parentheses are optional, but good style)
+if (a > 23)
+    disp('Greater than 23')
+elseif (a == 23)
+    disp('a is 23')
+else
+    disp('neither condition met')
+end

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: async-reset
+# key: 
+# --
+always@(posedge clk or negedge rst_n)
+if(!rst_n) begin
+  psum_r <= 32'h0;
+end else if(vld_i) begin
+  psum_r <= psum_d;
+end

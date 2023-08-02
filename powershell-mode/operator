@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: 
+# --
++,-,*
+/ # always return float, 比如 [int]5 / [int]3       # => 1.66666666666667
+%
+
+# ternary operator
+0 ? 'yes' : 'no'

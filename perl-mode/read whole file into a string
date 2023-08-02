@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: read whole file into a string
+# key: 
+# --
+my $file = "index.html";
+my $document = do {
+    local $/ = undef;
+    open my $fh, "<", $file
+        or die "could not open $file: $!";
+    <$fh>;
+};

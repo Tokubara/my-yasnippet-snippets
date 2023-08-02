@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: debugger
+# key: 
+# --
+# perl -d ./perl_debugger.pl
+$DB::single = 1 if ($_ =~ glew);

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: prototype
+# key: 
+# --
+Array.isPrototypeOf(EZArray) // 是在判断 Array 是不是 EZArray 的 prototype

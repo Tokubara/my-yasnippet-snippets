@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: write-binary-file
+# key: 
+# --
+f=open("tmp.bin","wb")
+byte_array=bytearray([0xb8,0x34,0x12,0x00,0x00])
+f.write(byte_array)
+f.close()

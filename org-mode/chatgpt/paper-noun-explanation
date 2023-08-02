@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: paper-noun-explanation
+# key: 
+# --
+Following previous work (Brown et al., 2020), we consider zero-shot and few-shot tasks, and report results on a total of 20 benchmarks.
+This is a sentence in a paper about a LLM. What's zero-shot and few-shot tasks?

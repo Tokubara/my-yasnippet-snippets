@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: 范数(norm)
+# key: 
+# --
+\Vert \Vert_{2}
+\lVert \rVert
+\| \|

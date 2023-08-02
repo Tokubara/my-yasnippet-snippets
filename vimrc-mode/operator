@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: operator
+# key: 
+# --
++=
+.= " string concat
+. " string concat
+: " slice operator, 右边

@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: algorithm-template
+# key: 
+# --
+#include <cstdio>
+#include <cassert>
+#include <algorithm>
+#include <functional>
+#include <cstdint>
+#include <cstring>
+#include <utility>
+#include <tuple>
+#include <vector>
+#include <list>
+#include <queue>
+#include <deque>
+#include <array>
+#include <cmath>
+using namespace std;
+
+typedef long long LL;
+typedef pair<int, int> pp;
+
+int main() {
+  freopen("input.txt", "r", stdin);
+  return 0;
+}

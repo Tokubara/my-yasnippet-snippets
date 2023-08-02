@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: list
+# key: 
+# --
+(add-to-list 'foo 'c)
+(car list-of-names) ; first
+(cdr list-of-names) ; 除了 first 的剩下所有
+(nth 3 '(0 1 2 3 4 5)) ; 3
+(member "计组.org" '("computer_architecture.org" "isa_x86_mips_riscv_assembly.org" "计组.org" "计算机体系结构_胡伟武.org")) ; if element in list, return non-nil
+; memq, 类似, 但比较用的是 eq 而不是 equal

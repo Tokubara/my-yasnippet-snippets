@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: sub-of-number-binary
+# key: 
+# --
+integer = 9;
+partStart = 2;
+partEnd = 1;
+binaryDigits = Reverse@IntegerDigits[integer, 2];
+FromDigits[Take[binaryDigits, {partStart, partEnd}], 2]

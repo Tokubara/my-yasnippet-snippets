@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: ordering-less-greater-<->-类似-cmp
+# key: 
+# --
+use std::cmp::Ordering;
+fn compare(n: i32, m: i32) -> Ordering { ifn<m{
+Ordering::Less }elseifn>m{
+Ordering::Greater }else{
+            Ordering::Equal
+        }
+}
+
+// 或者
+use std::cmp::Ordering::{self, *};
+// `*` to import all children
+fn compare(n: i32, m: i32) -> Ordering { ifn<m{
+Less }elseifn>m{
+Greater
+}else{ Equal
+} }

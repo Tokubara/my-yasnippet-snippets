@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: rg
+# key: 
+# --
+rg  -g '!coc.vim' coc  # exclude

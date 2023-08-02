@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: pretty-print-table:array
+# key: 
+# --
+library(pander)
+pandoc.table(timetable[[2]], style = 'grid', split.table = Inf, split.cells=8, use.hyphening = TRUE, plain.ascii=TRUE) # keep.line.breaks=TRUE

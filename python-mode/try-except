@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: try-except
+# key: 
+# --
+try:
+    result = x / y
+except ZeroDivisionError:
+    print("division by zero!")
+except Exception:
+    print("not very good")
+else: # else, 仅仅在不产生异常时执行, 任何异常发生, 无论except能不能处理, else都不会执行. 也就是说, else相当于try成功时会执行的.
+    print("result is", result)
+finally:
+    print("executing finally clause")

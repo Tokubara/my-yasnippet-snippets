@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: venv-virtual-environments--虚环境-
+# key: 
+# --
+python3 -m venv venv
+source venv/bin/activate

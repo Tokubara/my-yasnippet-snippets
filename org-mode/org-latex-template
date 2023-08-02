@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: org-latex-template
+# key: 
+# --
+#+SETUPFILE: /Users/quebec/Playground/org-mode-latex-setup/marktex.setup
+#+OPTIONS: num:t date:nil toc:t author:nil ^:{}
+#+cite_export: natbib
+#+bibliography: academic_ethics.bib
+#+title: 科研人员的行为规范——《怎样当一名科学家》读书报告
+#+author: 田卓钰 202228018629017 信息工程研究所
+#+PROPERTY: :eval never-export
+
+# 下面是在插入参考文献的地方下加, 自带 section, 因此不要加一节 *** 参考文献
+#+LATEX_HEADER: \bibliographystyle{plain}
+
+#+ATTR_LATEX: :width 0.98\linewidth

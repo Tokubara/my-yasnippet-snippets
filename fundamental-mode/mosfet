@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mosfet
+# key: 
+# --
+$i_{D}=\mu_{n}C_{ox}\frac{W}{L}(v_{OV}-\frac{1}{2}v_{DS}) v_{DS}=\mu_{n}C_{ox}\frac{W}{L}(v_{OV}v_{DS}-\frac{1}{2}v_{DS}^{2})=k_{n}(v_{OV}v_{DS}-\frac{1}{2}v_{DS}^{2})$
+$i_{D}=\mu_{n}C_{ox}\frac{W}{L}(v_{OV}-\frac{1}{2}V_{D S A T}) V_{D S A T}=k_{n}(v_{OV}V_{D S A T}-\frac{1}{2}V_{D S A T}^{2})=k_{n}V_{D S A T}(v_{OV}-\frac{1}{2}V_{D S A T})$
+$i_{D}=\frac{1}{2}\mu_{n}C_{ox}\frac{W}{L}v_{OV}^{2}=\frac{1}{2}k_{n}' \frac{W}{L}v_{OV}^{2}=\frac{1}{2}k_{n}v_{OV}^{2}$
+$i_{D}=\frac{1}{2}k_{n}'(\frac{W}{L})(v_{GS}-V_{tn})^{2}(1+\lambda v_{DS})$

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: get clipboard
+# key: 
+# --
+use utf8;
+use open qw( :std :encoding(UTF-8) );
+use Clipboard;
+# use String::Util qw(collapse trim);
+$_ = Clipboard->paste;

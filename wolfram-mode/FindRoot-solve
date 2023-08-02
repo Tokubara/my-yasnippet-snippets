@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: FindRoot-solve
+# key: 
+# --
+lhs=;
+rhs=;
+Plot[{lhs, rhs}, {i, 0, 0.005}];
+FindRoot[ihs==rhs, {x, 0, 0.01}];

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ripgrep-multiline-mode
+# key: 
+# --
+rg -N -o -U ':(\w+)"\s+replace: "(.)"' "$MHOME/Library/Application Support/espanso/match/packages/mac-symbols/package.yml"  -r '$2($1)'
+# -U 就是 multiline

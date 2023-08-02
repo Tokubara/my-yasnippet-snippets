@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+// While, do...while and for loops 都和 c 一样
+$i = 0;
+while ($i < 5) {
+    echo $i++;
+} // Prints "01234"
+
+echo "\n";
+
+$i = 0;
+do {
+    echo $i++;
+} while ($i < 5); // Prints "01234"
+
+echo "\n";
+
+for ($x = 0; $x < 10; $x++) {
+    echo $x;
+} // Prints "0123456789"
+
+// 类似也有 continue, break

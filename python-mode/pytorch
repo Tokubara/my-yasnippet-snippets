@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pytorch
+# key: 
+# --
+torch.arange(1, T + 1, dtype=torch.float32)
+
+torch.sin(0.01 * self.time)
+torch.randn(T) * 0.2

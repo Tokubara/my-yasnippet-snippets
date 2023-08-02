@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pickle-load-object
+# key: 
+# --
+import pickle
+problems_path = "problems_dict"
+with open(problems_path, 'rb') as f:
+  problems = pickle.load(f)

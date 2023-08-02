@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: 微分方程-differential-function
+# key: 
+# --
+DSolve[{y'[x] + y[x] == a Sin[x], y[0] == 0}, y, x];
+FullSimplify[y''[x] + y[x]^2 /. %]

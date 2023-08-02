@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+foreach ($animal in ("dog", "cat", "mouse")) {
+    # You can use -f to interpolate formatted strings
+    "{0} is a mammal" -f $animal
+}
+
+# c style
+$letters = ('a','b','c','d','e','f','g','h')
+for($i=0; $i -le $letters.Count-1; $i++){
+    Write-Host $i, $letters[$i]
+}
+
+$x = 0
+while ($x -lt 4) {
+    Write-Output $x
+    $x += 1  # Shorthand for x = x + 1
+}

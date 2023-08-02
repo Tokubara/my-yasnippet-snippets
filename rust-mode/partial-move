@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: partial-move
+# key: 
+# --
+let mut broom1 = Broom { name: "good boom".to_string(), ..a };

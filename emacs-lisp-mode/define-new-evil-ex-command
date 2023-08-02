@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: define-new-evil-ex-command
+# key: 
+# --
+(evil-ex-define-cmd "b[utterfly]" 'butterfly)

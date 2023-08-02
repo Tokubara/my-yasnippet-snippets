@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: Result
+# key: 
+# --
+match get_weather(hometown) { Ok(report) => {
+display_weather(hometown, &report); }
+Err(err) => {
+println!("error querying the weather: {}", err); schedule_weather_retry();
+} }
+
+// boolean
+result.is_ok()
+result.is_err()
+result.ok() // convert Result to Option
+result.err() // Option<Err>
+result.unwrap_or(fallback)
+// 

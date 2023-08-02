@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: program-directory-path-dirname---basename
+# key: 
+# --
+mydir=`dirname $0`
+basename /home/bdms/setup/GraphLite-0.20/README.md # README.md

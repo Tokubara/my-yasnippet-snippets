@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: static-final-member
+# key: 
+# --
+private final static IntWritable one = new IntWritable(1);

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ripgrep-replace-pattern-text-string-in-all-files
+# key: 
+# --
+rg 11315 -l **/*.v | xargs perl -p -i -e 's{C:/Users/11315/workspace}{D:}g;'

@@ -1,0 +1,44 @@
+# -*- mode: snippet -*-
+# name: statement-list
+# key: 
+# --
+{} // 类似 , 之于 expression, 任何需要 statement 的地方都可以用这个
+; // empty statement, 比如 for(let i = 0; i < a.length; a[i++] = 0) ;
+if() else if {} else{} // 与 c 无区别
+ 
+// switch 与 c 无区别, 也仍然需要 break
+switch (n) {
+  case 1:                        // Start here if n === 1     // Execute code block #1.
+    break;                     // Stop here
+  case 2:                        // Start here if n === 2     // Execute code block #2.
+    break;                     // Stop here
+  case 3:                        // Start here if n === 3     // Execute code block #3.
+    break;                     // Stop here
+  default:                       // If all else fails...
+    // Execute code block #4.
+    break;                     // Stop here
+}
+
+// loop
+while() {} // 与 c 无区别
+do {} while() // 与 c 无区别
+// for
+// c-style for
+for(let count = 0; count < 10; count++) {
+console.log(count);
+}
+// for of, 用于 iterable, 比如 array, 不可用于 object
+for(let i of a) console.log(i);
+for(let [k, v] of Object.entries(o)) {     pairs += k + v; }
+// 可以是 string, 遍历 char
+for(let letter of "mississippi")
+// 可以是 Set
+// 可以是 Map
+for(let word of wordSet) {}
+for(let [key, value] of m) {}
+// for in, 遍历 object 的 enumerable properties, symbol 会被忽略, 内置的方法比如 toString 也不会被考虑, 由于 array 也是 object, 可以用于 array, 但没必要
+for(let p in o) {      // Assign property names of o to variable p
+console.log(o[p]);// Print the value of each property
+}
+// return 与 c 相同
+return;

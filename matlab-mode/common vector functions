@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: common vector functions
+# key: 
+# --
+max     % largest component
+min     % smallest component
+length  % length of a vector
+sort    % sort in ascending order
+sum     % sum of elements
+prod    % product of elements
+mode    % modal value
+median  % median value
+mean    % mean value
+std     % standard deviation
+perms(x) % list all permutations of elements of x

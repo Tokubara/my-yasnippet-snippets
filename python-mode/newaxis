@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: newaxis
+# key: 
+# --
+a[np.newaxis,:] # 得到行矩阵
+a[:,np.newaxis] # 得到列矩阵

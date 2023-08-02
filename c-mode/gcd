@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: gcd
+# key: 
+# --
+int gcd(int a, int b) {
+  return b ? gcd(b, a % b) : a; // b 之后会是上一次余数, a 是上一次的除数, b 有可能为 0, a 不可能为 0
+}

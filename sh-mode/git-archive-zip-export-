@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: git-archive-zip-export-
+# key: 
+# --
+git archive --format zip --output ~/Downloads/VLSI-sim.zip master

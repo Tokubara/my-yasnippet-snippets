@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: rename:mv
+# key: 
+# --
+rename($_, "/Users/quebec/notes/vx_attachments/" . $new_name); # rename() 第二个参数不能是目录, 必须是文件名
+
+use File::Copy;
+copy($oldfile, $newfile);
+move($oldfile, $newfile); # 作用也是 mv, 第二个参数可以是目录, 更推荐这个 

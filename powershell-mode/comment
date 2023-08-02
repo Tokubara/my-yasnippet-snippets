@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: comment
+# key: 
+# --
+# Single line comments start with a number symbol.
+
+<#
+  Multi-line comments
+  like so
+#>

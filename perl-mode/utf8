@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: utf8
+# key: 
+# --
+use utf8;
+use open qw( :std :encoding(UTF-8) );

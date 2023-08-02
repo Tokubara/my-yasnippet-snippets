@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ReplaceAll--.
+# key: 
+# --
+vo/vs /. {rs->5000, rpi->2500, gm->40*^-3,ro->1*^5,rl->5*^3} // N

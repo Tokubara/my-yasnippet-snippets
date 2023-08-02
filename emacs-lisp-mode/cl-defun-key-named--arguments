@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cl-defun-key-named--arguments
+# key: 
+# --
+(cl-defun draw-rectangle (&key (width 10) (height 20))
+  (message "Width is %s, height is %s" width height))
+
+(draw-rectangle :width 30 :height 40)

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: time-interval-difference
+# key: 
+# --
+struct timeval tpend, tpstart;
+float time_use = 0.0;
+gettimeofday(&tpstart, NULL);
+// do something
+gettimeofday(&tpend, NULL);
+time_use = 1000000 * (tpend.tv_sec - tpstart.tv_sec)+ tpend.tv_usec - tpstart.tv_usec; // 以 us 为单位, /1000 就是 ms

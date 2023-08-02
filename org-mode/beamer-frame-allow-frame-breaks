@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: beamer-frame-allow-frame-breaks
+# key: 
+# --
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks
+:END:

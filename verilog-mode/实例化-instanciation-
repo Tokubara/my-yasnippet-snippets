@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: 实例化-instanciation-
+# key: 
+# --
+// 与顺序一致
+// module declaration
+module fulladd4(sum, c_out, a, b, c_in);
+// 实例化, 顺序一致
+fulladd4 fa_ordered(SUM, C_OUT, A, B, C_IN);
+
+// by name
+fulladd4 fa_byname(.c_out(C_OUT), .sum(SUM),.b(B),.c_in(C_IN), .a(A), ) ;
+// Instantiate module fa-byname and connect signals to ports by name
+fulladd4 fa_byname(.sum(SUM), .b(B) , .c_in(C_IN), .a(A), ) ;

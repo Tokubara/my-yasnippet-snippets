@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: parse-hex-str-to-number
+# key: 
+# --
+int('0x123sys.argv[2]',16)

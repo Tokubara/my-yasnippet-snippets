@@ -1,0 +1,26 @@
+# -*- mode: snippet -*-
+# name: named-field:tuple-like:unit-like struct
+# key: 
+# --
+/// A rectangle of eight-bit grayscale pixels.
+struct GrayscaleMap {
+  pixels: Vec<u8>,
+  size: (usize, usize)
+}
+
+let image = GrayscaleMap {
+pixels: vec![0; width * height],
+        size: (width, height)
+    };
+
+// tuple-like structs
+struct Bounds(usize, usize);
+let image_bounds = Bounds(1024, 768);
+image_bounds.0
+
+struct Ascii(Vec<u8>);
+    
+// unit-like structs
+struct Onesuch;
+let o = Onesuch;
+

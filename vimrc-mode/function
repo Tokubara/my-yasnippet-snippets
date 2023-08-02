@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: function
+# key: 
+# --
+function! MyJoinLines(block_start, del_start, num, ...) "  neovim 不支持 default arguments, 只能用 ...
+let split=a:0>0? a:1 : " " " 默认空格 a:0 是参数个数, a:1 是第一个参数
+let block_end=a:block_start+a:num-1
+let del_end=a:del_start+a:num-1
+execute printf('%d,%ddel | let l=split(@", "\n") | %d,%ds/$/\="%s" . remove(l,0)/',a:del_start, del_end, a:block_start, block_end, split) 
+endfunction

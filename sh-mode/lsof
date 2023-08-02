@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: lsof
+# key: 
+# --
+lsof -i :80 # 查看 port 的使用情况

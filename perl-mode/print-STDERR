@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print-STDERR
+# key: 
+# --
+printf LOG "Hello, %s; your password expires in %d days!\n", $user, $days_to_die;
+print STDERR "error";

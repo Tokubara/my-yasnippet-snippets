@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 繁体-convert-to-简体
+# key: 
+# --
+python -mzhconv -w zh-cn < /path/ > tmp.txt

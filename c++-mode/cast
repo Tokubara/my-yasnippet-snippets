@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cast
+# key: 
+# --
+// upcast, derived->base
+dynamic_cast<Dog&>(myConfusedAnimal).eat(); // 其中 Dog 就是父类

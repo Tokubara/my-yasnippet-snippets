@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: sed append(insert) lines
+# key: 
+# --
+sed -i '5~2 a\
+    word: true' /file/path
+# -i 是 inplace
+# 这里为什么用 a\ 的语法, 是为了保证插入空格, 否则可以直接一行
+# 从 5 行每隔 2 行 append

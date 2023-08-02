@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: start-shell-bash-zsh--without-source-any-startup-files-user-configuration-
+# key: 
+# --
+env -i bash --norc --noprofile

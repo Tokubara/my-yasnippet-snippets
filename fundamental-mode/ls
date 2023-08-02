@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ls
+# key: 
+# --
+ ls --time=birth # create time
+ ls -t # modified time
+ # 都是 newest firt, 需要加 -r

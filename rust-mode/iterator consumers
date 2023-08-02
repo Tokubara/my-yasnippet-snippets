@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: iterator consumers
+# key: 
+# --
+.max(), .min() // 需要 Item 实现 Ord
+.count() // 计数
+max_by(F), min_by(F) // 不需要 Item 实现 Ord, 自己提供比较函数, F: FnMut(&Self::Item, &Self::Item) -> Ordering
+max_by_key(F), min_by_key(F) // F: FnMut(&Self::Item) -> B, B: Ord, 也就是 &val 返回 一个 Ord 类型用于比较
+.eq(), ne(), .le(), .lt(), .ge(), .gt() // 参数是 IntoIterator, 要求前一个 iterator 的 item 实现了 PartialOd<后一个 iterator 的 item> 
+.any(), .all() // F: FnMut(Self::Item) -> bool
+.fold(self, init: A, f: FnMut(A, Self::Item) -> A)->A
+
+.nth(&mut self, n: usize)-> Option<Self::Item>
+.last() -> Option<Self::Item>
+.position(predicate: FnMut(Self::Item) -> bool) -> Option<usize> // 返回 index, 从左到右第一个为 true 的
+.rposition() // 类似, 但需要前一个 iterator 实现 ExactSizeIterator + DoubleEndedIterator
+.find(&mut self, predicate: FnMut(&Self::Item) -> bool)-> Option<Self::Item>
+.find_map(&mut self, f: FnMut(Self::Item) -> Option<B>)-> Option<B> // 虽然名字叫 find_map, 但其实动作顺序应该是 map 再 find. 先 map, 返回是 Option<B>, 从左到右第一个不为 None 的 map 结果被返回
+.collect<B: FromIterator<Self::Item>>(self) -> B
+.for_each<F>(self, f: FnMut(Self::Item)) -> () // for loop
+
+
+
+.extend<T: IntoIterator<Item = A>>(&mut self, iter: IntoIterator) // 

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: read_csv
+# key: 
+# --
+challenge2 <- read_csv(readr_example("challenge.csv"), col_types = cols(.default = col_character()))
+challenge <- read_csv( readr_example("challenge.csv"), col_types = cols(.default = col_character(),
+x = col_integer(),
+y = col_character() )
+)

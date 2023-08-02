@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: list-padding
+# key: 
+# --
+PadRight[list,n]
+
+PadRight[list,n,x]
+
+PadRight[list,n,{x1,x2,…}]
+
+PadLeft

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: shell-command
+# key: 
+# --
+(shell-command (concat "pngpaste " file))
+(shell-command-to-string "")
+(shell-quote-argument (expand-file-name target)) ; 否则  ~ 也会被 \~

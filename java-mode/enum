@@ -1,0 +1,31 @@
+# -*- mode: snippet -*-
+# name: enum
+# key: 
+# --
+public enum Size { SMALL, MEDIUM, LARGE }
+Size size = Size.SMALL;
+System.out.println(size.toString()); // "SMALL"
+System.out.println(size.name()); // 与 toString() 相同
+// equal, compare
+System.out.println(size == Size.SMALL);
+System.out.println(size.equals(Size.SMALL));
+System.out.println(size == Size.MEDIUM);
+Size size = Size.SMALL;
+System.out.println(size == Size.SMALL);
+System.out.println(size.equals(Size.SMALL));
+size.ordinal() // 对应的 int, enum to int
+Size.SMALL==Size.valueOf("SMALL") // String to enum
+// switch enum
+static void onChosen(Size size) {
+  switch (size) {
+  case SMALL: // 不能写成 Size.SMALL
+    System.out.println("chosen small");
+    break;
+  case MEDIUM:
+    System.out.println("chosen medium");
+    break;
+  case LARGE:
+    System.out.println("chosen large");
+    break;
+  }
+}

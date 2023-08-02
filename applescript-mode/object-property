@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: object-property
+# key: 
+# --
+get the <property name> of <object>

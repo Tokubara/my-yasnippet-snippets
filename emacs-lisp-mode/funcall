@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: funcall
+# key: 
+# --
+(funcall 'list 'x '(y) '(z))

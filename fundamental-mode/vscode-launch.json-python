@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: vscode-launch.json-python
+# key: 
+# --
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+      {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+    },
+      {
+      "name": "Python: Current File (input.txt)",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [ "<", "${fileDirname}/input.txt"]
+    },
+    {
+      "name": "python mlp test",
+      "type": "python",
+      "request": "launch",
+      "program": "inference_mlp_loadweight.py",
+      "cwd": "sim_examples/",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
+"args": [ "<", "input.txt", ">", "output.txt" ]
+"args": [ "<", "${fileDirname}/input.txt"]

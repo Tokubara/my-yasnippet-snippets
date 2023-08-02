@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: array:matrix-size:shape
+# key: 
+# --
+size(A) % ans = 3 3, shape
+size(A,2) % 在 dim 2
+ndims(A) % 比如 4 维 array 就会是 4, matrix 就是 2
+reshape(A,[3 1 3])
+numel(A) % 元素总数

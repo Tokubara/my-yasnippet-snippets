@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: list
+# key: 
+# --
+mylist[[2]], mylist[["ages"]], mylist$ages
+# 可以直接访问
+l=list()
+list[[2]]=3 # 合法
+
+# 初始化 list 元素为空矩阵
+timetable=list()
+for(i in c(1:20)) {
+  timetable[[i]]=matrix("",nrow=12,ncol=7)
+}

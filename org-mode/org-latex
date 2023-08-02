@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: org-latex
+# key: 
+# --
+#+begin_export latex
+#+end_export
+这样是 literal, 不会对 %{} 等字符进行处理
+
+#+begin_<environment>
+#+end_<environment>
+会对 %{} 等字符进行处理

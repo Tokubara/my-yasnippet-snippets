@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: regex
+# key: 
+# --
+java.util.regex
+String.matches("\\d{8}") // 其实调用了 Patten.maches
+
+public static void findGroup() {
+  String regex = "(\\d{4})-(\\d{2})-(\\d{2})";
+  Pattern pattern = Pattern.compile(regex);
+  String str = "today is 2017-06-02, yesterday is 2017-06-01";
+  Matcher matcher = pattern.matcher(str);
+  while (matcher.find()) {
+    System.out.println("year:" + matcher.group(1) + ",month:" +
+                       matcher.group(2) + ",day:" + matcher.group(3));
+  }
+}

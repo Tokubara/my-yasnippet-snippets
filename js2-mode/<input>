@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: <input>
+# key: 
+# --
+.defaultValue  // 对应 html 的 "value" property
+.value

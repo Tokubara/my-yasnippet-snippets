@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: cargo test
+# key: 
+# --
+cargo test -- --include-ignored # include ignored
+cargo test -- --ignored # only ignored
+cargo test math # 只运行名字包含 math 的测例
+cargo test -- --test-threads 1 # 设置多个线程运行 cargo test
+cargo test -- --no-capture # show pass results too
+cargo test --test unfurl # only run ntegration test tests/unfurl.rs

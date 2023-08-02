@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: clear-clean--all-user-defined-symbols-in-workspace
+# key: 
+# --
+ClearAll["Global`*"]

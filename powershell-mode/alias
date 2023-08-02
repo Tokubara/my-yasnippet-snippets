@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: alias
+# key: 
+# --
+# create alias
+New-Alias grep -Value Select-String
+New-Alias open -Value Invoke-Item

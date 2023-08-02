@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: idx
+# key: 
+# --
+unsigned int idx = blockIdx.x * blockDim.x + threadIdx.x;

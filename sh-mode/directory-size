@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: directory-size
+# key: 
+# --
+du -s -S -h

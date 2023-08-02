@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read whole file into list
+# key: 
+# --
+open my $handle, '<', $path_to_file;
+chomp(my @lines = <$handle>); # 这里每一行就不会包含 newline, 如果需要 newline 就不要调用 chomp
+close $handle;

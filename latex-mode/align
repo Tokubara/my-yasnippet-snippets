@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: align
+# key: 
+# --
+\begin{align}
+&\int_{5}^{\infty}\phi(x)dx\\
+=&\int_{5}^{\infty}\frac{\phi(x)}{g(x)}g(x)dx\\
+=&\sum_{i=1}{n}w_{i}
+\end{align}

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: service
+# key: 
+# --
+systemctl stop docker
+systemctl start docker

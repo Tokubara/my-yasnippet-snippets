@@ -1,0 +1,48 @@
+# -*- mode: snippet -*-
+# name: generator(generate-iterator-from-function)
+# key: 
+# --
+use std::iter::from_fn;
+let mut count = 0;
+let counter = std::iter::from_fn(move || {
+    // Increment our count. This is why we started at zero.
+    count += 1;
+
+    // Check to see if we've finished counting or not.
+    if count < 6 {
+        Some(count)
+    } else {
+        None
+    }
+});
+assert_eq!(counter.collect::<Vec<_>>(), &[1, 2, 3, 4, 5]);
+
+
+use rand::random;
+let lengths: Vec<f64> = from_fn(|| Some((random::<f64>() - random::<f64>()).abs())).take(1000)
+.collect();
+
+fn fibonacci() -> impl Iterator<Item = usize> {
+    let mut state = (0, 1);
+    std::iter::from_fn(move || {
+        state = (state.1, state.0 + state.1);
+        Some(state.0)
+    })
+}
+
+assert_eq!(fibonacci().take(8).collect::<Vec<_>>(),
+               vec![1, 1, 2, 3, 5, 8, 13, 21]);
+               
+use std::iter::from_fn;
+
+fn main() {
+    let mut i = 0;
+    let it = from_fn(move || {
+    Some(match i {
+        0 => {i=1;1_i32},
+        x => {i*=10; x*10}
+    })
+    }).take(10).collect::<Vec<_>>();
+    println!("{:?}", it);
+}
+

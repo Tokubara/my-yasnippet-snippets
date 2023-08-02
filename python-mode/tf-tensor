@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: tf-tensor
+# key: 
+# --
+import tensorflow as tf
+# 有以下 attributes
+dtype 
+shape 
+name  
+op    
+device
+graph

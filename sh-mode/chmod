@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: chmod
+# key: 
+# --
+# u(owner)g(group owner)o(除了 ug)a(ugo 三者)
+# +-=
+# rwx
+chmod 600 foo.txt
+chmod u+x,go=rx foo.txt

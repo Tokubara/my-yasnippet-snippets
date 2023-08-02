@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: strict-mode
+# key: 
+# --
+// 不能用 with

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: shutdown
+# key: 
+# --
+reboot
+shutdown -h now

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: integrate
+# key: 
+# --
+Integrate[f[x], x]
+Integrate[f[x], {x, a, b}]

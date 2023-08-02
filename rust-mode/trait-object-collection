@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: trait-object-collection
+# key: 
+# --
+&mut dyn Write
+let writer: &mut dyn Write = &mut buf;
+
+struct Salad {
+veggies: Vec<Box<dyn Vegetable>>
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: product
+# key: 
+# --
+np.prod(a) # a 就算不是 prod也可以
+# iterable, 3.8 以上
+import math
+math.prod(a)
+# 3.7 以下
+from operator import mul
+from functools import reduce
+reduce(mul, a, 1)

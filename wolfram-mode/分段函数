@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: 分段函数
+# key: 
+# --
+Piecewise[{{x^2, x < 0}, {x, x > 0}}]

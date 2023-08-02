@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: bit
+# key: 
+# --
+BitAnd[61, 15]
+BitAnd[{61, 61}, 15]
+BitAnd[{61, 61}, {15, 15}]
+BitXor
+BitOr
+BitShiftRight[32, 3] (*>>3*)
+BitShiftLeft[32, 3] (*<<3*)
+BitLength[32]

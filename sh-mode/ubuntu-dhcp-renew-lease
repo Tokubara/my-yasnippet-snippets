@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ubuntu-dhcp-renew-lease
+# key: 
+# --
+sudo dhclient -r; sudo dhclient

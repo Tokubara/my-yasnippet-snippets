@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: try
+# key: 
+# --
+# Handle exceptions with a try/catch block
+try {
+    # Use "throw" to raise an error
+    throw "This is an error"
+}
+catch {
+    Write-Output $Error.ExceptionMessage
+}
+finally {
+    Write-Output "We can clean up resources here"
+}

@@ -1,0 +1,104 @@
+# -*- mode: snippet -*-
+# name: gdb
+# key: 
+# --
+info variables configMap # regex, 查看名字包含这个的变量
+info functions # 内容太多了, 包含了大量无关函数, 并不建议使用
+info functions stack_overflow # 包含名字内容会少一点
+info args # Print the arguments of the selected frame, each on a separate line. 支持 regex
+info locals
+frame
+info frame
+
+# type 相关
+ptype
+whatis
+
+### assembly, 高级语言都常用
+info address stack_overflow  # 查看 symbol address, 不是 regex, 必须严格匹配
+info symbol <addr> #  show symbol of address
+bt # backtrace, 调用栈
+
+### breakpoint
+i b //常用，info break 查看所有断点信息（编号、断点位置）
+show args
+b *(0x123456) //常用，给0x123456地址处的指令下断点
+b *main // 汇编级别, 没有 * 则是源码级别
+b *$rebase(0x123456) //$rebase 在调试开 PIE 的程序的时候可以直接加上程序的随机地址
+b fun_name //常用，给函数fun_name下断点，目标文件要保留符号才行
+b file_name:fun_name
+b file_name:15 //给file_name的15行下断点，要有源码才行
+b vuln+47
+b 15 // 当前文件的 15 行, 源码级别
+b +0x10 //在程序当前停住的位置下0x10的位置下断点，同样可以-0x10，就是前0x10
+bl # list breakpoints
+d # delete all
+bd 2 # diable 2
+be 2 # enable 2
+break fun if $rdi==5 //条件断点，rdi值为5的时候才断
+
+#### 删除、禁用断点
+i b
+delete 5 //常用，删除5号断点，直接delete不接数字删除所有
+disable 5 //常用，禁用5号断点
+enable 5 //启用5号断点
+clear //清除下面的所有断点
+
+### watch
+watch *0x5555559ec278
+watch a # 变量 a, 但小心生命周期以及范围问题
+i w # info watchpoints //查看watch断点信息
+
+### set
+set $rdi=0x10 //把rdi寄存器的值变为0x10
+set *(0x123456)=0x10 //0x123456地址的值变为0x10，注意带星号
+set args "abc" "def" "gh"//给参数123赋值
+set args "python -c 'print "1234\x7f\xde"'" //使用python给参数赋值不可见字符
+
+
+### x command: show memory
+
+x /n[todxufcsbi][bhwg] 0x123456 # 据说 b 是字符, 地址可以是存在变量中的, 比如 $rdi
+x /10i $rip # 显示 *将要* 执行的 10 条汇编指令 assembly highlight
+
+### disass­emble
+disass­emble /m main # 如果有源码显示就显示源代码, 查看整个 function 的 assembly
+disass­emble 0x400566
+
+### run
+
+
+### p
+p fun_name //打印fun_name的地址(show address)，需要保留符号 
+p 0x10-0x08 //计算0x10-0x08的结果
+p &a //查看变量a的地址
+p *(0x123456) //查看0x123456地址的值，注意和x指令的区别，x指令查看地址的值不用星号
+p $rdi //显示rdi寄存器的值，注意和x的区别，这只是显示rdi的值，而不是rdi指向的值
+p *($rdi) //显示rdi指向的值
+
+### list
+list //查看当前附近10行代码，要有源码，list指令pwn题中几乎不用，但为了完整性还是简单举几个例子
+list 38 //查看38行附近10行代码
+list 1,10 //查看1-10行
+list main //查看main函数开始10行
+
+
+###
+info shared # shared library
+ 
+
+### assembly 常用
+si
+ni
+i r # 查看 registers, info registers
+regs # pwndbg, 
+
+### rop
+rop --grep 'pop rdi.*ret'
+rop --grep 'ret'
+
+### proc
+info proc # get pid
+shell ls -l /proc/5262/fd
+shell lsof -p 5262
+

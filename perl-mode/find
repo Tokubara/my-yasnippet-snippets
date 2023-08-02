@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: find
+# key: 
+# --
+use File::Find qw(find);
+my @files;
+# $_(文件名), $File::Find::dir(目录名), $File::Find::name(完整 path)
+find(sub {
+      return if($_ eq '.' || $_ eq '..');
+      push @files, $File::Find::name;
+}, '/my/dir/to/search');
+
+
+use File::Find qw(find);
+find(\&PrintName, @curDir);
+sub PrintName{
+                my $path;
+                if (/$reg/) {
+                      $path = $File::Find::name;
+                      $path =~ s/\//\\/g;
+                      $path =~ s/\\+/\\/g;
+                      print LST "$path\n";
+                } 
+}

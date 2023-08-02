@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+while (<fh>) {
+    next # 相当于 c 中的 continue
+}

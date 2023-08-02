@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: convert-absolute-paths-to-relative-path-file-A-to-file-B--and-vice-versa
+# key: 
+# --
+realpath --relative-to=code_chap_5_1_student/src/bangc/PluginPowerDifferenceOp/ code_chap_5_1_student/src/offline/include/ # 绝大多数情况, 为了命令行的用途, --relative-to 的参数都应该是目录, 而不是文件, 否则会多一个 .. 
+realpath ../../models/int_pb_models/udnie_int8_power_diff.pb # relative to absolute

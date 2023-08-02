@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: container
+# key: 
+# --
+gcloud: {
+  label: Google Cloud
+  a
+  b
+  c
+}
+
+clouds: {
+  aws: AWS {
+    load_balancer -> api
+    api -> db
+  }
+  gcloud: Google Cloud {
+    auth -> db
+  }
+
+  gcloud -> aws
+}
+
+users -> clouds.aws.load_balancer
+users -> clouds.gcloud.auth
+
+ci.deploys -> clouds

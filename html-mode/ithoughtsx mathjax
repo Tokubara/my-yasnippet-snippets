@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ithoughtsx mathjax
+# key: 
+# --
+<head>
+<script type="text/javascript" id="MathJax-script" async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"> </script> </head>
+
+<div>\(x = {-b \pm \sqrt{b^2-4ac} \over 2a}\)</div>

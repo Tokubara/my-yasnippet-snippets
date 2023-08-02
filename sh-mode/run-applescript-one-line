@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: run-applescript-one-line
+# key: 
+# --
+osascript -e 'tell application "FoxTrot Professional Search" to get name of the first window'

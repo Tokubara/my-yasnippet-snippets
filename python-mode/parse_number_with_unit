@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: parse_number_with_unit
+# key: 
+# --
+def parse_number_with_unit(s: str) -> float:
+    # Extract the number and unit from the input string
+    number_string = ""
+    unit = ""
+    for c in s:
+        if c.isdigit() or c == ".":
+            number_string += c
+        else:
+            unit += c
+    unit = unit.lower()
+
+    # Convert the number string to an integer
+    number = float(number_string)
+
+    # Multiply the number by the appropriate factor based on the unit
+    if "k" in unit:
+        number *= 1000
+    elif "m" in unit:
+        number *= 1000000
+    # Add other units as needed
+
+    return number
+
+# Example usage
+# print(parse_number_with_unit("12.1k"))  # prints 12100
+# print(parse_number_with_unit("1M"))   # prints 1000000

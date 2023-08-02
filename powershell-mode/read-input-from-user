@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read-input-from-user
+# key: 
+# --
+$userInput = Read-Host "Enter some data: " # Returns the data as a string

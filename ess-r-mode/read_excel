@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: read_excel
+# key: 
+# --
+library(readxl)
+raw_1<-read_excel("post_pollution_1.xlsx",col_types="text", col_names=c("a, "b"))

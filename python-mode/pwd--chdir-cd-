@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: pwd--chdir-cd-
+# key: 
+# --
+import os
+os.getcwd()
+
+os.chdir("")

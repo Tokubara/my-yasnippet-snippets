@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: environment arguments
+# key: 
+# --
+let path = std::env::args().nth(1).unwrap_or("../minidecaf-tests/testcases/step12/bubbsort.c".to_string());
+let path = std::env::args().nth(1).expect("usage: minidecaf <input path>");

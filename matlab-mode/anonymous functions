@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: anonymous functions
+# key: 
+# --
+ln = @(x)  log(x)

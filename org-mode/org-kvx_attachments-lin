@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-kvx_attachments-lin
+# key: 
+# --
+[[file:../vx_attachments/$basename]]

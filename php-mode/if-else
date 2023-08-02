@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: if-else
+# key: 
+# --
+if (true) {
+    print 'I get printed';
+}
+
+if (false) {
+    print 'I don\'t';
+} else {
+    print 'I get printed';
+}
+
+if (false) {
+    print 'Does not get printed';
+} elseif (true) {
+    print 'Does';
+}

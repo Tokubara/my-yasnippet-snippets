@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: if-in-template
+# key: 
+# --
+<?php if ($x): ?>
+This is displayed if the test is truthy.
+<?php else: ?>
+This is displayed otherwise.
+<?php endif; ?>

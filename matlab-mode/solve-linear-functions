@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: solve-linear-functions
+# key: 
+# --
+% Solving matrix equations (if no solution, returns a least squares solution)
+% The \ and / operators are equivalent to the functions mldivide and mrdivide
+x=A\b % Solves Ax=b. Faster and more numerically accurate than using inv(A)*b.
+x=b/A % Solves xA=b

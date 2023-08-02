@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: if-elseif-else
+# key: 
+# --
+if ($someVar -gt 10) {
+    Write-Output "$someVar is bigger than 10."
+}
+elseif ($someVar -lt 10) {    # This elseif clause is optional.
+    Write-Output "$someVar is smaller than 10."
+}
+else {                        # This is optional too.
+    Write-Output "$someVar is indeed 10."
+}

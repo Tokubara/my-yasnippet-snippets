@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: ostream-I-O
+# key: 
+# --
+    ofstream fout;
+
+    	fout.open("matrix_" + to_string(17) + "_" + to_string(18) + "_" + to_string(k) + ".in");
+        fout << temp;
+        fout.close();

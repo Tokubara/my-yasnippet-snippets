@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: 分段函数-piecewise-function-
+# key: 
+# --
+y = 
+\left\{
+    \begin{array}{lr}
+        , & \text{if } \\
+        , & \text{if } 
+    \end{array}
+\right.
+
+\begin{cases}f(x)-q & f(x) \geqslant q \\ f(x) & f(x)<q\end{cases}

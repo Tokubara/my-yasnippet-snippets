@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: heredoc
+# key: 
+# --
+python3 << EOF
+class StrawberryIcecream:
+  def __call__(self):
+    print 'EAT ME'
+EOF

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: strftime
+# key: 
+# --
+use POSIX qw(strftime);
+$now_local_string = strftime("Pasted_image_%Y%m%d%H%M%S.png", localtime);

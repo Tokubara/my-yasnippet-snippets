@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: file
+# key: 
+# --
+(rename-file )
+(delete-file )
+(move-file-to-trash "path")

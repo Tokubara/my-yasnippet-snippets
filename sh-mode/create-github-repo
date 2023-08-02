@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: create-github-repo
+# key: 
+# --
+gh repo create
+# remote 已经设置好
+git push -u origin master

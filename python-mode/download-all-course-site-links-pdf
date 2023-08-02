@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: download-all-course-site-links-pdf
+# key: 
+# --
+from pyquery import PyQuery as pq
+import requests
+from urllib.parse import urlparse
+import wget
+import os
+import random
+import time
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+}
+
+os.chdir('/Users/quebec/ref/ee120')
+
+src_url = "https://inst.eecs.berkeley.edu/~ee120/fa19/"
+base_url = "https://15445.courses.cs.cmu.edu/fall2022/"
+
+response  = requests.get(src_url, headers=headers)
+response.status_code # 确认是否是 200
+doc = pq(response.text)
+
+def download_link_list(lec_links):
+    fail_links = []
+    for link in  lec_links: # 是tag object
+        try:
+            wget.download(link)
+        except Exception as e:
+            print(e)
+            fail_links.append(link)
+        time.sleep(random.uniform(0.8,1.5))
+    return fail_links
+
+pdf_links = [base_url+a.attr["href"] for a in doc('a').items() if a.attr["href"] and a.attr["href"].endswith('pdf')]
+
+# lec_links = [a.attr["href"] for a in doc('li+ ul a').items()]
+
+fail_list = download_link_list(pdf_links)

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: download-url
+# key: 
+# --
+const downloadURI = (uri, name) => { // 第一个参数是要下载的文件的 uri, 第二个参数是要下载下来的文件名
+  const link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+downloadURI('https://file-examples-com.github.io/uploads/2017/02/file-sample_100kB.doc', 'sample.doc')

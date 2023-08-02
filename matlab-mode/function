@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: function
+# key: 
+# --
+function [output] = double_input(x)
+    %double_input(x) returns twice the value of x
+    output = 2*x;
+end
+function void(x)
+    %double_input(x) returns twice the value of x
+    %do my things
+end
+% double_input(6) % ans = 12

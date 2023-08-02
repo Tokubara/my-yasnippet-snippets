@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org-id
+# key: 
+# --
+(org-id-goto "182ACCBC-429A-4C5D-9EE2-5675D5FAEFCA") ; buffer switch 到那里
+(org-id-get-create) ; 非常有用, 如果当前 entry 已经存在 id, 返回 id, 否则先 create 再返回 id
+(org-id-copy) ; id 到剪切板, 如果不存在也会 create
+(org-id-store-link)

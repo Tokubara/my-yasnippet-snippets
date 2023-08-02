@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: chdir
+# key: 
+# --
+chdir('/Users/quebec/Downloads');

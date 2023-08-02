@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: find-all-symlinks
+# key: 
+# --
+find . -type l -ls

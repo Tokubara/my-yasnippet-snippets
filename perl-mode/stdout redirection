@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: stdout redirection
+# key: 
+# --
+open STDOUT, '>', "foo.out";

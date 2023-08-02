@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: yasnippet
+# key: 
+# --
+org-insert-image-file-link 是我写的, 作用是插入图片链接之后 display
+`(org-insert-image-file-link (shell-command-to-string "/usr/local/bin/perl /Users/quebec/Playground/little-scripts/org_link_image.pl -s -dest=org"))`
+

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: setter-getter
+# key: 
+# --
+let o = {
+  // An ordinary data property
+  dataProp: value, // An accessor property defined as a pair of functions.
+  get accessorProp() {
+    return this.dataProp;
+  },
+  set accessorProp(value) {
+    this.dataProp = value;
+  },
+};
+// org-protocol://id?id=5762A5B8-B05E-43ED-BA48-FC74727FD833 还有一个例子

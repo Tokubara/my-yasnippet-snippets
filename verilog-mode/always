@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: always
+# key: 
+# --
+always @(posedge clk) begin
+end
+posedge clk or negedge rst_n // multiple signal
+
+// 过程赋值, 左右宽度不需要相同, 会进行 trim 以及 0 扩展
+<= // 顺序不重要, 赋值用的是块执行前的值
+=

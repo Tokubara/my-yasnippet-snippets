@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: processor-CPU--number
+# key: 
+# --
+nproc

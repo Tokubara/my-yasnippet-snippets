@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: os
+# key: 
+# --
+os.path.join(os.path.expanduser('~'), '.ucas_wifi.json')
+os.path.basename(opts.in_path)
+os.path.dirname()
+os.path.abspath(sys.modules['__main__'].__file__)
+os.listdir() # ls
+os.path.isdir(opts.out_path) 不含 '.' 与 '..'
+os.path.exists(opts.out_path)
+os.path.splitext("a.txt") # ("a",'.txt')
+os.path.expanduser("~/Library/Application Support/Anki2")

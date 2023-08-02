@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: (not) match
+# key: 
+# --
+if ($var =~ m//)
+if ($var !~ m//)

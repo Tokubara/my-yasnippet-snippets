@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: class-definition
+# key: 
+# --
+// header
+static uint64_t concat_address(uint64_t addr_tag, uint32_t offset) ;
+
+
+
+// cpp
+uint64_t RRM::concat_address(uint64_t addr_tag, uint32_t offset) { // static 在定义中不用写
+// ...
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: set-get-environment-variables
+# key: 
+# --
+;; set env var PATH, by appending a new path to existing PATH value
+(setenv "PATH"
+        (concat
+         "C:/cygwin/usr/local/bin" path-separator
+         "C:/cygwin/usr/bin" path-separator
+         "C:/cygwin/bin" path-separator
+         (getenv "PATH")))
+         
+;; get value of env var PATH
+(getenv "PATH")

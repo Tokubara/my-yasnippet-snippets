@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: docstring
+# key: 
+# --
+#[doc = "Simulate the production of a spore by meiosis."]
+
+/// Simulate the production of a spore by meiosis.
+
+//! enclosing
+// 这种写法基本上都是在一个文件(mod) 的开始

@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: generics
+# key: 
+# --
+public class Pair<T> {
+  T first;
+  T second;
+  public Pair(T first, T second) {
+    this.first = first;
+    this.second = second;
+  }
+  public T getFirst() { return first; }
+  public T getSecond() { return second; }
+}
+
+Pair<Integer> minmax = new Pair<Integer>(1, 100);
+Integer min = minmax.getFirst();
+Integer max = minmax.getSecond();

@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: selenium-wait
+# key: 
+# --
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverwait
+from selenium.webdriver.support import expected conditions as EC
+browser=webdriver.Chrome()
+wait=WebDriverWait(browser,10) # 超过这个时间会发出 TimeoutException
+browser.get('https://www.taobao.com/')
+input=wait.until(EC.presence_of_element_located((By.ID,'q')))
+button=wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,'.btn-search')))
+print(input,button)
+
+
+try:
+    return WebDriverWait(self.browser, 5).until(
+        EC.text_to_be_present_in_element((By.ID, 'errorMsg'), '用户名或密码错误'))
+except TimeoutException:
+    return False

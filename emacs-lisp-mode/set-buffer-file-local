@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: set-buffer-file-local
+# key: 
+# --
+(setq-default org-startup-with-inline-images nil)
+(setq-local a 789)

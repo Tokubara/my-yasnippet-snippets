@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: org-capture-templates
+# key: 
+# --
+(setq org-capture-templates nil)
+(add-to-list 'org-capture-templates
+             '("l" "ics log" plain
+               (id "D509AD3A-F8CA-4862-B3CE-2ADC5634A24C")
+               "" :kill-buffer nil :no-save t :empty-lines 1 :empty-lines-after 3 :jump-to-captured t))

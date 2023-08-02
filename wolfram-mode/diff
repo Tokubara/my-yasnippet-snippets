@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: diff
+# key: 
+# --
+D[f[x], x]
+D[f[x], {x, n}]

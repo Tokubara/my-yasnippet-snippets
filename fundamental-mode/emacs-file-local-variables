@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: emacs-file-local-variables
+# key: 
+# --
+# emacs specify major mode for a file
+# -*- mode: sh; -*-
+# -*- eval: (outli-mode); -*-
+# -*- org-image-actual-width: (200); -*-
+
+;; Local Variables:
+;; eval: (eldoc-mode)
+;; eval: (font-lock-mode -1)
+;; compile-command: "cc foo.c -Dfoo=bar -Dhack=whatever \
+;;   -Dmumble=blaah"
+;; End:

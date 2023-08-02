@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pure-anonymous--function-Map
+# key: 
+# --
+Map[{#, Log[2, MultiplicativeOrder[5, 2^#]]} &, Table[i, {i, 3, 7}]] // TableForm
+(*也可以用 /@*)
+{#, Log[2, MultiplicativeOrder[5, 2^#]]} & /@ Table[i, {i, 3, 7}] 

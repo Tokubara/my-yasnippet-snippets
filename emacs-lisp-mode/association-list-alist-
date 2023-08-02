@@ -1,0 +1,42 @@
+# -*- mode: snippet -*-
+# name: association-list-alist-
+# key: 
+# --
+; create
+(setq xx
+      '(("aa" . 23)
+        ("bb" . 24)
+        ("cc" . 33)))
+
+(setq xx
+      '((aa . 23) ; 用 symbol
+        (bb . 24)
+        (cc . 33)))
+        
+(setq org-rifle-fileset '(
+                          (arch . ("computer_architecture.org" "isa_x86_mips_riscv_assembly.org" "计组.org" "计算机体系结构_胡伟武.org" "高级计算机系统结构.org"))
+(emacs . ("emacs.org" "spacemacs.org"))
+                          ))
+
+
+(setq xx
+      '(("aa" . 23)
+        ("bb" . 24)
+        ("cc" . 33)))
+
+;; get the value with key "bb". if not found, return 999. use string-equal for comparison
+(alist-get "bb" xx 999 nil 'string-equal)
+;; 24
+
+
+(setq xx
+      '((aa . 23)
+        (bb . 24)
+        (cc . 33)))
+
+;; get the value with symbol key bb. if not found, return 999
+(alist-get 'bb xx 999)
+;; 24
+
+(alist-get 'dd xx 999)
+;; 999

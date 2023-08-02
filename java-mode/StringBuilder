@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: StringBuilder
+# key: 
+# --
+String pet = "Cat";
+StringBuilder sb = new StringBuilder(pet);
+sb.append("amaran");
+String boat = sb.toString();
+System.out.println(boat);

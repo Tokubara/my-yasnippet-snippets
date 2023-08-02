@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: symbol-variable-value-name
+# key: 
+# --
+(symbol-value 'a)
+(symbol-name 'a) ; convert symbol to string

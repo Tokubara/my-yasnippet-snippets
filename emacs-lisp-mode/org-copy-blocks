@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: org-copy-blocks
+# key: 
+# --
+; {{{2 org-copy-blocks
+; 作用是, 拷贝当前, 注意, 仅仅是 src block
+(defun org-copy-blocks ()
+  (interactive)
+  (let ((code ""))
+    (save-restriction
+      (org-narrow-to-subtree)
+      (org-babel-map-src-blocks nil
+    (setq code (concat code (org-no-properties body))))
+      )
+    (kill-new code)))

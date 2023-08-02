@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: struct
+# key: 
+# --
+  struct prog {
+    unsigned short len;
+    unsigned char *filter;
+  } rule = {
+    .len = sizeof(filter) >> 3,
+    .filter = filter
+  };

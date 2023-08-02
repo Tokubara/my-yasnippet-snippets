@@ -1,0 +1,41 @@
+# -*- mode: snippet -*-
+# name: matrix
+# key: 
+# --
+A( A > 5 ) % indice
+
+% 右闭
+x(2) % ans = 32, indices in MATLAB start 1, not 0
+x(2:3) % ans = 32 53
+x(2:end) % ans = 32 53 7 1
+x = [4 32 53 7 1]
+x = [4; 32; 53; 7; 1] % Column vector
+
+% create sequence, 似乎有没有 [] 都一样
+x = [1:10] % x = 1 2 3 4 5 6 7 8 9 10
+x = [1:2:10] % Increment by 2, i.e. x = 1 3 5 7 9
+
+A = [1 2 3; 4 5 6; 7 8 9]
+A(2,3) % ans = 6, A(row, column)
+A(6) % ans = 8
+A(2,3) = 42 % Update row 2 col 3 with 42
+
+% submatrix
+A(2:3,2:3) % Creates a new matrix from the old one
+A(:,1) % All rows in column 1
+
+% concat
+[A ; A]
+vertcat(A,A);
+[A , A]
+horzcat(A,A);
+A(:, [3 1 2]) % Rearrange the columns of original matrix
+
+A(1, :) =[] % Delete the first row of the matrix
+A(:, 1) =[] % Delete the first column of the matrix
+
+% 有的函数作用于每个元素 element-wise, 有的作用于整个矩阵
+exp(A) % exponentiate each element
+expm(A) % calculate the matrix exponential
+sqrt(A) % take the square root of each element
+sqrtm(A) %  find the matrix whose square is A

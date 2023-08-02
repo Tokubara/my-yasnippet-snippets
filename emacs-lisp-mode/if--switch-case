@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: if--switch-case
+# key: 
+# --
+(when condition a b c) ; 相当于  (if condition (progn a b c) nil)
+(and arg1 arg2 arg3)
+(if arg1 (if arg2 arg3))
+(cond (arg1 (cond (arg2 arg3)))) ; cond 用起来和 switch case 差不多, 比如
+(cond
+          ((eq embark-type 'consult-org--heading) (plist-get embark-plist 'consult--candidate))
+          ((eq embark-type 'consult--outline-level) (car (plist-get embark-plist 'consult-location)))
+         )

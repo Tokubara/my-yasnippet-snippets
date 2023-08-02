@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: untitled-snippet
+# key: 
+# --
+(org-element-context)
+(org-element-type (org-element-context))

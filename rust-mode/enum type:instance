@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: enum type:instance
+# key: 
+# --
+enum Shape {
+    Sphere { center: Point3d, radius: f32 },
+    Cuboid { corner1: Point3d, corner2: Point3d },
+}
+
+let unit_sphere: Shape = Shape::Sphere {
+    center: ORIGIN,
+    radius: 1.0,
+};
+
+#[derive(Copy, Clone, Debug, PartialEq)]
+enum RoughTime {
+    InThePast(TimeUnit, u32),
+    JustNow,
+    InTheFuture(TimeUnit, u32),
+}

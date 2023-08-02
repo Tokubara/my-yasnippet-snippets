@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: date time
+# key: 
+# --
+time::macros::date!(2021 - 06 - 19) // time::Date
+
+// 计算日期差
+    pub fn get_day(self, date: time::Date) -> usize {
+        (date.to_julian_day() - self.date_offset.to_julian_day()) as usize
+    }

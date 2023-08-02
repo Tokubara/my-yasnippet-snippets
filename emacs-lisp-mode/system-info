@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: system-info
+# key: 
+# --
+system-type ; variable, 在 mac 上是 "darwin"
+(string-equal system-type "windows-nt")

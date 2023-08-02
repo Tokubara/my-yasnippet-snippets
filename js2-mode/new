@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: new
+# key: 
+# --
+new Object()
+new Point(2,3)
+// 没有参数可以省略 ()
+new Object
+new Date

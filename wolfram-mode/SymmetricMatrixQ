@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: SymmetricMatrixQ
+# key: 
+# --
+SymmetricMatrixQ[wInverseMatrix[8]]

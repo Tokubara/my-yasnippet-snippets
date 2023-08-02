@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: git-log
+# key: 
+# --
+git log --oneline --shortstat

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: if
+# key: 
+# --
+		if (user == 0) {
+# found a new user
+			username[++number_of_users]=$3;
+			user=number_of_users;
+		}

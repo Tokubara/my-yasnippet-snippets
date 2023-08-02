@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: benchmark
+# key: 
+# --
+microbenchmark::microbenchmark(
+fixed = str_detect(sentences, fixed("the")), regex = str_detect(sentences, "the"),
+times = 20
+)

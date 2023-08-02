@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: format string
+# key: 
+# --
+String name="sonoo";  
+String sf1=String.format("%.3f", 12.37444);

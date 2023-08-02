@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: parse-convert-string-to-number
+# key: 
+# --
+int       atoi( const char *str );
+long      atol( const char *str );
+long long atoll( const char *str );

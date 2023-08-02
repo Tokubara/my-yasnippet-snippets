@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: timing
+# key: 
+# --
+library(tictoc)
+tic()
+toc()

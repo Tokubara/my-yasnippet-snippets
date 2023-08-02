@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: write lines
+# key: 
+# --
+write_lines(str_c(vars_str,":", labels_vec), "labels.txt")

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: read-from-directory-name
+# key: 
+# --
+(read-directory-name "dir" "/Users/quebec/Playground/ics-lab/lab5/.env")

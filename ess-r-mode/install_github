@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: install_github
+# key: 
+# --
+devtools::install_github("jabiru/tictoc")

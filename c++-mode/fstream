@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: fstream
+# key: 
+# --
+// 下面的 fd 是 fstream 类型
+ifstream fd
+fd.open(path) // path 是字符串保存 path
+fd.good()
+fd.close

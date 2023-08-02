@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: max
+# key: 
+# --
+use std::cmp;
+assert_eq!(2, cmp::max(1, 2));

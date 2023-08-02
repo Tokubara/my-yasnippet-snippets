@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: neoterm
+# key: 
+# --
+let g:neoterm_bracketed_paste = 0 " close
+let g:neoterm_bracketed_paste = 1 " open

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: week num
+# key: 
+# --
+as.integer(strftime(Sys.Date(), format = "%W")) # 当前周数
+start_week_num = as.integer(strftime(strptime("2022-08-22",format="%F"), format = "%W")) # 某个日期的周数

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: expansion
+# key: 
+# --
+$(()) # arithmetic
+value=$(( $value + 1 ))
+# 可以用 +, -, *, /, %, 只支持整数运算, 不支持浮点数运算
+

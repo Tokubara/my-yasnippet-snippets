@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org-plot
+# key: 
+# --
+#+begin_src mathematica :results file graphics :output-dir ../vx_attachments/ :file `(setq tmp-img-path (format-time-string "Pasted_image_%4Y%m%d%H%M%S.pdf")) (symbol-value 'tmp-img-path)`
+p = $0;
+Export["../vx_attachments/`(symbol-value 'tmp-img-path)`", p];
+#+end_src

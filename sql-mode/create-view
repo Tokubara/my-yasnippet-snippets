@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: create-view
+# key: 
+# --
+CREATE VIEW ProductCustomers AS SELECT ... -- ... 就是普通的 query

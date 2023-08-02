@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-export
+# key: 
+# --
+(org-reveal-export-to-html-and-browse nil t nil nil)
+(org-latex-export-to-latex &optional ASYNC SUBTREEP VISIBLE-ONLY BODY-ONLY EXT-PLIST)

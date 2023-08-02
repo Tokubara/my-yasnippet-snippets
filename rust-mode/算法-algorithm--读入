@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: 算法-algorithm--读入
+# key: 
+# --
+use std::io::{self, Read};
+
+macro_rules! input {
+    ($it: expr) => ($it.next().unwrap().parse().unwrap());
+    ($it: expr, $T: ty) => ($it.next().unwrap().parse::<$T>().unwrap());
+}
+
+fn main() {
+    let mut buf = String::new();
+    io::stdin().read_to_string(&mut buf).unwrap();
+
+    let mut it = buf.split_whitespace();
+
+    let n: usize = input!(it);
+    let a: Vec<u64> = (0..n).map(|_| input!(it)).collect();
+
+    let mut sum: u64 = 0;
+    for i in 0..n {
+        sum += a[i];
+    }
+
+    println!("{}", sum);
+}

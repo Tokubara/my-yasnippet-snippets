@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: PIL
+# key: 
+# --
+from PIL import Image
+import numpy as np
+image = Image.open('code2.jpg')
+image_array = np.full((200,200),130,dtype=np.uint8)
+gray_scale_image = Image.fromarray(image_array, 'L')
+gray_scale_image.save("gray_scale.bmp")

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bytes-like-object
+# key: 
+# --
+b'\x12\xa4'
+bytes("\x12", encoding="utf-8")
+bytearray("123")

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: print
+# key: 
+# --
+// Printing, and forcing a new line on the next print
+println("Hello world!")
+println(10)
+// Hello world!
+// 10
+
+// Printing, without forcing a new line on next print
+print("Hello world")
+print(10)
+// Hello world10

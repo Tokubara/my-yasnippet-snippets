@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: environment variables
+# key: 
+# --
+execute('source ' . $MDOT . 'util.vim')

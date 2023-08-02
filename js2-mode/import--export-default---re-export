@@ -1,0 +1,33 @@
+# -*- mode: snippet -*-
+# name: import--export-default---re-export
+# key: 
+# --
+// 逐个 export
+export const PI = Math.PI;
+// export 全部 name(不是 object)
+export { Circle, degreesToRadians, PI }; // 写在最后
+export default class BitSet // default
+export {a as b, c as d}; // rename
+
+
+// import 位置不重要(hoisting), 但通常写在开头, 被 import 的内容是相对路径, 需要后缀(.js)
+import BitSet from './bitset.js'; // import default
+import { mean, stddev } from "./stats.js"; // 非 default
+import * as stats from "./stats.js"; // 所有 non-default exports 都作为了 stats object 的 property, 这些 properties 也不可写
+import Histogram, { mean, stddev } from "./histogram-stats.js"; // 同时 import default 和非 default, Histogram 就是 default, {} 则是 non-default
+import "./analytics.js"; // 表示不 import 任何内容, 只是为了执行一遍
+
+import { render as renderImage } from "./imageutils.js";
+import { render as renderUI } from "./ui.js";
+import { default as Histogram, mean, stddev } from "./histogram-stats.js";
+
+export { mean } from "./stats/mean.js";
+export { stddev } from "./stats/stddev.js";
+// * 参考前面 import 的写法, 是全部 non-default 的 items
+export * from "./stats/mean.js"; 
+export * from "./stats/stddev.js";
+// 前面说的都是 non-default 的写法, default 是
+export { default as mean } from "./stats/mean.js";
+export { default as stddev } from "./stats/stddev.js";
+export { mean as default } from "./stats.js" // 原来 mean 不是 default, 现在是 default
+export { default } from "./stats/mean.js" // 原来是 default, 现在还是 default

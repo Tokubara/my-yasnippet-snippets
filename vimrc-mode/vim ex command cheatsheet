@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: vim ex command cheatsheet
+# key: 
+# --
+:5,10bd
+:bd 5 6 7

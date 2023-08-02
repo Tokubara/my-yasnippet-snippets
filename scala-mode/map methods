@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: map methods
+# key: 
+# --
+m.contains("key")
+m.getOrElse("key", 0)

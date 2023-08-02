@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sort
+# key: 
+# --
+sort -k 1,1n 2,2n # 先按照第一个字段数字排序, 再按照第二个字段数字排序

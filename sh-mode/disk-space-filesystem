@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: disk-space-filesystem
+# key: 
+# --
+df -lh # local all filesystems
+df -lh . # current directory 所在的 filesystem 的信息
+
+du -s -S -h # directory size
+du -h --max-depth=1
+mount # list filesystems info

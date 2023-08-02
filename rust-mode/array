@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: array
+# key: 
+# --
+let a: [usize;32] = [5_usize;32];
+let a = [1,2,3];

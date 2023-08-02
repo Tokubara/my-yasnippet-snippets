@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: str_detect
+# key: 
+# --
+x <- c("apple", "banana", "pear")
+str_detect(x, fixed(""))

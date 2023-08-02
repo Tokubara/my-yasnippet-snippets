@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: taylor-series
+# key: 
+# --
+Series[Exp[x], {x, 0, 7}]

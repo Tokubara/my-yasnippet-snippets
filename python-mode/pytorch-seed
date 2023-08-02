@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pytorch-seed
+# key: 
+# --
+torch.manual_seed(0)

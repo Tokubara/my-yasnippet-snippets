@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: timing control
+# key: 
+# --
+repeat(10)@(posedge clk);//延迟10个时钟周期
+a=b;
+
+a=repeat(10)@(posedge clk) b ;

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: open-and-read-binary-file
+# key: 
+# --
+// Read the UDP packet from file
+FILE *f = fopen("ip.bin", "rb");
+if (!f) {
+  perror("Can't open 'ip.bin'");
+  exit(0);
+} 
+unsigned char ip[MAX_FILE_SIZE];
+int n = fread(ip, 1, MAX_FILE_SIZE, f);
+printf("Total IP packet size: %d\n", n);

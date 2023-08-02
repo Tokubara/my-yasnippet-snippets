@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: try-catch-error-handling
+# key: 
+# --
+try {
+} catch (ExceptionA | ExceptionB e) {
+  e.printStackTrace();
+} catch (RuntimeException e) {
+  System.out.println("runtime exception " + e.getMessage());
+} catch (Exception e) {
+  e.printStackTrace();
+} finally {
+}

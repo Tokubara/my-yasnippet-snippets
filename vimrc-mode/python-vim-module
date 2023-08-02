@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: python-vim-module
+# key: 
+# --
+vim.current.buffer[:]=str_list # 其中 str_list 每一个元素不需要以 \n 结尾
+
+# 无法访问 l: 变量, 可以访问 a: 变量, g: 等变量
+vim.eval("a:1")

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: explain-option-of-command
+# key: 
+# --
+Can you explain -print0 option of find command?

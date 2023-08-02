@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tile
+# key: 
+# --
+import numpy as np 
+a=np.arange(3)
+print(np.tile(a,3))
+print(np.tile(a,(2,2)))

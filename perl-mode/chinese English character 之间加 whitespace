@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: chinese English character 之间加 whitespace
+# key: 
+# --
+perl -CIOED -p -i -e 's/(\p{Script_Extensions=Han})([a-zA-Z])/$1 $2/g;s/([a-zA-Z])(\p{Script_Extensions=Han})/$1 $2/g' `rg -l '^#+ .*[\u4e00-\u9fa5][a-zA-Z]'`

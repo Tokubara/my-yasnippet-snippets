@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: save-clipboard-image-to-file
+# key: 
+# --
+use POSIX qw(strftime);
+
+$path = strftime("/Users/quebec/notes/vx_attachments/Pasted_image_%Y%m%d%H%M%S.png", localtime);
+
+$exit_code = system '/usr/local/bin/pngpaste', $path; 
+
+if ($exit_code == 0) {
+  print "<img src=\"$path\" width=\"600\" />";
+} else {
+  print "error";
+}

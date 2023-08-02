@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: tf-example
+# key: 
+# --
+my_tensor = tf.constant([[1.0, 2.0], [3.0, 4.0]])
+my_variable = tf.Variable(my_tensor)
+x1=tf.placeholder(tf.float32,[2,3])
+
+# Variables can be all kinds of types, just like tensors
+bool_variable = tf.Variable([False, False, False, True])
+print("Shape: ", my_variable.shape)
+print("DType: ", my_variable.dtype)
+print("As NumPy: ", my_variable.numpy())
+
+self.get_bias(name)
+conv = tf.nn.conv2d(bottom, filt, [1, 1, 1, 1], padding='SAME')
+conv_biases = self.get_bias(name)
+bias = tf.nn.bias_add(conv, conv_biases)
+relu = tf.nn.relu(bias)
+
+tf.nn.max_pool(bottom, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME', name=name)

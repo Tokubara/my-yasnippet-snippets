@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: object
+# key: 
+# --
+(prin1-to-string (org-element-context)) ; object/list to string

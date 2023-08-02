@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: detect str in data frame
+# key: 
+# --
+any(str_detect(join$city, "北京"))

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: integer-to-enum
+# key: 
+# --
+fn http_status_from_u32(n: u32) -> Option<HttpStatus> {
+    match n {
+        200 => Some(HttpStatus::Ok),
+        304 => Some(HttpStatus::NotModified),
+        404 => Some(HttpStatus::NotFound),
+        // ...
+        _ => None,
+    }
+}

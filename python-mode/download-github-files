@@ -1,0 +1,61 @@
+# -*- mode: snippet -*-
+# name: download-github-files
+# key: 
+# --
+import requests
+import shutil
+from pyquery import PyQuery as pq
+from urllib.parse import unquote
+import time
+import random
+
+headers = {
+  'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36'
+}
+
+def download_file(url, local_filename=None, target_dir=""):
+    if not local_filename:
+      local_filename = target_dir+unquote(url.split('/')[-1])
+    try:          
+      with requests.get(url, stream=True) as r:
+          if r.status_code < 300:
+            with open(local_filename, 'wb') as f:
+                shutil.copyfileobj(r.raw, f)
+            return True
+          else:
+            raise Exception("")
+    except Exception as e:
+      print(f"error:{url}")
+      print(e)
+      return False
+
+
+#%%
+index_url=f"https://github.com/constantinje/Hacking-books/"
+raw_url =  "https://raw.githubusercontent.com"
+response=requests.get(index_url, headers=headers)
+doc = pq(response.text)
+anode_list = list(doc(".js-navigation-open.Link--primary").items())
+for anode in anode_list:
+  print(download_file(raw_url+anode.attr("href").replace("blob/","") ,target_dir="/Users/quebec/Documents/Book/"))
+  time.sleep(random.uniform(0.8,1.5))
+
+error_list = [
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/51.%20SQL%20Injection%20Attacks%20and%20Defense.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/45.%20Metasploit%20Toolkit%20-%20Syngress.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/35.%20Cracking%20Passwords%20Guide.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/34.%20Computer%20Viruses%2C%20Hacking%20and%20Malware%20attacks%20for%20Dummies.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/26.%20Hacker%20School.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/24.%20Network%20Attacks%20and%20Exploitation.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/17.%20Python%20Web%20Penetration%20Testing%20Cookbook.pdf",
+  "https://raw.githubusercontent.com/constantinje/Hacking-books/master/13.%20Network%20Performance%20and%20Security.pdf"
+]
+
+new_error_list = []
+for error_url in error_list:
+  is_success = download_file(raw_url+anode.attr("href").replace("blob/","") ,target_dir="/Users/quebec/Documents/Book/")
+  if not is_success:
+    new_error_list.append(error_url)
+  else:
+    print(f"success: {error_url}")
+    

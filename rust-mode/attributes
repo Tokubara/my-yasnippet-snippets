@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attributes
+# key: 
+# --
+#[derive(Copy, Clone, Debug, PartialEq, Eq, PartialOrd, Ord)]

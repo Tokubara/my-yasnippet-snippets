@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: define-handler
+# key: 
+# --
+on HelloWorld()
+display dialog "Hello, world"
+end HelloWorld
+HelloWorld()
+
+on Hello(somebody, howLong)
+display dialog somebody giving up after howLong
+end Hello
+Hello("Apple", 2)
+Hello("Microsoft", 1)
+Hello("User", 3)

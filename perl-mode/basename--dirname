@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: basename--dirname
+# key: 
+# --
+use File::Basename;
+# $fullname="/Users/quebec/box/markdown2latex/out/error.tex";
+$basename = basename($fullname,@suffixlist); # 可以不要第二个参数
+$dirname  = dirname($fullname);
+
+# 或者不要函数简单的
+/^(.+)\.rs/
+$basename = $1;

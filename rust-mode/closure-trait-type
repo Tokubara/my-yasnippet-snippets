@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: closure-trait-type
+# key: 
+# --
+pub fn from_fn<T, F>(f: F) -> ()
+where F: FnMut() -> Option<T> { }

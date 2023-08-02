@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: RandomChoice
+# key: 
+# --
+RandomChoice[{a, b, c}]
+RandomChoice[{0.2, 0.2, 0.6} -> {a, b, c}, 20] (*抽样 20 个*)
+RandomChoice[{0.2, 0.2, 0.6} -> {a, b, c}]

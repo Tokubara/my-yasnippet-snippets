@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: object
+# key: 
+# --
+$process.Name
+
+Select-Object -Property Name
+Get-Process | Select-Object -First 5 -ExpandProperty Name # -ExpandProperty 的作用是: 如果没这个参数, 返回是 array of PSCustomObject, PSCustomObject 相比 Process 的区别是, 并没有保证完整持续, 尽管 PSCustomObject 只有 Name 属性, 但仍然不是 string 数组, 加上 -ExpandProperty 就会是 string 数组
+-First 5 # 前 5 个 objects
+# 感觉 select-object 首先肯定有 R select 的作用, 选择某些属性, -First 5 又有点 filter 的感觉 
+
+# create object
+[PSCustomObject]@{
+  Number = $_
+}

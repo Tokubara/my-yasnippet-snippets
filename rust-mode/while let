@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: while let
+# key: 
+# --
+while let pattern = expr {
+    
+}

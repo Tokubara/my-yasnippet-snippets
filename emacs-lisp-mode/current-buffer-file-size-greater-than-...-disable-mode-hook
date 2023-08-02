@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: current-buffer-file-size-greater-than-...-disable-mode-hook
+# key: 
+# --
+(add-hook 'org-mode-hook (lambda() (when (> (file-attribute-size (file-attributes (buffer-file-name))) 40000) (font-lock-mode -1))))

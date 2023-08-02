@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ls
+# key: 
+# --
+import os
+os.listdir("") # return list of str->pathname

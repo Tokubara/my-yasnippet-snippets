@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: numpy-random
+# key: 
+# --
+np.random.rand(nrow,ncol)
+np.random.uniform(a, b, shape)
+np.random.rand() # 数
+np.random.rand(3) # 向量
+np.random.rand(2,4) # 2*4
+np.random.randint(0,2,(4,8)) # [0,2), (4,8)的矩阵

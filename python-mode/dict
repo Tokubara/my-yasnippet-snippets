@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dict
+# key: 
+# --
+dict.get(key[, default]) # 不存在就返回 default
+dict.keys() # 所有 key

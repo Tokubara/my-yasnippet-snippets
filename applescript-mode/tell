@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: tell
+# key: 
+# --
+tell application "Microsoft PowerPoint"
+end tell
+tell application "Finder" to close every window

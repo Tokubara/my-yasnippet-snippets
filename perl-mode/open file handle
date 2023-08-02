@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: open file handle
+# key: 
+# --
+open CONFIG, 'dino'; # default input
+open CONFIG, '<dino'; # input
+open BEDROCK, '>fred'; # output
+open LOG, '>>logfile'; # append
+open STDOUT, '>>logfile'; # append
+open STDERR, '>>errorfile'; # append
+
+close CONFIG;

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: netcat
+# key: 
+# --
+# kali
+nc -vz 127.0.0.1 1-65535 # 端口扫描
+nc -v -v -w3 -z 192.168.1.2 8080-8083
+
+
+# mac
+nc -l 333 # listen 不能有 -p 选项

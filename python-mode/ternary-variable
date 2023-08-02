@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ternary-variable
+# key: 
+# --
+a if condition else b

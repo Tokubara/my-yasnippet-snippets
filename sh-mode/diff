@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: diff
+# key: 
+# --
+diff -arq  gcd/ uart/ # compare two directories
+diff -u file1.txt file2.txt

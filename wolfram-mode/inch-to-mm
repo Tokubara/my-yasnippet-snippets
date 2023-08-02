@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inch-to-mm
+# key: 
+# --
+r = QuantityMagnitude@ UnitConvert[Quantity[12, "Inches"], "Millimeters"];

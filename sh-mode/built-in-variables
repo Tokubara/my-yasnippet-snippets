@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: built-in-variables
+# key: 
+# --
+$# # number of arguments, 什么都没有是 0, 有一个参数是 1
+$0 # program name
+$1, $2 ... # positional arguments
+$@
+$*
+"$@"
+"$*"

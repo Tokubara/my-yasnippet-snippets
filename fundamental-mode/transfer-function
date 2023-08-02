@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: transfer-function
+# key: 
+# --
+${H(j \omega)=\int_{-\infty}^{\infty} h(\tau) e^{-j \omega \tau} d \tau}$
+${H\left(e^{j \omega}\right)=\sum h[k] e^{-j \omega k}}$

@@ -1,0 +1,40 @@
+# -*- mode: snippet -*-
+# name: position
+# key: 
+# --
+; move cursor
+(goto-char position/marker)
+(forward-line 1)
+(forward-char 10)
+(search-forward (concat "begin " region-id))
+(beginning-of-line)
+(end-of-line)
+
+; get position
+;; line
+(line-beginning-position)
+(point-at-bol) ; the character position of the first character on the current line, 我没感觉与 (line-beginning-position) 有什么不同
+(point-at-bol N) ; scan forward N - 1 lines first
+(line-end-position)
+(line-number-at-pos end)
+(line-beginning-position-of-pos pos) ; util.el 定义的, 获得 pos 所在的 line 的起始 position
+
+;; point
+(point) ; get current point
+(point-max)
+(point-min)
+
+; text between positions
+(buffer-substring START END)
+(buffer-substring-no-properties START END)
+; region
+(region-beginning)
+(region-end)
+
+; use position
+(narrow-to-region START END)
+
+; save position
+(save-excursion
+  (goto-char point)
+  (line-beginning-position))

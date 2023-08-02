@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vim count of pattern
+# key: 
+# --
+:%s/pattern//gn " 不会真的 replace

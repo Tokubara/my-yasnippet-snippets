@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: cargo-run
+# key: 
+# --
+cargo run --bin efern --verbose

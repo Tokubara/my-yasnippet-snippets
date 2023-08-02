@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: complex
+# key: 
+# --
+complex<double> EvaluatorUtils::randomComplex(double bound) {
+	complex<double> res;
+	res.real(raindomReal(bound)); // 设置 real 部分, 实部
+	res.imag(randomReal(bound)); // 设置虚部
+	return res;
+}
+// complex  重载了 +,* 符号

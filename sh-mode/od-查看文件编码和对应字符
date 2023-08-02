@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: od-查看文件编码和对应字符
+# key: 
+# --
+od -t c -t x1 -A d tmp.txt

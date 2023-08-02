@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: leetcode
+# key: 
+# --
+package main
+
+func min(a, b int) int {
+    if a < b {
+        return a
+    }
+    return b
+}
+
+func max(a, b int) int {
+    if a >= b {
+        return a
+    }
+    return b
+}
+]
+
+func main() {
+		if canJump([]int{2,3,1,1,4}) != true {
+			panic("fail")
+		}
+		if canJump([]int{3,2,1,0,4}) != false {
+			panic("fail")
+		}
+}

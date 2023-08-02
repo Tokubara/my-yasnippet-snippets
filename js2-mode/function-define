@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: function-define
+# key: 
+# --
+// function expression
+let square = function(x) { return x * x; };
+// 可以有默认参数, 默认参数可以是任何表达式, 不需要是常数, 而且可以是前面参数的函数
+const rectangle = (width, height=width*2) => ({width, height});
+// arrow function, 语法约束见 org-protocol://id?id=A355FB93-19AF-4C86-9261-FE61D7530D4B
+const sum = (x, y) => x + y;
+// 要省略 {}, return, semicolon, 三者必须同时省略
+
+// Destructuring Function Arguments into Parameters
+function vectorAdd([x1, y1], [x2, y2]) {
+  // Unpack 2 arguments into 4 parameters
+  return [x1 + x2, y1 + y2];
+}
+vectorAdd([1, 2], [3, 4]); // => [4,6]

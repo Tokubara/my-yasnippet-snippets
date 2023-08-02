@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: boolean
+# key: 
+# --
+# Boolean values are primitives
+$True  # => True
+$False  # => False
+# negate with !
+!$True   # => False
+!$False  # => True
+# Boolean Operators
+# Note "-and" and "-or" usage
+$True -and $False  # => False
+$False -or $True   # => True
+
+# True and False are actually 1 and 0 but only support limited arithmetic.
+# However, casting the bool to int resolves this.
+$True + $True # => 2
+$True * 8    # => '[System.Boolean] * [System.Int32]' is undefined
+[int]$True * 8 # => 8
+$False - 5   # => -5

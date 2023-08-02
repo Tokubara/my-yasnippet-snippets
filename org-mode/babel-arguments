@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: babel-arguments
+# key: 
+# --
+:exports code/results/both/none
+
+src_R[:exports code]{n0}

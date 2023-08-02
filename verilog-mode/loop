@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: loop
+# key: 
+# --
+repeat(次数) begin
+end
+
+// for 与 c 没区别
+integer i;
+for (i = 1;i <= 8; i = i + 1)
+// verilog 中 i 不能声明在 for 内
+// while 与 c 没区别
+while()
+
+forever begin
+end

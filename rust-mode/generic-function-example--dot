@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: generic-function-example--dot
+# key: 
+# --
+use std::default::Default;
+use std::ops::Add;
+use std::ops::Mul;
+
+fn dot<N: Mul<Output = N> + Add<Output = N> + Default + Copy>(v1: &[N], v2: &[N]) -> N {
+    let mut total: N = N::default(); // 必须有 0
+    for i in 0..v1.len() {
+        total = total + v1[i] * v2[i];
+    }
+    total
+}
+
+fn main() {
+    let v1: [f32; 3] = [1.0, 2.0, 3.0];
+    let v2: [f32; 3] = [3.0, 4.0, 5.0];
+    println!("{}", dot(&v1, &v2));
+}

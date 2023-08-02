@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ipython-benchmark
+# key: 
+# --
+%timeit reduce(lambda x, y: x * y, a)

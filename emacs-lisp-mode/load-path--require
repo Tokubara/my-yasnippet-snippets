@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: load-path--require
+# key: 
+# --
+(add-to-list 'load-path "/Users/quebec/Playground/little-scripts/dotfiles/mac/")
+(require 'find-file-in-project)

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: leetcode rust
+# key: 
+# --
+struct Solution;
+
+fn main() {
+    assert_eq!(Solution::(6), true);
+    assert_eq!(Solution::(1), true);
+    assert_eq!(Solution::(14), false);
+}

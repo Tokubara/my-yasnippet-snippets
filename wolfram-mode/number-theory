@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: number-theory
+# key: 
+# --
+ModularInverse[p, mod];

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: raw-str
+# key: 
+# --
+r'''
+'''
+# 有个非常值得注意的地方, 如果本来就需要块缩进, 比如下面, e 前面的空格也会被当成 raw string 的一部分, 可以顶格写, raw string 不需要满足 block indent 的要求 
+if __name__ == '__main__':
+    test_str=r'''bc
+    e
+    '''
+    print(test_str)

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: selected-line-prepend-ABCD...
+# key: 
+# --
+'<,'>s/^/\=nr2char(char2nr('A')+line(".")-line("'<")) . " "

@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: anonymous functions
+# key: 
+# --
+// anonymous functions
+(x: Int) => x * x
+(i) => i * 2 // 类型如果能推导出来就可以省略, 否则不行, 毕竟 scala 是静态类型
+i => i * 2 // 有没有括号, 我还真不确定, 尽管 ecause there’s only one argument, the parentheses around the parameter i aren’t needed, 但是 val x = x:Int=>x*x 又是错的
+val sq: Int => Int = x => x * x // Int => Int 是在给出它的类型
+(1 to 5).map { x =>
+  val y = x * 2
+  println(y)
+  y
+}
+// 前面的 anonymous functions 都是一个表达式, 但其实也可以是一个块
+val x=(x:Double) =>{
+  val y = x * 2
+  println(y)
+  y}
+// 如果是作为函数参数, 可以省略 ()
+(1 to 5).map { x =>
+  val y = x * 2
+  println(y)
+  y
+}
+
+// placeholder
+(1 to 5).map(_ * 2) // 这里的匿名函数甚至没有给参数声明, 因为它可以从 map 函数的参数推导出来
+(1 to 5).reduceLeft(_ + _)
+(1 to 5).map(x => x * x) // 但如果参数使用不止一次, 必须给出 name

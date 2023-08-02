@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: 二分-binary---找到满足条件最小的
+# key: 
+# --
+int mid;
+while (l < r) {
+  mid = (l + r) >> 1;
+  if () { // mid 满足条件
+    r = mid;
+  } else { // mid 不满足条件
+    l = mid + 1;
+  }
+}

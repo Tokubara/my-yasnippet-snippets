@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: use(mod)
+# key: 
+# --
+use a::b::c...::z
+use a::{self,b,c}
+use a::*
+use a::b as c

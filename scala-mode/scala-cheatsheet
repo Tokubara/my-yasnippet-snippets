@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: scala-cheatsheet
+# key: 
+# --
+// variables
+var x = 5
+val z: Int = 10
+x=6
+val x=6 // constant
+
+// type
+Boolean true,flase
+Int 0x32
+Float 3.14f
+Double 3.14
+String "123"
+Unit ()
+
+// type alias
+type R = Double
+
+// operator
+/ // 与 c 一样, 是整除
+
+
+
+
+
+

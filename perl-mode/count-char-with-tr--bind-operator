@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: count-char-with-tr--bind-operator
+# key: 
+# --
+$dot_num=$section =~ tr/\.//;

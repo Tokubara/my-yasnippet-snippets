@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mp4-to-mp3
+# key: 
+# --
+ffmpeg -i "04语音 a2. 通读笔记.mp4" "04语音 a2. 通读笔记.mp3"
+# from to
+
+ffmpeg -i pre.mov pre.mp4

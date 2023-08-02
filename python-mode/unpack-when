@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: unpack-when
+# key: 
+# --
+    kwargs = {
+        "slow":options.slow,
+        "epochs":options.epochs,
+        "print_iterations":options.checkpoint_iterations,
+        "batch_size":options.batch_size,
+        "save_path":os.path.join(options.checkpoint_dir,'fns.ckpt'),
+        "learning_rate":options.learning_rate
+    }
+    
+        args = [
+        content_targets,
+        style_target,
+        options.content_weight,
+        options.style_weight,
+        options.tv_weight,
+        options.vgg_path
+    ]
+
+optimize(*args, **kwargs)

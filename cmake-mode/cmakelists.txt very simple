@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: cmakelists.txt very simple
+# key: 
+# --
+cmake_minimum_required(VERSION 3.24)
+project(Pcap_analyze_master)
+
+set(CMAKE_BUILD_TYPE "Debug")
+# set(CMAKE_BUILD_TYPE "Release")
+set(CMAKE_CXX_FLAGS_DEBUG "-std=c++11 -g -Wall ${CMAKE_CXX_FLAGS_DEBUG}")
+# set(CMAKE_CXX_FLAGS_RELEASE "-std=c++11 ${CMAKE_CXX_FLAGS_RELEASE}")
+include_directories(${OPENCV_INCLUDE_DIR})
+include_directories($ENV{NEUWARE}/include/)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+#link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
+link_directories($ENV{X86_LIB_PATH})
+link_directories($ENV{NEUWARE}/lib64/)
+link_libraries("libcnrt.so")
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+
+add_executable(Pcap_analyze_master
+        define.h
+        main.cc)

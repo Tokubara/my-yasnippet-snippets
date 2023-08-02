@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: error
+# key: 
+# --
+# 可以在命令中加 -ErrorAction SilentlyContinue
+$ErrorActionPreference='SilentlyContinue' # 还可以是 "Continue", 报错但继续, 还可以是 "Stop"

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read-file
+# key: 
+# --
+f.read() # 包括 \n
+f.readlines()
+f.readline() # \n

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: conditional-feature-macos-platform
+# key: 
+# --
+if has('mac')
+  let MHOME="/Users/quebec/"
+else
+  let MHOME="/media/psf/Home/"
+endif
