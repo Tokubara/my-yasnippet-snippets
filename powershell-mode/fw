@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fw
+# key: 
+# --
+Get-Process | Format-Wide name -col 4
