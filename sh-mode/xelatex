@@ -2,4 +2,4 @@
 # name: xelatex
 # key: 
 # --
-xelatex --shell-escape -output-directory=out test.tex
+xelatex --shell-escape -output-directory=out -8bit test.tex

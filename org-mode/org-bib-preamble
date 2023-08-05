@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: org-bib-preamble
+# key: 
+# --
+#+cite_export: natbib
+#+bibliography: academic_ethics.bib
