@@ -3,7 +3,6 @@
 # key: 
 # --
 -split
-# 详见 hook://file/NEJeJL9c7?p=RG9jdW1lbnRzL0Jvb2s=&n=Mastering%20PowerShell%20Scripting%20Automate%20and%20manage%20your%20environment%20using%20PowerShell%207%2E1%2C%204th%20Edition%20by%20Chris%20Dent%20%28z%2Dlib%2Eorg%29%2Epdf#p=154
 # <Value> -split <Match>, <Maximum-Number>, <Split-Options>
 $first, $second, $third = '1,2,3,4,5' -split ','
 $first, $second, $null = '1,2,3,4,5' -split ','
@@ -11,9 +10,9 @@ $first, $second, $null = '1,2,3,4,5' -split ','
 'axbxcxd' -csplit ' X ', 0, 'IgnoreCase, IgnorePatternWhiteSpace'
 
 -join
-'a', 'b', 'c', 'd' -join "`t"
 # 用在 array 前
 -join ('hello', 'world')
+'a', 'b', 'c', 'd' -join "`t"
 
 -replace # regex
 # <Value> -replace <Match>, <Replace-With>
@@ -22,8 +21,10 @@ $first, $second, $null = '1,2,3,4,5' -split ','
 'abababab' -replace 'a' # 'bbbb'
 'value1,value2,value3' -replace '(.*),(.*),(.*)', '$3,$2,$1' # 可以用 capture groups
 
-
 # regex
 -match
 'The cow jumped over the moon' -match 'cow' # return $true
 -nomatch
+# wildcard
+-like
+-notlike

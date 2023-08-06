@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: format-table-hash
+# key: 
+# --
+Get-Process | Format-Table Name, @{name='VM(MB)';expression={$_.VM / 1MB -as [int]}}

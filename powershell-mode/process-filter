@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: process-filter
+# key: 
+# --
+Get-Process | Where-Object {  $_.ProcessName -ne "pwsh"  } | Sort-Object VirtualMemorySize -Descending | Select-Object -First 10 |  Measure-Object -Property VirtualMemorySize -Sum

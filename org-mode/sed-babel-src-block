@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sed-babel-src-block
+# key: 
+# --
+#+begin_src sed :stdin $0 :results output code
+s_(^.*)/([^/]+)$_cp \2 \1_
+#+end_src

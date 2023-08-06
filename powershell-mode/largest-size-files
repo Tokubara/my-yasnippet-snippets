@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: largest-size-files
+# key: 
+# --
+Get-ChildItem "C:\Users\12708\OneDrive\Book\" -File  | Where-Object {$_.Length -gt 10MB} | Sort-Object Length -Descending | Select-Object -First 10
