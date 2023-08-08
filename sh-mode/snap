@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: file--snap-command-list
+# key: 
+# --
+snap find "media players"
+snap version
+snap info vlc # uninstalled
+sudo snap install vlc
+snap list # installed
+snap list vlc
+snap list vlc -all # all revisions installed
+sudo snap refresh vlc # update/upgrade a package
+sudo snap refresh # update/upgrade all package
+sudo snap revert vlc # revert to previous version
+sudo snap disable vlc # disable but keep
+sudo snap enable vlc
+sudo snap install --channel=beta vlc
+sudo snap remove vlc
+sudo snap remove --revision=2344 vlc # remove a specific revision
