@@ -2,14 +2,7 @@
 # name: Get-Member
 # key: 
 # --
-# 查看有哪些 property, method 等 member
-Get-Process -Id 1624 | Get-Member
-# Get-Member 的输出如下
-Name                       MemberType     Definition                                                  
-----                       ----------     ----------                                                  
-Handles                    AliasProperty  Handles = Handlecount                                       
-Name                       AliasProperty  Name = ProcessName
-Get-Process -Id $PID | Get-Member -MemberType Property
-# -MemberType Property|Method|AliasProperty|Event|PropertySet|ScriptProperty
+ | Get-Member
+ | Get-Member -MemberType Property
 Get-Member -Name MachineName # filter, 只保留有这个属性的
-"abc" | Get-Member -MemberType Method # 看到字符串有哪些方法可以调用
+ | Get-Member -MemberType Method # 看到字符串有哪些方法可以调用

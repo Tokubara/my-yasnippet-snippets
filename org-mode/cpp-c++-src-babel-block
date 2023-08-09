@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cpp-c++-src-babel-block
+# key: 
+# --
+#+begin_src cpp :includes '(<iostream> <stdio.h>) :results output :main yes
+  std::cout<<"Hello World!\n";
+  printf("%d\n", 2+2);
+#+end_src

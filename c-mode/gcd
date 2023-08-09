@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: gcd
+# name: gcd-oj
 # key: 
 # --
 int gcd(int a, int b) {

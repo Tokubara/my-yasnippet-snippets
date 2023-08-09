@@ -3,3 +3,4 @@
 # key: 
 # --
 (advice-add 'ob-async-org-babel-execute-src-block :before #'no-hide-overlays)
+(advice-add 'org-store-link-functions :around #'my/org-store-link-functions-nil)

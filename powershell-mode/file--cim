@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: file--cim
+# key: 
+# --
+(get-cimclass win32_networkadapterconfiguration).CimClassMethods | where-object Name -like "*dhcp*"
+Get-CimInstance -ClassName Win32_NetworkAdapterConfiguration -Filter "description like '%intel%'" | Invoke-CimMethod -MethodName EnableDHCP

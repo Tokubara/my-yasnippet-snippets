@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: fast-exponentiation
+# key: 
+# --
+// a^b mod p, 快速幂
+int power(int a, int b, int p) { // calculate (a ^ b) mod p
+  int ans = 1 % p; // 这里的 %p 应该也不用写
+  for (; b; b >>= 1) {
+    if (b & 1) ans = (long long)ans * a % p;
+    a = (long long)a * a % p;
+  }
+  return ans;
+}
