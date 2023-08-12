@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: time diff
-# key: 
-# --
-beg := time.Now()
-time.Now().Sub(beg)

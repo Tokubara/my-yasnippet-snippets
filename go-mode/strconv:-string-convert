@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: strconv:-string-convert
-# key: 
-# --
-a,_=strconv.Atoi(字符串)

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: if-else-if
+# key: 
+# --
+if false {
+} else if true {
+} else {
+}

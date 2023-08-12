@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: range-for-loop-iterating-slice
+# key: 
+# --
+for _, name := range []string{"Bob", "Bill", "Joe"} {
+  fmt.Printf("Hello, %s\n", name)
+}

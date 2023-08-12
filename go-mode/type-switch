@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: type-switch
+# key: 
+# --
+var data interface{}
+data = ""
+switch c := data.(type) {
+case string:
+  fmt.Println(c, "is a string")
+case int64:
+  fmt.Printf("%d is an int64\n", c)
+default:
+  // all other cases
+}

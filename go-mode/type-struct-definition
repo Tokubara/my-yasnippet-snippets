@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: type-struct-definition
+# key: 
+# --
+type Employee struct {
+  ID            int
+  Name, Address string
+  DoB, time     Time
+  Position      string
+  Salary        int
+  ManagerID     int
+}
+Point{1, 2}
+Point{x:1, y:2}
+

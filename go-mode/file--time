@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: file--time
+# key: 
+# --
+now := time.Now()
+duration := 5 * time.Second
+future := now.Add(duration)
+diff := future.Sub(now)

@@ -2,6 +2,6 @@
 # name: go_src_block
 # key: g
 # --
-#+begin_src go :imports "fmt"
+#+begin_src go
 $0
 #+end_src

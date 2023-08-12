@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: quickrun-file-local
+# key: 
+# --
+Local Variables:
+quickrun-option-cmd-alist: ((:command . "g++")
+                            (:exec    . ("%c -std=c++0x -o %n %s"
+                                          "%n apple orange melon"))
+                            (:remove  . ("%n")))
+End:

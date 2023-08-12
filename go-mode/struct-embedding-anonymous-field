@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: struct-embedding-anonymous-field
+# key: 
+# --
+type Circle struct {
+  Point
+  Radius int
+}

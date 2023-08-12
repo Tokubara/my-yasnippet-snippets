@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: for-while-loop
+# key: 
+# --
+for condition { // Infinite loop.
+  break    // Just kidding.
+  continue // Unreached.
+}

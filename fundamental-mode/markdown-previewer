@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: markdown-previewer
-# key: 
-# --
-\[\left\{\begin{array}{l}
-R=I(1-S) \\
-G=I\left[1+\frac{S \cos H'}{\cos (\pi / 3-H')}\right] \\
-B=3 I-R-B
-\end{array}\right.\]

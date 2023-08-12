@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: c-style-for-loop
+# key: 
+# --
+for x := 0; x < 3; x++ { // ++ is a statement.
+  fmt.Println("iteration", x)
+}

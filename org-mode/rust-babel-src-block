@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: rust-babel-src-block
+# key: 
+# --
+#+begin_src rust
+for count in 0..3 {
+    println!("{}. Hello World!", count);
+}
+#+end_src

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: file--map
+# key: 
+# --
+m := map[string]int{"three": 3, "four": 4}
+m["one"] = 1

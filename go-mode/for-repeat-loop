@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: for-repeat-loop
+# key: 
+# --
+// For is the only loop statement in Go, but it has alternate forms.
+for { // Infinite loop.
+  break    // Just kidding.
+  continue // Unreached.
+}

@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: format_man_page
-# key: fm
-# --
-`(shell-command-to-string "pbpaste | /usr/bin/env perl /Users/quebec/Playground/little-scripts/format_man_page.pl")`

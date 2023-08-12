@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: math:big
-# key: 
-# --
-big.NewInt(int64(p))
-z.Sub(x, y) // z=x-y
-z.Lsh(x, y) // z=x<<y
-a := new(big.Int).Set(t)
