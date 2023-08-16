@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: convert-list-to-polynomial
+# key: 
+# --
+ToPolynomial[list_List]:=Dot[list, Table[x^i,{i,0,Length[list]-1}]];

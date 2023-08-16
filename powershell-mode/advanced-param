@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: advanced-param
+# key: 
+# --
+[CmdletBinding()]
+param (
+  [Parameter(Mandatory=$True,HelpMessage="Enter a computer name to query")]
+  [Alias('hostname')]
+  [string]$computername,
+  [ValidateSet(2,3)]
+  [int]$drivetype = 3
+)

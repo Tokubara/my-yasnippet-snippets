@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: math-big-int
+# key: 
+# --
+import (
+	"math/big"
+)
+big.NewInt(1)
+new(big.Int).Set()

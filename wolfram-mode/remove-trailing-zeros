@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remove-trailing-zeros
+# key: 
+# --
+RemoveTrailingZeros[list_List]:=list /. {x___, Longest[0 ...]} :> {x};

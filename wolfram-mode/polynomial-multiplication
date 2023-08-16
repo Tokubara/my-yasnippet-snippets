@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: polynomial-multiplication
+# key: 
+# --
+(*v1[1], v2[1] 是 0 次项而不是最高次项*)
+`(my/get-yasnippet-expansion-by-name "remove-trailing-zeros" 'wolfram-mode)`
+RemoveTrailingZeros[ListConvolve[v1,v2,{1,-1},0]]

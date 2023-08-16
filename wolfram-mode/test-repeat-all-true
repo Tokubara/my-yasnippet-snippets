@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: test-repeat-all-true
+# key: 
+# --
+ Print[AllTrue[
+   Table[(v1 = RandomInteger[P - 1, 8]; dftINTT[dftNTT[v1]] == v1),
+    100], # == True &]]
