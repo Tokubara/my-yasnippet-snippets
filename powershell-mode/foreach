@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: foreach
+# key: 
+# --
+foreach ($a in $array) {Write-output $a}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: execute-file
+# key: 
+# --
+pwsh -ExecutionPolicy ByPass -File "/var/folders/mv/8cdh2ggj7lschy650jcglyvm0000gn/T/tempCodeRunnerFile.ps1"

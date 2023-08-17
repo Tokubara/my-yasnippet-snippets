@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: while
+# key: 
+# --
+$n=1
+While ($n -le 10){Write-Output $n; $n++}

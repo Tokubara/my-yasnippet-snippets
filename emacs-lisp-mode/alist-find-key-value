@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: alist-find-key-value
+# key: 
+# --
+; get the value with key "bb". if not found, return 999. use string-equal for comparison
+(alist-get "bb" xx 999 nil 'string-equal)
+; get pair by value
+(rassoc 24 xx) ; equal
+(rassq 'abc xx) ; eq
+; get pair by key
+(assoc "aa" xx)
+(assq "aa" xx)

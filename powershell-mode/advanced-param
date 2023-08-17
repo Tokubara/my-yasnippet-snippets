@@ -1,12 +1,13 @@
 # -*- mode: snippet -*-
-# name: advanced-param
+# name: advanced-param-block
 # key: 
 # --
 [CmdletBinding()]
 param (
-  [Parameter(Mandatory=$True,HelpMessage="Enter a computer name to query")]
+  [Parameter(Mandatory=$True,HelpMessage="Enter a computer name to query",Position=0,ValueFromPipelineByPropertyName=$true,)]
+  [ValidateNotNullOrEmpty()]
   [Alias('hostname')]
-  [string]$computername,
+  [string[]]$computername,
   [ValidateSet(2,3)]
   [int]$drivetype = 3
 )

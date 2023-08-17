@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: powershell-src-block
+# key: pw
+# --
+#+begin_src powershell
+$0
+#+end_src

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: do-while
+# key: 
+# --
+$date = get-date
+do {    Write-Output "Checking if the month is December"    $date = $date.AddMonths(1)} while ($date.Month -ne 12 )

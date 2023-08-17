@@ -4,6 +4,8 @@
 # --
 # create
 $myArray = @() # 不觉得这个有用, 因为之后也不能再添加元素
+$myArray=1..5,7..9
+$myArray.length
 $myArray = [Object[]]::new(10)
 $myGreetings = "Hello world", "Hello sun", "Hello moon"
 $myGreetings = @("Hello world", "Hello sun", "Hello moon")
