@@ -2,5 +2,5 @@
 # name: wget
 # key: 
 # --
-wget -O output_filepath url
+cd ~/notes/vx_attachments; wget -O output_filepath url
 # -o logfilepath
