@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: if-elseif-else
+# key: 
+# --
+if( "${NATIVE_SIZE}" EQUAL 128 )
+elseif( "${NATIVE_SIZE}" EQUAL 64 )
+else()
+endif()

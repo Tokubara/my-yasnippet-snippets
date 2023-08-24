@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: if-condition
+# key: 
+# --
+if( "${NATIVE_SIZE}" EQUAL 128 )
+if (APPLE)
