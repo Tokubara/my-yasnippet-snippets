@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: assuming-simplify
+# key: 
+# --
+jkresult=Assuming[{Element[{k,j},Integers], k!=j, k >=0, j>=0, k<4, j<4}, FullSimplify[basek . Conjugate[basej]]];

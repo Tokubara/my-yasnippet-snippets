@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: chinese-hanji-character-regex
+# key: 
+# --
+\p{Han} # chinese
+\P{Han} # non-chinese

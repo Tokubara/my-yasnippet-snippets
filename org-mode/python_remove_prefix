@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: python_remove_prefix
-# key: py
+# key: 
 # --
 #+begin_src python
 `(shell-command-to-string "pbpaste | /usr/local/bin/perl /Users/quebec/Playground/little-scripts/remove_python_prefix.pl")`

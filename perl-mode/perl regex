@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: perl regex
-# key: 
-# --
-\p{Script_Extensions=Han} # 我觉得作用类似于 [\x{4e00}-\x{9fa5}]
-(?:) # not group

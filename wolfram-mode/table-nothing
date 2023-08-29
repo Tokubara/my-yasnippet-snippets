@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: table-nothing
+# key: 
+# --
+Table[If[j<k, (jkresult /. {j->j, k->k}), Nothing], {j, 0, n-1}, {k, 0, n-1}]

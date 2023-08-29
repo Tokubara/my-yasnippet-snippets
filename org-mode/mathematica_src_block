@@ -2,6 +2,6 @@
 # name: mathematica_src_block
 # key: m
 # --
-#+begin_src mathematica :results output
+#+begin_src mathematica
 $0
 #+end_src

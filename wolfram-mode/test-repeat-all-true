@@ -1,7 +1,14 @@
 # -*- mode: snippet -*-
-# name: test-repeat-all-true
+# name: test-repeat-for-all-true
 # key: 
 # --
+Module[{pow},
  Print[AllTrue[
-   Table[(v1 = RandomInteger[P - 1, 8]; dftINTT[dftNTT[v1]] == v1),
-    100], # == True &]]
+         Table[(
+                n=2^i;
+                pow=PowerMod[5, Range[0,n/4-1], n];
+                Sort[Mod[Join[pow,-pow],n]]==Range[1,n-1,2]
+               )
+              ,{i,3,12}
+               ], # == True &]]
+]

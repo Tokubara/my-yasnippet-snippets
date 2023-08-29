@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: alist-get-value-by-key
+# key: 
+# --
+(alist-get 'bb xx 999) ; 999 is default value
+(alist-get "bb" xx 999 nil 'string-equal)
