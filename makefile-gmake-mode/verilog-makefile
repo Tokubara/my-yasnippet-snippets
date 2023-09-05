@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: verilog-makefile
+# key: 
+# --
+MODULE_NAME := sram
+all: $(MODULE_NAME)
+$(MODULE_NAME): $(MODULE_NAME).v tb_$(MODULE_NAME).v
+	iverilog $^ -o $@
+db_tb_$(MODULE_NAME).vcd: $(MODULE_NAME)
+	vvp $<
+run: db_tb_$(MODULE_NAME).vcd
+	gtkwave "$<"
+clean:
+	rm $(MODULE_NAME) db_tb_$(MODULE_NAME).vcd

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: save-position
+# key: 
+# --
+(save-excursion
+  (goto-char point)
+  (line-beginning-position))

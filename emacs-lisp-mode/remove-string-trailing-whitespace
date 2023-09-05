@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remove-string-trailing-whitespace
+# key: 
+# --
+(replace-regexp-in-string "[ ]+$" "" "  abc ")

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: simulation-generate-vcd-waveform-file
+# key: 
+# --
+initial
+begin
+    $dumpfile("wave.vcd");
+    $dumpvars(0, led_demo_tb);
+end
+

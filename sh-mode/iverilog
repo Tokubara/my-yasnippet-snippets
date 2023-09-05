@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: iverilog
-# key: 
-# --
-iverilog -o main main.v
-iverilog -Wall -o led led_demo.v led_demo_tb.v

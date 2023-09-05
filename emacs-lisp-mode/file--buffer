@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: file--buffer
+# key: 
+# --
+(display-buffer diff-buf)

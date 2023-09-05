@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: application-switch
+# key: 
+# --
+#5::
+{
+; if WinExist("ahk_class CASCADIA_HOSTING_WINDOW_CLASS")
+if WinExist("ahk_exe firefox.exe")
+    WinActivate
+else
+    Run "firefox.exe"
+}

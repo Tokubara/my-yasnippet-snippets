@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: keybindings
+# key: key
+# --
+; ctrl(^), alt(!), win(#)
+#!d::
+{
+}

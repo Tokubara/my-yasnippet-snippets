@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: dot_babel_block
+# key: dot
+# --
+#+begin_src dot :file `(my/vx-pasted-image-name "svg")`
+$0
+#+end_src

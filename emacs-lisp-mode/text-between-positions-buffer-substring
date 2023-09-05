@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: text-between-positions-buffer-substring
+# key: 
+# --
+(buffer-substring START END)
+(buffer-substring-no-properties START END)

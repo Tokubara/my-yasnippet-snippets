@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: file--get-position
+# key: 
+# --
+;; line
+(line-beginning-position)
+(point-at-bol) ; the character position of the first character on the current line, 我没感觉与 (line-beginning-position) 有什么不同
+(point-at-bol N) ; scan forward N - 1 lines first
+(line-end-position)
+(line-number-at-pos end)
+(line-beginning-position-of-pos pos) ; util.el 定义的, 获得 pos 所在的 line 的起始 position
+
+;; point
+(point) ; get current point
+(point-max)
+(point-min)

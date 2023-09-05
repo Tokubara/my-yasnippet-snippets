@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remap-key
+# key: 
+# --
+Capslock::Esc

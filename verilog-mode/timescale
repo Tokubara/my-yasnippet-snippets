@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: timescale
+# key: 
+# --
+`timescale  1ns / 1ns

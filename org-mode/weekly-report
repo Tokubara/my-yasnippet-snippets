@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: weekly-report
+# key: 
+# --
+`(format-time-string "%4Y%m%d")`+田卓钰+周报

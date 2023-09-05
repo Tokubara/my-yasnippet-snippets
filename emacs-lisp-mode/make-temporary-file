@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: make-temporary-file
+# key: 
+# --
+(make-temp-file "string-diff" nil nil str1)

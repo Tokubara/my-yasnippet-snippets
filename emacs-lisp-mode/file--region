@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: file--region
+# key: 
+# --
+(region-beginning)
+(region-end)

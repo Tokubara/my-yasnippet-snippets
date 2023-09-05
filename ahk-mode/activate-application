@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: activate-application
+# key: 
+# --
+if WinExist("ahk_exe firefox.exe")
+    WinActivate

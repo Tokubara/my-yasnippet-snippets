@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: run-application
+# key: 
+# --
+Run "firefox.exe"

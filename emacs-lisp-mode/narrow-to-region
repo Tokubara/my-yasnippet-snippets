@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: narrow-to-region
+# key: 
+# --
+(narrow-to-region START END)
