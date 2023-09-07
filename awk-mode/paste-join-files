@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: paste-join-files
+# key: 
+# --
+awk 'NR==FNR {a[NR]=$0; next} {print a[FNR] "            " $0}' a.txt b.txt > c.txt

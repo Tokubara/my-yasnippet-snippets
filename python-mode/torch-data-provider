@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: torch-data-provider
+# key: 
+# --
+from torch.utils.data import DataLoader, Dataset
+class LinearRegressionDataset(Dataset):
+    def __init__(self):
+    def __len__(self):
+    def __getitem__(self, idx):
+
+class LinearRegression(nn.Module):
+  def __init__(self):
+    pass
+  def forward(self):
+    pass

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: key-in-define-key
+# key: 
+# --
+(kbd "TAB")
+(vector 'tab)
+(vector 'backtab)

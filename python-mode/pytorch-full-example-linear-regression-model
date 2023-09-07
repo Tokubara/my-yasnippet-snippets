@@ -1,0 +1,52 @@
+# -*- mode: snippet -*-
+# name: pytorch-full-example-linear-regression-model
+# key: 
+# --
+import torch
+from torch import nn
+from torch import optim
+
+from torch.utils.data import DataLoader, Dataset, random_split
+class LinearRegressionDataset(Dataset):
+    def __init__(self, w, b, num, noise = 0):
+      self.w = w
+      self.b = b
+      self.noise = noise
+      self.num = num
+      self.X = torch.randn(num, len(w))
+      self.y = self.X @ self.w + self.b + self.noise*torch.randn(num)
+    def __len__(self):
+      return self.num
+    def __getitem__(self, idx):
+      return self.X[idx], self.y[idx]
+
+in_features = 5
+dataset = LinearRegressionDataset(torch.rand(in_features), torch.rand(1)[0], 1000)
+training_dataset, val_dataset = random_split(dataset, [800, 200], torch.manual_seed(1))
+training_dataloader = DataLoader(training_dataset, batch_size=10, shuffle=False)
+
+class LinearRegression(nn.Module):
+  def __init__(self, in_features):
+    super(LinearRegression, self).__init__()
+    self.linear = nn.Linear(in_features, 1)
+  def forward(self, x):
+    return self.linear(x)
+
+mse_loss = nn.MSELoss()
+
+epoch_num = 10
+
+model = LinearRegression(in_features)
+optimizer = optim.SGD(params = model.parameters(), lr = 0.01)
+loss_list = []
+x, y= training_dataset[0]
+for epoch in range(epoch_num):
+  # model.train(True)
+  for x_batch, y_batch in training_dataloader:
+    loss = mse_loss(model(x_batch), y_batch.reshape(-1,1))
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+  model.eval()
+  loss_list.append(loss)
+  print("w: {}, b: {}".format(torch.sum(torch.abs(dataset.w.reshape(1,-1)-model.linear.weight)), torch.sum(torch.abs(dataset.b-model.linear.bias))))
