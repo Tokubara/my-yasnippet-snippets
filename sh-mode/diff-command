@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: diff-command
+# key: 
+# --
+diff -u file1 file2

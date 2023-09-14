@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: symlink
+# key: 
+# --
+New-Item LinkName -ItemType SymbolicLink -Value \\Server\Share # symlink

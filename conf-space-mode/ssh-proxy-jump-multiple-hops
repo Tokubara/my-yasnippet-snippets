@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: ssh-proxy-jump-multiple-hops
+# key: 
+# --
+Host server
+  HostName 8.131.57.219
+  User tianzy
+  Port 6004
+  ServerAliveInterval 240
+
+Host docker
+  HostName 127.0.0.1
+  User root
+  Port 10112
+  ServerAliveInterval 240
+  ProxyJump server

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: file-local-outli-heading-config
+# key: 
+# --
+# Local Variables:
+# outli-heading-config: ((bash-ts-mode "#" ?# t))
+# eval: (outli-mode)
+# End:

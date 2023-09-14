@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: docker-run
+# key: 
+# --
+docker run -i -t -p 10112:22 -p 5005:5005 -v /Users/quebec/Playground/bigdata/lab2:/home/bdms/homework/hw2 --name hw2 dingms/ucas-bdms-hw-u64-2019:ssh /bin/bash
+docker run -d --name mineos ubuntu <command>

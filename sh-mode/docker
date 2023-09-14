@@ -1,21 +1,15 @@
 # -*- mode: snippet -*-
-# name: docker
+# name: file--docker
 # key: 
 # --
-docker ps -a -q # 常用于展开, 比如:
+docker ps -a -q # all containers(including stop containers) id
 docker rm -f `sudo docker ps -a -q`
-docker start -a -i afdce499d14d
-docker attach 
+docker attach 5a3f9eee9405
 docker container cp index.html 86b:/usr/local/apache2/htdocs/index.html
 docker container cp 11f623640937:/home/bdms/homework/hw2 .
 docker container cp afdce499d14d:/root/hdfs_help.txt $VX
 
 docker pull dingms/ucas-bdms-hw-u64-2019:16.04 # 一定要检查 tag, 只有 latest 存在的情况下可以省略 tag
-docker run -i -t -p 10112:22 -p 5005:5005 -v /Users/quebec/Playground/bigdata/lab2:/home/bdms/homework/hw2 --name hw2 dingms/ucas-bdms-hw-u64-2019:ssh /bin/bash
-docker run -i -t -p 10112:22 -p 5005:5005 --name hw2 dingms/ucas-bdms-hw-u64-2019:16.04 /bin/bash
-docker run -d --name mineos ubuntu <command>
-exit # 或者 ctrl-d, 会 stop container
-docker run -i -t -p 10112:22 -p 5005:5005 -v ~/iflow/iFlow:/home/iflow --name iflow ubuntu:20.04 /bin/bash
 
 docker commit -m "ssh" 11f623640937 dingms/ucas-bdms-hw-u64-2019:ssh
 

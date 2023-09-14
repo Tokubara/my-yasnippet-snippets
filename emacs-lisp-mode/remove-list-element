@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remove-list-element
+# key: 
+# --
+(delete 'sh-mode global-treesit-auto-modes)

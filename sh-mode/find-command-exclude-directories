@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: find-command-exclude-directories
+# key: 
+# --
+find build -not \( -path build/external -prune \) -not \( -path build/blog -prune \) -name \*.js
+find -name "*.js" -not -path "./directory/*"

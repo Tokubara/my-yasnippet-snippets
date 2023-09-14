@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: spacemacs-key-binding-define
-# key: 
-# --
-(spacemacs/declare-prefix "o" "own-menu")
-(spacemacs/set-leader-keys "os" 'org-save-all-org-buffers)
-(spacemacs/set-leader-keys-for-major-mode 'org-mode "la" 'outline-hide-sublevels)
