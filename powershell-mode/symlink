@@ -2,4 +2,4 @@
 # name: symlink
 # key: 
 # --
-New-Item LinkName -ItemType SymbolicLink -Value \\Server\Share # symlink
+New-Item -Path <link-path> -ItemType SymbolicLink -Value <source-path>

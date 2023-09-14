@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: source-file-in-the-same-directory
+# key: 
+# --
+execute('source ' . expand('<sfile>:h') . '\' . 'vimrc')
