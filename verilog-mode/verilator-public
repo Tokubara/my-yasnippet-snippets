@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: verilator-public
+# key: 
+# --
+/*verilator public*/

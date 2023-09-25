@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: verilator-assert
+# key: 
+# --
+#include "Vmultiplier_naive.h"
+#include <cstdio>
+#include <cstdlib>
+#include <cassert>
+
+using Vmodule = Vmultiplier_naive;
+
+int main(int argc, char **argv, char **env) {
+  Vmodule *dut = new Vmodule;
+
+  for (int i = 0; i < ; i++) {
+    for (int j = 0; j < 16; j++) {
+      dut->x_in = i;
+      dut->y_in = j;
+      dut->eval();
+      assert(dut->p_out == i * j);
+    }
+  }
+  puts("All passed");
+
+  delete dut;
+  exit(EXIT_SUCCESS);
+}

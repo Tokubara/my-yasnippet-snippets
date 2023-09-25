@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: verilator-combinational-trace
+# key: 
+# --
+Verilated::traceEverOn(true);
+VerilatedVcdC *m_trace = new VerilatedVcdC;
+dut->trace(m_trace, 5);
+m_trace->open("waveform.vcd");
+
+dut->eval();
+m_trace->dump(sim_time);
+sim_time++;
+
+m_trace->close();

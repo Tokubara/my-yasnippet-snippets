@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: use-package
+# key: 
+# --
+(use-package eww
+  :defer t
+  :init
+  (add-hook 'eww-after-render-hook #'shrface-mode)
+  :commands (eww)
+  :config
+  (setq shr-use-fonts nil)
+  )

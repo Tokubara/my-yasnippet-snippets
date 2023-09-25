@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: origami-mode
+# key: 
+# --
+# -*- eval: (origami-mode); -*-
+# -*- origami-fold-style: double-braces -*-

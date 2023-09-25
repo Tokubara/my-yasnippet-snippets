@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: module-instantiation
+# key: 
+# --
+Adder_carry_para #(.N(8)) unit1 (.a(a8),.b(b8),.sum(sum8),.cout(c8)); //实例化4位加法器

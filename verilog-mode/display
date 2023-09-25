@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: $display
+# key: 
+# --
+$display("ID of the port is %b", port-id);

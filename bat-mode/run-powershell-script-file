@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: run-powershell-script-file
+# key: 
+# --
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& './wsl-2_0-run-all.ps1'"

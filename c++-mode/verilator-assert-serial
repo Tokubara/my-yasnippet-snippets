@@ -1,0 +1,50 @@
+# -*- mode: snippet -*-
+# name: verilator-assert-serial
+# key: 
+# --
+#include "Vmultiplier_serial.h"
+#include <cassert>
+#include <cstdio>
+#include <cstdlib>
+
+using Vmodule = Vmultiplier_serial;
+const int N = 8;
+const int M = 4;
+
+inline void setInput(Vmodule *dut, int x_in, int y_in, int ini) {
+  dut->x_in = x_in;
+  dut->y_in = y_in;
+  dut->clk = 0;
+  dut->ini = ini;
+  dut->eval();
+  dut->clk = 1;
+  dut->eval();
+}
+
+void func(Vmodule *dut, int x_in, int y_in, int expect_result) {
+  setInput(dut, x_in, y_in, 1);
+  for (int cycle = 0; cycle <= N; cycle++) {
+    setInput(dut, 0, 0, 0);
+  }
+  assert(dut->done == 1);
+  if (!(dut->p_out == expect_result)) {
+    std::printf("x_in: %d, y_in: %d, p_out: %d\n", x_in, y_in, dut->p_out);
+  }
+  assert(dut->p_out == expect_result);
+}
+
+int main(int argc, char **argv, char **env) {
+  Vmodule *dut = new Vmodule;
+  int i_end = (1 << N) - 1;
+  int j_end = (1 << M) - 1;
+  for (int i = 0; i < i_end; i++) {
+    for (int j = 0; j < j_end; j++) {
+      func(dut, i, j, i * j);
+    }
+  }
+  // func(dut, 22, 3, 66);
+  std::puts("All passed");
+
+  delete dut;
+  exit(EXIT_SUCCESS);
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for-loop
+# key: for
+# --
+integer i;
+for (i = 1; i <= 8; i = i + 1) begin
+end

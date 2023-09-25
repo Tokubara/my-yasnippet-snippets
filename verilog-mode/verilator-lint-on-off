@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: verilator-lint-on-off
+# key: 
+# --
+/* verilator lint_off BLKSEQ */
+/* verilator lint_on BLKSEQ */
+

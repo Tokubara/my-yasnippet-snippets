@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hash-table-all-keys
+# key: 
+# --
+(hash-table-keys quickrun--command-key-table)

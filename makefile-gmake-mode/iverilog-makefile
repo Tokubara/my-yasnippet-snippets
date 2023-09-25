@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
-# name: verilog-makefile
+# name: iverilog-makefile
 # key: 
+# expand-env: ((yas-indent-line 'fixed))
 # --
 MODULE_NAME := sram
 all: $(MODULE_NAME)

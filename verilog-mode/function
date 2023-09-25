@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: function
+# key: function
+# --
+function [3:0] add_func;
+  input [3:0] x, y;
+  begin
+    add_func = x + y;
+  end
+endfunction

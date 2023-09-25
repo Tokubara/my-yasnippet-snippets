@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: ifeq
+# key: 
+# expand-env: ((yas-indent-line 'fixed))
+# --
+ifeq ($(random),)
+else
+endif

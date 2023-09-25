@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: FFT
-# key: 
-# --
-$\text{result}_{n,a}[i]=\text{result}_{\frac{n}{2},a_{\text{even}}}[i]+\omega_{n}^{i}\text{result}_{\frac{n}{2},a_{\text{odd}}}[i]$
-$\text{result}_{n,a}[i+\frac{n}{2}]=\text{result}_{\frac{n}{2},a_{\text{even}}}[i]-\omega_{n}^{i}\text{result}_{\frac{n}{2},a_{\text{odd}}}[i]$
