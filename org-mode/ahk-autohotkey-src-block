@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ahk-autohotkey-src-block
+# key: ahk
+# --
+#+begin_src ahk
+$0
+#+end_src

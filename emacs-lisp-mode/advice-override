@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: advice-override
+# key: 
+# --
+(advice-add 'org-id-store-link :override #'my/org-id-store-link)

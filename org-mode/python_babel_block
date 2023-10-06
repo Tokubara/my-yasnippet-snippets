@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: python_babel_block
+# key: pb
+# --
+#+begin_src python :results output
+$0
+#+end_src

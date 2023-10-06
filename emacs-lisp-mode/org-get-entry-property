@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: org-get-entry-property
+# key: 
+# --
+(org-entry-get nil "description")

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: emacs-dir-local-variables
+# key: 
+# --
+((nil . ((indent-tabs-mode . t) ; nil applies for any modes
+         (fill-column . 80)
+         (mode . (mode . origami)))) ; "mode" 是一个特殊关键词, 表示 specifies the minor mode to be enabled, 注意不可在其后加上 -mode, 不能写成是 origami-mode, 否则执行的会是 origami-mode-mode
+ (c-mode . ((c-file-style . "BSD")
+            (subdirs . nil))) ; subdirectories 也是一个特殊的 keyword, 表示 settings are only to be applied in the current directory, not in any subdirectories
+ ("src/imported"
+  . ((nil . ((change-log-default-name
+              . "ChangeLog.local")))))) ; 表示对 "src/imported" subdirectory 起作用
+

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: symbol-variable-exists-defined-and-t
+# key: 
+# --
+(bound-and-true-p outli-mode)
+(boundp 'outli-mode)

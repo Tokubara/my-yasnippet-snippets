@@ -2,5 +2,4 @@
 # name: origami-mode
 # key: 
 # --
-# -*- eval: (origami-mode); -*-
-# -*- origami-fold-style: double-braces -*-
+# -*- origami-fold-style: brace-vert; eval: (origami-mode); -*-

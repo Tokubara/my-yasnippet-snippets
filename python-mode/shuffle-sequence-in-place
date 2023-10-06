@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: shuffle-sequence-in-place
+# key: shuffle
+# --
+random.shuffle(x)

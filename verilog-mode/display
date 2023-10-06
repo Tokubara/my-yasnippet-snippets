@@ -2,4 +2,4 @@
 # name: $display
 # key: 
 # --
-$display("ID of the port is %b", port-id);
+$display("ID of the port is %b", port-id); // do not need newline

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-id-link-description
+# key: desc
+# --
+:PROPERTIES:
+:description: PrivFT
+:END:

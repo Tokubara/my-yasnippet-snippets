@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: mv
+# key: mv
+# --
+Move-Item -Path $path -Destination $destination

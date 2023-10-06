@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: unzip
+# key: 
+# --
+# list
+unzip -l file.zip
+# 解压到目录 directory 中
+unzip file.zip -d directory
+# 只解压 file.zip 中的 file.txt
+unzip file.zip file.txt

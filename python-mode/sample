@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sample
+# key: sample
+# --
+import random
+random.sample(['red', 'blue'], counts=[4, 2], k=5)

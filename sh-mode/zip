@@ -8,10 +8,3 @@ zip -r submit.zip  exp2/src/submit report.tex
 zip -r ~/Downloads/资格审核_144302186000101_田卓钰.zip 资格审核_144302186000101_田卓钰 -x "资 格审核_144302186000101_田卓钰/.*" # exclude hidden files
 zip -r cmu-15445.zip cmu-15445/
 zip 体系结构2022-2023期末.zip ../vx_attachments/Pasted_image_20230102201836.png ../vx_attachments/Pasted_image_20230102201850.png ../vx_attachments/Pasted_image_20230102201908.png ../vx_attachments/Pasted_image_20230102201927.png ../vx_attachments/Pasted_image_20230102201942.png ../vx_attachments/Pasted_image_20230102201957.png
-
-# list
-unzip -l file.zip
-# 解压到目录 directory 中
-unzip file.zip -d directory
-# 只解压 file.zip 中的 file.txt
-unzip file.zip file.txt
